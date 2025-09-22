@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1758477112
+ModificationTime: 1758477673
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -63,6 +63,7 @@ Lookup: 1 9 0 "Single Substitution 2" { "Single Substitution 2-1"  } []
 Lookup: 1 9 0 "Single Substitution 3" { "Single Substitution 3-1"  } []
 Lookup: 1 9 0 "Single Substitution 4" { "Single Substitution 4-1"  } []
 Lookup: 1 9 0 "Single Substitution 5" { "Single Substitution 5-1"  } []
+Lookup: 1 1 0 "Single Substitution 6" { "Single Substitution 6-1"  } []
 Lookup: 1 9 0 "'fina' Terminal Forms in Arabic lookup 1" { "'fina' Terminal Forms in Arabic lookup 1 subtable"  } ['fina' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 1 9 0 "'medi' Medial Forms in Arabic lookup 2" { "'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 1 9 0 "'init' Initial Forms in Arabic lookup 3" { "'init' Initial Forms in Arabic lookup 3 subtable"  } ['init' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
@@ -1647,7 +1648,9 @@ GlifName: uni0653
 Width: 0
 VWidth: 2709
 GlyphClass: 4
-Flags: HW
+Flags: W
+HStem: 1122 108<338.81 524.477> 1211 108<148.483 326.892>
+VStem: -13 672
 AnchorPoint: "Anchor110" 310 1066 mark 0
 AnchorPoint: "Anchor109" 310 1066 mark 0
 AnchorPoint: "Anchor101" 298 1405 basemark 0
@@ -1655,15 +1658,15 @@ AnchorPoint: "Anchor101" 310 1066 mark 0
 LayerCount: 2
 Fore
 SplineSet
-227 1211 m 0
+227 1211 m 0x60
  188 1211 95 1123 61 1088 c 1
  -13 1154 l 1
- 42 1215 154 1319 223 1319 c 0
+ 42 1215 154 1319 223 1319 c 0x60
  269 1319 382 1230 443 1230 c 0
  478 1230 552 1295 586 1329 c 1
  659 1263 l 1
- 605 1209 510 1122 447 1122 c 0
- 401 1122 277 1211 227 1211 c 0
+ 605 1209 510 1122 447 1122 c 0xa0
+ 401 1122 277 1211 227 1211 c 0x60
 EndSplineSet
 EndChar
 
@@ -1738,7 +1741,9 @@ GlifName: uni065A_
 Width: 0
 VWidth: 2347
 GlyphClass: 4
-Flags: HW
+Flags: W
+HStem: 1471 351.863
+VStem: 375.407 411.529
 AnchorPoint: "Anchor110" 584 1444 mark 0
 AnchorPoint: "Anchor109" 584 1444 mark 0
 AnchorPoint: "Anchor101" 579 1861 basemark 0
@@ -2187,7 +2192,9 @@ GlifName: uni0674
 Width: 558
 VWidth: 2573
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: 1491 107<244.19 446.65>
+VStem: 132 93<1320.1 1468.24>
 LayerCount: 2
 Fore
 SplineSet
@@ -3385,13 +3392,16 @@ GlifName: uniF_E_82
 Width: 536
 VWidth: 3091
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: 0 182<382.511 556> 1374 108<322.81 508.477> 1463 108<132.483 310.892>
+VStem: -29 672 153 169<242.111 1247>
 AnchorPoint: "Anchor110" 252 1655 basechar 0
 AnchorPoint: "Anchor107" 355 -247 basechar 0
 LayerCount: 2
 Fore
 Refer: 54 1619 S 1 0 0 1 -16 252 2
 Refer: 297 -1 N 1 0 0 1 0 0 3
+Substitution2: "Single Substitution 6-1" uniFE82.rlig
 EndChar
 
 StartChar: uniFE83
@@ -3415,13 +3425,16 @@ GlifName: uniF_E_84
 Width: 536
 VWidth: 3091
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: 0 182<382.511 556> 1691 107<174.19 376.65>
+VStem: 62 93<1520.1 1668.24> 153 169<242.111 1247>
 AnchorPoint: "Anchor110" 238 1884 basechar 0
 AnchorPoint: "Anchor107" 359 -245 basechar 0
 LayerCount: 2
 Fore
 Refer: 76 1652 S 1 0 0 1 -70 200 2
 Refer: 297 -1 N 1 0 0 1 0 0 3
+Substitution2: "Single Substitution 6-1" uniFE84.rlig
 EndChar
 
 StartChar: uniFE85
@@ -3474,13 +3487,16 @@ GlifName: uniF_E_88
 Width: 536
 VWidth: 3091
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: -216 107<238.19 440.65> 0 182<382.511 556>
+VStem: 126 93<-386.9 -238.764> 153 169<242.972 1377>
 AnchorPoint: "Anchor110" 232 1544 basechar 0
 AnchorPoint: "Anchor107" 305 -603 basechar 0
 LayerCount: 2
 Fore
 Refer: 76 1652 N 1 0 0 1 -6 -1707 2
 Refer: 153 65166 N 1 0 0 1 0 0 3
+Substitution2: "Single Substitution 6-1" uniFE88.rlig
 EndChar
 
 StartChar: uniFE89
@@ -3568,7 +3584,9 @@ GlifName: uniF_E_8E_
 Width: 536
 VWidth: 3091
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: 0 182<382.511 556>
+VStem: 153 169<242.972 1377>
 AnchorPoint: "Anchor110" 236 1542 basechar 0
 AnchorPoint: "Anchor107" 300 -256 basechar 0
 LayerCount: 2
@@ -3584,6 +3602,7 @@ SplineSet
  276 0 153 130 153 422 c 2
  153 1377 l 1
 EndSplineSet
+Substitution2: "Single Substitution 6-1" uniFE8E.rlig
 EndChar
 
 StartChar: uniFE8F
@@ -5247,7 +5266,9 @@ GlifName: uniF_E_D_F_
 Width: 590
 VWidth: 3091
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: 0 182<-20 202.691>
+VStem: 268 169<248.294 1377>
 AnchorPoint: "Anchor107" 231 -245 basechar 0
 AnchorPoint: "Anchor110" 343 1542 basechar 0
 LayerCount: 2
@@ -5263,6 +5284,7 @@ SplineSet
  -20 0 l 5
  -20 182 l 5
 EndSplineSet
+Substitution2: "Single Substitution 6-1" uniFEDF.rlig
 Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
@@ -5274,7 +5296,9 @@ GlifName: uniF_E_E_0
 Width: 651
 VWidth: 3091
 GlyphClass: 2
-Flags: HW
+Flags: W
+HStem: 0 182<-20 201.672 504.159 671>
+VStem: 268 169<254.875 1377>
 AnchorPoint: "Anchor107" 231 -245 basechar 0
 AnchorPoint: "Anchor110" 342 1542 basechar 0
 LayerCount: 2
@@ -5295,6 +5319,7 @@ SplineSet
  64 182 l 2
  231 182 267 291 268 438 c 2
 EndSplineSet
+Substitution2: "Single Substitution 6-1" uniFEE0.rlig
 EndChar
 
 StartChar: uniFEE1
@@ -6662,7 +6687,9 @@ Encoding: 413 -1 297
 GlifName: N_ameM_e.65564
 Width: 536
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 182<382.511 556>
+VStem: 153 169<242.111 1247>
 LayerCount: 2
 Fore
 SplineSet
@@ -6997,13 +7024,16 @@ Encoding: 422 -1 316
 GlifName: uni06B_5.init
 Width: 590
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 182<-20 202.691> 1519 351.863
+VStem: 144.407 411.529 268 169<248.294 1377>
 AnchorPoint: "Anchor110" 353 1972 basechar 0
 AnchorPoint: "Anchor107" 231 -245 basechar 0
 LayerCount: 2
 Fore
 Refer: 58 1626 N 1 0 0 1 -231 48 2
 Refer: 234 65247 N 1 0 0 1 0 0 3
+Substitution2: "Single Substitution 6-1" uni06B5.init.rlig
 Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
@@ -7014,13 +7044,16 @@ Encoding: 423 -1 317
 GlifName: uni06B_5.medi
 Width: 651
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 182<-20 201.672 504.159 671> 1519 351.863
+VStem: 144.407 411.529 268 169<254.875 1377>
 AnchorPoint: "Anchor107" 231 -245 basechar 0
 AnchorPoint: "Anchor110" 353 1972 basechar 0
 LayerCount: 2
 Fore
 Refer: 58 1626 N 1 0 0 1 -231 48 2
 Refer: 235 65248 N 1 0 0 1 0 0 3
+Substitution2: "Single Substitution 6-1" uni06B5.medi.rlig
 EndChar
 
 StartChar: uni06BE
@@ -7199,13 +7232,16 @@ Encoding: 180 64337 331
 GlifName: uniF_B_51
 Width: 536
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 182<382.511 556> 1346 86<159 442.031> 1613 88<263.949 446.663>
+VStem: 153 169<242.111 1247> 459 84<1454.05 1599.28>
 AnchorPoint: "Anchor107" 359 -245 basechar 0
 AnchorPoint: "Anchor110" 285 1781 basechar 0
 LayerCount: 2
 Fore
 Refer: 332 -1 S 1 0 0 1 24 81 2
 Refer: 297 -1 N 1 0 0 1 0 0 3
+Substitution2: "Single Substitution 6-1" uniFB51.rlig
 EndChar
 
 StartChar: NameMe.65583
@@ -7213,7 +7249,9 @@ Encoding: 426 -1 332
 GlifName: N_ameM_e.65583
 Width: 471
 VWidth: 2739
-Flags: HW
+Flags: W
+HStem: 1265 86<135 418.031> 1532 88<239.949 422.663>
+VStem: 435 84<1373.05 1518.28>
 AnchorPoint: "Anchor101" 246 1226 mark 0
 AnchorPoint: "Anchor101" 270 1696 basemark 0
 AnchorPoint: "Anchor109" 246 1226 mark 0
@@ -11417,7 +11455,9 @@ StartChar: uniFB51.rlig
 Encoding: 574 -1 574
 Width: 570
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 1406 86<159 442.031> 1673 88<263.949 446.663>
+VStem: 459 84<1514.05 1659.28>
 AnchorPoint: "Anchor106" 323 -256 baselig 1
 AnchorPoint: "Anchor109" 294 1820 baselig 1
 LayerCount: 2
@@ -11448,26 +11488,28 @@ StartChar: uniFE82.rlig
 Encoding: 575 -1 575
 Width: 570
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 1422 108<322.81 508.477> 1511 108<132.483 310.892>
+VStem: -29 672
 AnchorPoint: "Anchor106" 323 -256 baselig 1
 AnchorPoint: "Anchor109" 273 1725 baselig 1
 LayerCount: 2
 Fore
 SplineSet
-421 176 m 1
+421 176 m 1x20
  421 176 352 710 109 1260 c 1
  264 1332 l 1
  505 764 582 207 582 207 c 1
- 421 176 l 1
-211 1511 m 0
+ 421 176 l 1x20
+211 1511 m 0x60
  172 1511 79 1423 45 1388 c 1
  -29 1454 l 1
- 26 1515 138 1619 207 1619 c 0
+ 26 1515 138 1619 207 1619 c 0x60
  253 1619 366 1530 427 1530 c 0
  462 1530 536 1595 570 1629 c 1
  643 1563 l 1
- 589 1509 494 1422 431 1422 c 0
- 385 1422 261 1511 211 1511 c 0
+ 589 1509 494 1422 431 1422 c 0xa0
+ 385 1422 261 1511 211 1511 c 0x60
 EndSplineSet
 EndChar
 
@@ -11475,7 +11517,9 @@ StartChar: uniFE84.rlig
 Encoding: 576 -1 576
 Width: 570
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 1726 107<119.19 321.65>
+VStem: 7 93<1555.1 1703.24>
 AnchorPoint: "Anchor106" 323 -256 baselig 1
 AnchorPoint: "Anchor109" 180 1910 baselig 1
 LayerCount: 2
@@ -11507,7 +11551,9 @@ StartChar: uniFE88.rlig
 Encoding: 577 -1 577
 Width: 570
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: -217 107<296.19 498.65>
+VStem: 184 93<-387.9 -239.764>
 AnchorPoint: "Anchor106" 390 -593 baselig 1
 AnchorPoint: "Anchor109" 212 1468 baselig 1
 LayerCount: 2
@@ -11539,7 +11585,8 @@ StartChar: uniFE8E.rlig
 Encoding: 578 -1 578
 Width: 570
 VWidth: 3091
-Flags: HW
+Flags: W
+VStem: 109 473
 AnchorPoint: "Anchor109" 206 1465 baselig 1
 AnchorPoint: "Anchor106" 317 -259 baselig 1
 LayerCount: 2
@@ -11557,7 +11604,9 @@ StartChar: uniFEDF.rlig
 Encoding: 579 -1 579
 Width: 604
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 171<-452 48.1866>
+VStem: 283 169<378.768 1377>
 AnchorPoint: "Anchor109" 379 1541 baselig 0
 AnchorPoint: "Anchor106" 347 -252 baselig 0
 LayerCount: 2
@@ -11581,7 +11630,9 @@ StartChar: uniFEE0.rlig
 Encoding: 580 -1 580
 Width: 674
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 171<-452 47.7967 552.027 694>
+VStem: 283 169<378.504 1377>
 AnchorPoint: "Anchor109" 369 1541 baselig 0
 AnchorPoint: "Anchor106" 337 -252 baselig 0
 LayerCount: 2
@@ -11610,7 +11661,9 @@ StartChar: uni06B5.init.rlig
 Encoding: 581 -1 581
 Width: 604
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 171<-452 48.1866>
+VStem: 283 169<378.768 1377>
 AnchorPoint: "Anchor106" 331 -255 baselig 0
 AnchorPoint: "Anchor109" 362 1968 baselig 0
 LayerCount: 2
@@ -11642,7 +11695,9 @@ StartChar: uni06B5.medi.rlig
 Encoding: 582 -1 582
 Width: 674
 VWidth: 3091
-Flags: HW
+Flags: W
+HStem: 0 171<-452 47.7967 552.027 694>
+VStem: 283 169<378.504 1377>
 AnchorPoint: "Anchor109" 362 1968 baselig 0
 AnchorPoint: "Anchor106" 331 -255 baselig 0
 LayerCount: 2
