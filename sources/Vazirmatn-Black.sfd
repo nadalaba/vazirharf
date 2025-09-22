@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1758483461
+ModificationTime: 1758643826
 PfmFamily: 33
 TTFWeight: 900
 TTFWidth: 5
@@ -67,10 +67,9 @@ Lookup: 1 1 0 "Single Substitution 6" { "Single Substitution 6-1"  } []
 Lookup: 1 9 0 "'fina' Terminal Forms in Arabic lookup 1" { "'fina' Terminal Forms in Arabic lookup 1 subtable"  } ['fina' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 1 9 0 "'medi' Medial Forms in Arabic lookup 2" { "'medi' Medial Forms in Arabic lookup 2 subtable"  } ['medi' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 1 9 0 "'init' Initial Forms in Arabic lookup 3" { "'init' Initial Forms in Arabic lookup 3 subtable"  } ['init' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
-Lookup: 4 9 1 "'rlig' Required Ligatures in Arabic lookup 5" { "'rlig' Required Ligatures in Arabic lookup 5 subtable"  } ['rlig' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 4 1 1 "'ccmp' Required Ligatures in Arabic lookup 4" { "'ccmp' Required Ligatures in Arabic lookup 4 subtable"  } ['ccmp' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
+Lookup: 5 9 0 "'rclt' Required Contextual Alternates in Arabic lookup 6" { "'rclt' Required Contextual Alternates in Arabic lookup 6 subtable"  } ['rclt' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 6 9 0 "'calt' Contextual Alternates lookup 7" { "'calt' Contextual Alternates lookup 7 subtable 0"  "'calt' Contextual Alternates lookup 7 subtable 1"  "'calt' Contextual Alternates lookup 7 subtable 2"  "'calt' Contextual Alternates lookup 7 subtable 3"  "'calt' Contextual Alternates lookup 7 subtable 4"  "'calt' Contextual Alternates lookup 7 subtable 5"  "'calt' Contextual Alternates lookup 7 subtable 6"  } ['calt' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
-Lookup: 4 9 1 "'liga' Standard Ligatures in Arabic lookup 8" { "'liga' Standard Ligatures in Arabic lookup 8 subtable"  } ['liga' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 4 1 1 "'liga' Standard Ligatures in Arabic lookup 9" { "'liga' Standard Ligatures in Arabic lookup 9 subtable"  } ['liga' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 1 0 0 "'locl' Localized Forms in Arabic lookup 10" { "'locl' Localized Forms in Arabic lookup 10 subtable"  } ['locl' ('arab' <'URD ' > ) ]
 Lookup: 257 0 0 "Single Positioning lookup 0" { "Single Positioning lookup 0 subtable"  } []
@@ -90,6 +89,24 @@ Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic lookup 11" { "'mkmk' Mark to Mark
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic lookup 12" { "'mkmk' Mark to Mark in Arabic lookup 12 subtable"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 MarkAttachClasses: 1
 DEI: 91125
+ContextSub2: class "'rclt' Required Contextual Alternates in Arabic lookup 6 subtable" 3 3 3 1
+  Class: 41 uniFEDF uniFEE0 uni06B5.init uni06B5.medi
+  Class: 39 uniFB51 uniFE82 uniFE84 uniFE88 uniFE8E
+  BClass: 41 uniFEDF uniFEE0 uni06B5.init uni06B5.medi
+  BClass: 39 uniFB51 uniFE82 uniFE84 uniFE88 uniFE8E
+  FClass: 41 uniFEDF uniFEE0 uni06B5.init uni06B5.medi
+  FClass: 39 uniFB51 uniFE82 uniFE84 uniFE88 uniFE8E
+ 2 0 0
+  ClsList: 1 2
+  BClsList:
+  FClsList:
+ 2
+  SeqLookup: 0 "Single Substitution 6"
+  SeqLookup: 1 "Single Substitution 6"
+  ClassNames: "All_Others" "Lam_Before_Alef" "Alef_After_Lam"
+  BClassNames: "All_Others" "Lam_Before_Alef" "Alef_After_Lam"
+  FClassNames: "All_Others" "Lam_Before_Alef" "Alef_After_Lam"
+EndFPST
 ChainPos2: coverage "'kern' Horizontal Kerning lookup 5 subtable 7" 0 0 0 1
  1 1 0
   Coverage: 21 parenleft bracketleft
@@ -5841,7 +5858,6 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFE82
 EndChar
 
 StartChar: uniFEF6
@@ -5860,7 +5876,6 @@ Fore
 Refer: 54 1619 S 1 0 0 1 -16 330 2
 Refer: 263 65276 S 1 0 0 1 0 0 3
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFE82
 EndChar
 
 StartChar: uniFEF7
@@ -5882,7 +5897,6 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFE84
 EndChar
 
 StartChar: uniFEF8
@@ -5901,7 +5915,6 @@ Fore
 Refer: 76 1652 N 1 0 0 1 -115 265 2
 Refer: 263 65276 N 1 0 0 1 0 0 3
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFE84
 EndChar
 
 StartChar: uniFEF9
@@ -5923,7 +5936,6 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFE88
 EndChar
 
 StartChar: uniFEFA
@@ -5942,7 +5954,6 @@ Fore
 Refer: 76 1652 N 1 0 0 1 82 -1708 2
 Refer: 263 65276 N 1 0 0 1 0 0 3
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFE88
 EndChar
 
 StartChar: uniFEFB
@@ -5977,7 +5988,6 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 LCarets2: 1 0
-Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uniFEDF uniFE8E
 EndChar
 
 StartChar: uniFEFC
@@ -6014,7 +6024,6 @@ SplineSet
  520 984 658 355 658 355 c 1
 EndSplineSet
 LCarets2: 1 0
-Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uniFEE0 uniFE8E
 EndChar
 
 StartChar: arabic_dot
@@ -7148,7 +7157,6 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 LCarets2: 1 0
-Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uni06B5.init uniFE8E
 EndChar
 
 StartChar: NameMe.65574
@@ -7166,7 +7174,6 @@ Fore
 Refer: 58 1626 S 1 0 0 1 389 48 2
 Refer: 263 65276 S 1 0 0 1 0 0 3
 LCarets2: 1 0
-Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uni06B5.medi uniFE8E
 EndChar
 
 StartChar: figuredash
@@ -9082,7 +9089,6 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFB51
 EndChar
 
 StartChar: LamAlefWasla.fina
@@ -9100,7 +9106,6 @@ Fore
 Refer: 332 -1 S 1 0 0 1 54 201 2
 Refer: 263 65276 N 1 0 0 1 0 0 3
 LCarets2: 1 0
-Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFB51
 EndChar
 
 StartChar: uni220E
