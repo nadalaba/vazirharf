@@ -253,22 +253,21 @@ MATH:RadicalKernBeforeDegree: 1295
 MATH:RadicalKernAfterDegree: -5928 
 MATH:RadicalDegreeBottomRaisePercent: 139
 MATH:MinConnectorOverlap: 40
-Encoding: UnicodeBmp
-Compacted: 1
+Encoding: Custom
 UnicodeInterp: none
 NameList: AGL For New Fonts
 DisplaySize: -48
 AntiAlias: 1
 FitToEm: 1
-WinInfo: 420 12 13
+WinInfo: 76 38 14
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 307200 153600 102400 553984 -1048576 102400 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
 AnchorClass2: "Anchor100" "'mkmk' Mark to Mark in Arabic lookup 12 subtable" "Anchor101" "'mkmk' Mark to Mark in Arabic lookup 11 subtable" "Anchor-2"""  "Anchor-3"""  "Anchor-4"""  "Anchor-5"""  "Anchor106" "'mark' Mark Positioning lookup 10 subtable" "Anchor107" "'mark' Mark Positioning lookup 6 subtable" "Anchor-8"""  "Anchor109" "'mark' Mark Positioning lookup 8 subtable" "Anchor110" "'mark' Mark Positioning lookup 9 subtable" "Anchor-11"""  "Anchor-12"""  "Anchor-13"""  "Anchor-14"""  "Anchor-15"""  "Anchor-16"""  "Anchor-17"""  "Anchor-18"""  "Anchor-19""" 
-BeginChars: 65720 574
+BeginChars: 583 574
 
 StartChar: space
-Encoding: 32 32 0
+Encoding: 0 32 0
 GlifName: space
 Width: 500
 VWidth: 2812
@@ -280,7 +279,7 @@ Validated: 1
 EndChar
 
 StartChar: exclam
-Encoding: 33 33 1
+Encoding: 1 33 1
 GlifName: exclam
 Width: 617
 VWidth: 2799
@@ -303,7 +302,7 @@ EndSplineSet
 EndChar
 
 StartChar: period
-Encoding: 46 46 2
+Encoding: 6 46 2
 GlifName: period
 Width: 637
 VWidth: 2799
@@ -321,7 +320,7 @@ EndSplineSet
 EndChar
 
 StartChar: colon
-Encoding: 58 58 3
+Encoding: 8 58 3
 GlifName: colon
 Width: 637
 VWidth: 2799
@@ -344,7 +343,7 @@ EndSplineSet
 EndChar
 
 StartChar: nbspace
-Encoding: 160 160 4
+Encoding: 12 160 4
 GlifName: uni00A_0
 Width: 500
 VWidth: 2812
@@ -356,7 +355,7 @@ Validated: 1
 EndChar
 
 StartChar: uni060C
-Encoding: 1548 1548 5
+Encoding: 17 1548 5
 GlifName: afii57388
 Width: 637
 VWidth: 2807
@@ -376,7 +375,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0615
-Encoding: 1557 1557 6
+Encoding: 22 1557 6
 GlifName: uni0615
 Width: 0
 VWidth: 2748
@@ -410,7 +409,7 @@ Validated: 1
 EndChar
 
 StartChar: uni061B
-Encoding: 1563 1563 7
+Encoding: 23 1563 7
 GlifName: uni061B_
 Width: 637
 VWidth: 2807
@@ -435,7 +434,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni061F
-Encoding: 1567 1567 8
+Encoding: 24 1567 8
 GlifName: uni061F_
 Width: 902
 VWidth: 2799
@@ -464,7 +463,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0621
-Encoding: 1569 1569 9
+Encoding: 25 1569 9
 GlifName: uni0621
 Width: 909
 VWidth: 3151
@@ -494,7 +493,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-100 dv=0
 EndChar
 
 StartChar: uni0622
-Encoding: 1570 1570 10
+Encoding: 26 1570 10
 GlifName: uni0622
 Width: 556
 VWidth: 2834
@@ -534,7 +533,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFE82
 EndChar
 
 StartChar: uni0623
-Encoding: 1571 1571 11
+Encoding: 27 1571 11
 GlifName: uni0623
 Width: 556
 VWidth: 2834
@@ -555,7 +554,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFE84
 EndChar
 
 StartChar: uni0624
-Encoding: 1572 1572 12
+Encoding: 28 1572 12
 GlifName: afii57412
 Width: 970
 VWidth: 2834
@@ -575,7 +574,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFE86
 EndChar
 
 StartChar: uni0625
-Encoding: 1573 1573 13
+Encoding: 29 1573 13
 GlifName: uni0625
 Width: 556
 VWidth: 2834
@@ -594,7 +593,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFE88
 EndChar
 
 StartChar: uni0626
-Encoding: 1574 1574 14
+Encoding: 30 1574 14
 GlifName: afii57414
 Width: 1495
 VWidth: 2834
@@ -614,7 +613,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFE8B
 EndChar
 
 StartChar: uni0627
-Encoding: 1575 1575 15
+Encoding: 31 1575 15
 GlifName: uni0627
 Width: 556
 VWidth: 3091
@@ -638,7 +637,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFE8E
 EndChar
 
 StartChar: uni0628
-Encoding: 1576 1576 16
+Encoding: 32 1576 16
 GlifName: uni0628
 Width: 1852
 VWidth: 2834
@@ -658,7 +657,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFE91
 EndChar
 
 StartChar: uni0629
-Encoding: 1577 1577 17
+Encoding: 33 1577 17
 GlifName: uni0629
 Width: 1015
 VWidth: 2834
@@ -676,7 +675,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFE94
 EndChar
 
 StartChar: uni062A
-Encoding: 1578 1578 18
+Encoding: 34 1578 18
 GlifName: uni062A_
 Width: 1852
 VWidth: 2834
@@ -696,7 +695,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFE97
 EndChar
 
 StartChar: uni062B
-Encoding: 1579 1579 19
+Encoding: 35 1579 19
 GlifName: uni062B_
 Width: 1852
 VWidth: 2834
@@ -716,7 +715,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFE9B
 EndChar
 
 StartChar: uni062C
-Encoding: 1580 1580 20
+Encoding: 36 1580 20
 GlifName: uni062C_
 Width: 1431
 VWidth: 2834
@@ -734,7 +733,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFE9F
 EndChar
 
 StartChar: uni062D
-Encoding: 1581 1581 21
+Encoding: 37 1581 21
 GlifName: uni062D_
 Width: 1431
 VWidth: 3091
@@ -768,7 +767,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEA3
 EndChar
 
 StartChar: uni062E
-Encoding: 1582 1582 22
+Encoding: 38 1582 22
 GlifName: uni062E_
 Width: 1431
 VWidth: 2834
@@ -786,7 +785,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEA7
 EndChar
 
 StartChar: uni062F
-Encoding: 1583 1583 23
+Encoding: 39 1583 23
 GlifName: uni062F_
 Width: 1040
 VWidth: 3091
@@ -814,7 +813,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFEAA
 EndChar
 
 StartChar: uni0630
-Encoding: 1584 1584 24
+Encoding: 40 1584 24
 GlifName: uni0630
 Width: 1040
 VWidth: 2834
@@ -832,7 +831,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFEAC
 EndChar
 
 StartChar: uni0631
-Encoding: 1585 1585 25
+Encoding: 41 1585 25
 GlifName: uni0631
 Width: 762
 VWidth: 2242
@@ -857,7 +856,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFEAE
 EndChar
 
 StartChar: uni0632
-Encoding: 1586 1586 26
+Encoding: 42 1586 26
 GlifName: uni0632
 Width: 762
 VWidth: 2834
@@ -875,7 +874,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFEB0
 EndChar
 
 StartChar: uni0633
-Encoding: 1587 1587 27
+Encoding: 43 1587 27
 GlifName: uni0633
 Width: 2480
 VWidth: 2144
@@ -920,7 +919,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEB3
 EndChar
 
 StartChar: uni0634
-Encoding: 1588 1588 28
+Encoding: 44 1588 28
 GlifName: uni0634
 Width: 2480
 VWidth: 3101
@@ -940,7 +939,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEB7
 EndChar
 
 StartChar: uni0635
-Encoding: 1589 1589 29
+Encoding: 45 1589 29
 GlifName: uni0635
 Width: 2616
 VWidth: 3091
@@ -982,7 +981,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEBB
 EndChar
 
 StartChar: uni0636
-Encoding: 1590 1590 30
+Encoding: 46 1590 30
 GlifName: uni0636
 Width: 2616
 VWidth: 2834
@@ -1002,7 +1001,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEBF
 EndChar
 
 StartChar: uni0637
-Encoding: 1591 1591 31
+Encoding: 47 1591 31
 GlifName: uni0637
 Width: 1577
 VWidth: 3091
@@ -1038,7 +1037,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEC3
 EndChar
 
 StartChar: uni0638
-Encoding: 1592 1592 32
+Encoding: 48 1592 32
 GlifName: uni0638
 Width: 1577
 VWidth: 2834
@@ -1058,7 +1057,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEC7
 EndChar
 
 StartChar: uni0639
-Encoding: 1593 1593 33
+Encoding: 49 1593 33
 GlifName: uni0639
 Width: 1327
 VWidth: 3091
@@ -1096,7 +1095,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFECB
 EndChar
 
 StartChar: uni063A
-Encoding: 1594 1594 34
+Encoding: 50 1594 34
 GlifName: uni063A_
 Width: 1327
 VWidth: 2834
@@ -1115,7 +1114,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFECF
 EndChar
 
 StartChar: uni0640
-Encoding: 1600 1600 35
+Encoding: 52 1600 35
 GlifName: afii57440
 Width: 565
 VWidth: 3091
@@ -1138,7 +1137,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uni0641
-Encoding: 1601 1601 36
+Encoding: 53 1601 36
 GlifName: uni0641
 Width: 1836
 VWidth: 2834
@@ -1158,7 +1157,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFED3
 EndChar
 
 StartChar: uni0642
-Encoding: 1602 1602 37
+Encoding: 54 1602 37
 GlifName: uni0642
 Width: 1477
 VWidth: 2834
@@ -1178,7 +1177,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFED7
 EndChar
 
 StartChar: uni0643
-Encoding: 1603 1603 38
+Encoding: 55 1603 38
 GlifName: uni0643
 Width: 1875
 VWidth: 3094
@@ -1213,7 +1212,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEDB
 EndChar
 
 StartChar: uni0644
-Encoding: 1604 1604 39
+Encoding: 56 1604 39
 GlifName: uni0644
 Width: 1381
 VWidth: 3091
@@ -1245,7 +1244,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEDF
 EndChar
 
 StartChar: uni0645
-Encoding: 1605 1605 40
+Encoding: 57 1605 40
 GlifName: uni0645
 Width: 1278
 VWidth: 2744
@@ -1280,7 +1279,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFEE2
 EndChar
 
 StartChar: uni0646
-Encoding: 1606 1606 41
+Encoding: 58 1606 41
 GlifName: uni0646
 Width: 1445
 VWidth: 2834
@@ -1300,7 +1299,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEE7
 EndChar
 
 StartChar: uni0647
-Encoding: 1607 1607 42
+Encoding: 59 1607 42
 GlifName: uni0647
 Width: 1015
 VWidth: 3091
@@ -1333,7 +1332,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEEB
 EndChar
 
 StartChar: uni0648
-Encoding: 1608 1608 43
+Encoding: 60 1608 43
 GlifName: uni0648
 Width: 970
 VWidth: 2242
@@ -1364,7 +1363,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFEEE
 EndChar
 
 StartChar: uni0649
-Encoding: 1609 1609 44
+Encoding: 61 1609 44
 GlifName: uni0649
 Width: 1495
 VWidth: 3091
@@ -1401,7 +1400,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFBE8
 EndChar
 
 StartChar: uni064A
-Encoding: 1610 1610 45
+Encoding: 62 1610 45
 GlifName: uni064A_
 Width: 1495
 VWidth: 2834
@@ -1419,7 +1418,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFEF3
 EndChar
 
 StartChar: uni064B
-Encoding: 1611 1611 46
+Encoding: 63 1611 46
 GlifName: uni064B_
 Width: 0
 VWidth: 2347
@@ -1447,7 +1446,7 @@ Validated: 1
 EndChar
 
 StartChar: uni064C
-Encoding: 1612 1612 47
+Encoding: 64 1612 47
 GlifName: uni064C_
 Width: 0
 VWidth: 2347
@@ -1487,7 +1486,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni064D
-Encoding: 1613 1613 48
+Encoding: 65 1613 48
 GlifName: uni064D_
 Width: 0
 VWidth: 2347
@@ -1515,7 +1514,7 @@ Validated: 1
 EndChar
 
 StartChar: uni064E
-Encoding: 1614 1614 49
+Encoding: 66 1614 49
 GlifName: uni064E_
 Width: 0
 VWidth: 2347
@@ -1538,7 +1537,7 @@ Validated: 1
 EndChar
 
 StartChar: uni064F
-Encoding: 1615 1615 50
+Encoding: 67 1615 50
 GlifName: uni064F_
 Width: 0
 VWidth: 2347
@@ -1571,7 +1570,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0650
-Encoding: 1616 1616 51
+Encoding: 68 1616 51
 GlifName: uni0650
 Width: 0
 VWidth: 2347
@@ -1594,7 +1593,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0651
-Encoding: 1617 1617 52
+Encoding: 69 1617 52
 GlifName: uni0651
 Width: 0
 VWidth: 2425
@@ -1629,7 +1628,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0652
-Encoding: 1618 1618 53
+Encoding: 70 1618 53
 GlifName: uni0652
 Width: 0
 VWidth: 2347
@@ -1657,7 +1656,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0653
-Encoding: 1619 1619 54
+Encoding: 71 1619 54
 GlifName: uni0653
 Width: 0
 VWidth: 2709
@@ -1684,7 +1683,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0654
-Encoding: 1620 1620 55
+Encoding: 72 1620 55
 GlifName: uni0654
 Width: 0
 VWidth: 2596
@@ -1701,7 +1700,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0655
-Encoding: 1621 1621 56
+Encoding: 73 1621 56
 GlifName: uni0655
 Width: 0
 VWidth: 2596
@@ -1718,7 +1717,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0657
-Encoding: 1623 1623 57
+Encoding: 75 1623 57
 GlifName: uni0657
 Width: 0
 VWidth: 2347
@@ -1752,7 +1751,7 @@ Validated: 1
 EndChar
 
 StartChar: uni065A
-Encoding: 1626 1626 58
+Encoding: 77 1626 58
 GlifName: uni065A_
 Width: 0
 VWidth: 2347
@@ -1778,7 +1777,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0660
-Encoding: 1632 1632 59
+Encoding: 79 1632 59
 GlifName: afii57392
 Width: 781
 VWidth: 2614
@@ -1797,7 +1796,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0661
-Encoding: 1633 1633 60
+Encoding: 80 1633 60
 GlifName: afii57393
 Width: 651
 VWidth: 3091
@@ -1818,7 +1817,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0662
-Encoding: 1634 1634 61
+Encoding: 81 1634 61
 GlifName: afii57394
 Width: 1132
 VWidth: 3091
@@ -1847,7 +1846,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0663
-Encoding: 1635 1635 62
+Encoding: 82 1635 62
 GlifName: afii57395
 Width: 1409
 VWidth: 3091
@@ -1883,7 +1882,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0664
-Encoding: 1636 1636 63
+Encoding: 83 1636 63
 GlifName: afii57396
 Width: 1009
 VWidth: 3091
@@ -1913,7 +1912,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0665
-Encoding: 1637 1637 64
+Encoding: 84 1637 64
 GlifName: afii57397
 Width: 1144
 VWidth: 3091
@@ -1937,7 +1936,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0666
-Encoding: 1638 1638 65
+Encoding: 85 1638 65
 GlifName: afii57398
 Width: 1063
 VWidth: 3091
@@ -1963,7 +1962,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0667
-Encoding: 1639 1639 66
+Encoding: 86 1639 66
 GlifName: afii57399
 Width: 1266
 VWidth: 3091
@@ -1985,7 +1984,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0668
-Encoding: 1640 1640 67
+Encoding: 87 1640 67
 GlifName: afii57400
 Width: 1266
 VWidth: 3091
@@ -2007,7 +2006,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0669
-Encoding: 1641 1641 68
+Encoding: 88 1641 68
 GlifName: afii57401
 Width: 1037
 VWidth: 2144
@@ -2033,7 +2032,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni066A
-Encoding: 1642 1642 69
+Encoding: 89 1642 69
 GlifName: afii57381
 Width: 1107
 VWidth: 4090
@@ -2061,7 +2060,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni066B
-Encoding: 1643 1643 70
+Encoding: 90 1643 70
 GlifName: uni066B_
 Width: 926
 VWidth: 2989
@@ -2080,7 +2079,7 @@ Validated: 1
 EndChar
 
 StartChar: uni066C
-Encoding: 1644 1644 71
+Encoding: 91 1644 71
 GlifName: uni066C_
 Width: 573
 VWidth: 2075
@@ -2100,7 +2099,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni066D
-Encoding: 1645 1645 72
+Encoding: 92 1645 72
 GlifName: afii63167
 Width: 1354
 VWidth: 2987
@@ -2124,7 +2123,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni066E
-Encoding: 1646 1646 73
+Encoding: 93 1646 73
 GlifName: uni066E_
 Width: 1852
 VWidth: 3091
@@ -2155,7 +2154,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uni066E.init
 EndChar
 
 StartChar: uni066F
-Encoding: 1647 1647 74
+Encoding: 94 1647 74
 GlifName: uni066F_
 Width: 1477
 VWidth: 3091
@@ -2190,7 +2189,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni066F.fina
 EndChar
 
 StartChar: uni0670
-Encoding: 1648 1648 75
+Encoding: 95 1648 75
 GlifName: uni0670
 Width: 0
 VWidth: 2608
@@ -2212,7 +2211,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0674
-Encoding: 1652 1652 76
+Encoding: 97 1652 76
 GlifName: uni0674
 Width: 558
 VWidth: 2573
@@ -2240,7 +2239,7 @@ Validated: 33
 EndChar
 
 StartChar: uni067E
-Encoding: 1662 1662 77
+Encoding: 100 1662 77
 GlifName: afii57506
 Width: 1852
 VWidth: 2834
@@ -2260,7 +2259,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFB58
 EndChar
 
 StartChar: uni0686
-Encoding: 1670 1670 78
+Encoding: 103 1670 78
 GlifName: afii57507
 Width: 1431
 VWidth: 2834
@@ -2278,7 +2277,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFB7C
 EndChar
 
 StartChar: uni0698
-Encoding: 1688 1688 79
+Encoding: 110 1688 79
 GlifName: afii57508
 Width: 762
 VWidth: 2834
@@ -2296,7 +2295,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB8B
 EndChar
 
 StartChar: uni06A1
-Encoding: 1697 1697 80
+Encoding: 113 1697 80
 GlifName: uni06A_1
 Width: 1836
 VWidth: 3091
@@ -2333,7 +2332,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06A1.fina
 EndChar
 
 StartChar: uni06A9
-Encoding: 1705 1705 81
+Encoding: 115 1705 81
 GlifName: uni06A_9
 Width: 1853
 VWidth: 3091
@@ -2372,7 +2371,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB8F
 EndChar
 
 StartChar: uni06AF
-Encoding: 1711 1711 82
+Encoding: 120 1711 82
 GlifName: uni06A_F_
 Width: 1853
 VWidth: 2834
@@ -2394,7 +2393,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFB94
 EndChar
 
 StartChar: uni06BA
-Encoding: 1722 1722 83
+Encoding: 122 1722 83
 GlifName: afii57514
 Width: 1445
 VWidth: 3091
@@ -2423,7 +2422,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB9F
 EndChar
 
 StartChar: uni06CC
-Encoding: 1740 1740 84
+Encoding: 136 1740 84
 GlifName: uni06C_C_
 Width: 1495
 VWidth: 2834
@@ -2440,7 +2439,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBFD
 EndChar
 
 StartChar: uni06D5
-Encoding: 1749 1749 85
+Encoding: 144 1749 85
 GlifName: afii57534
 Width: 1015
 VWidth: 2834
@@ -2457,7 +2456,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06D5.fina
 EndChar
 
 StartChar: uni06F0
-Encoding: 1776 1776 86
+Encoding: 149 1776 86
 GlifName: uni06F_0
 Width: 924
 VWidth: 2699
@@ -2481,7 +2480,7 @@ Validated: 1
 EndChar
 
 StartChar: uni06F1
-Encoding: 1777 1777 87
+Encoding: 150 1777 87
 GlifName: uni06F_1
 Width: 651
 VWidth: 3091
@@ -2493,7 +2492,7 @@ Refer: 60 1633 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06F2
-Encoding: 1778 1778 88
+Encoding: 151 1778 88
 GlifName: uni06F_2
 Width: 1132
 VWidth: 3091
@@ -2505,7 +2504,7 @@ Refer: 61 1634 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06F3
-Encoding: 1779 1779 89
+Encoding: 152 1779 89
 GlifName: uni06F_3
 Width: 1409
 VWidth: 3091
@@ -2517,7 +2516,7 @@ Refer: 62 1635 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06F4
-Encoding: 1780 1780 90
+Encoding: 153 1780 90
 GlifName: uni06F_4
 Width: 1230
 VWidth: 3091
@@ -2550,7 +2549,7 @@ Substitution2: "'locl' Localized Forms in Arabic lookup 10 subtable" uni06F4.loc
 EndChar
 
 StartChar: uni06F5
-Encoding: 1781 1781 91
+Encoding: 154 1781 91
 GlifName: uni06F_5
 Width: 1268
 VWidth: 3091
@@ -2580,7 +2579,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06F6
-Encoding: 1782 1782 92
+Encoding: 155 1782 92
 GlifName: uni06F_6
 Width: 1057
 VWidth: 3091
@@ -2609,7 +2608,7 @@ Substitution2: "'locl' Localized Forms in Arabic lookup 10 subtable" uni0666
 EndChar
 
 StartChar: uni06F7
-Encoding: 1783 1783 93
+Encoding: 156 1783 93
 GlifName: uni06F_7
 Width: 1266
 VWidth: 3091
@@ -2622,7 +2621,7 @@ Substitution2: "'locl' Localized Forms in Arabic lookup 10 subtable" uni06F7.loc
 EndChar
 
 StartChar: uni06F8
-Encoding: 1784 1784 94
+Encoding: 157 1784 94
 GlifName: uni06F_8
 Width: 1266
 VWidth: 3091
@@ -2634,7 +2633,7 @@ Refer: 67 1640 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06F9
-Encoding: 1785 1785 95
+Encoding: 158 1785 95
 GlifName: uni06F_9
 Width: 1037
 VWidth: 2144
@@ -2646,7 +2645,7 @@ Refer: 68 1641 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB56
-Encoding: 64342 64342 96
+Encoding: 181 64342 96
 GlifName: uniF_B_56
 Width: 1852
 VWidth: 2834
@@ -2660,7 +2659,7 @@ Refer: 77 1662 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB57
-Encoding: 64343 64343 97
+Encoding: 182 64343 97
 GlifName: uniF_B_57
 Width: 1933
 VWidth: 2834
@@ -2675,7 +2674,7 @@ Refer: 268 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB58
-Encoding: 64344 64344 98
+Encoding: 183 64344 98
 GlifName: uniF_B_58
 Width: 668
 VWidth: 3094
@@ -2695,7 +2694,7 @@ Substitution2: "Single Substitution 0 subtable" uniFB58.long1
 EndChar
 
 StartChar: uniFB59
-Encoding: 64345 64345 99
+Encoding: 184 64345 99
 GlifName: uniF_B_59
 Width: 743
 VWidth: 2834
@@ -2715,7 +2714,7 @@ Substitution2: "Single Substitution 0 subtable" uniFB59.long1
 EndChar
 
 StartChar: uniFB7A
-Encoding: 64378 64378 100
+Encoding: 193 64378 100
 GlifName: uniF_B_7A_
 Width: 1431
 VWidth: 2834
@@ -2729,7 +2728,7 @@ Refer: 78 1670 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB7B
-Encoding: 64379 64379 101
+Encoding: 194 64379 101
 GlifName: uniF_B_7B_
 Width: 1440
 VWidth: 2834
@@ -2744,7 +2743,7 @@ Refer: 173 65186 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB7C
-Encoding: 64380 64380 102
+Encoding: 195 64380 102
 GlifName: uniF_B_7C_
 Width: 1402
 VWidth: 2834
@@ -2761,7 +2760,7 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-160 dv=0
 EndChar
 
 StartChar: uniFB7D
-Encoding: 64381 64381 103
+Encoding: 196 64381 103
 GlifName: uniF_B_7D_
 Width: 1396
 VWidth: 2834
@@ -2776,7 +2775,7 @@ Refer: 175 65188 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB8A
-Encoding: 64394 64394 104
+Encoding: 199 64394 104
 GlifName: uniF_B_8A_
 Width: 762
 VWidth: 2834
@@ -2790,7 +2789,7 @@ Refer: 79 1688 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB8B
-Encoding: 64395 64395 105
+Encoding: 200 64395 105
 GlifName: uniF_B_8B_
 Width: 822
 VWidth: 2834
@@ -2805,7 +2804,7 @@ Refer: 185 65198 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB8E
-Encoding: 64398 64398 106
+Encoding: 203 64398 106
 GlifName: uniF_B_8E_
 Width: 1853
 VWidth: 3103
@@ -2822,7 +2821,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFB8F
-Encoding: 64399 64399 107
+Encoding: 204 64399 107
 GlifName: uniF_B_8F_
 Width: 1959
 VWidth: 3091
@@ -2859,7 +2858,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFB90
-Encoding: 64400 64400 108
+Encoding: 205 64400 108
 GlifName: uniF_B_90
 Width: 939
 VWidth: 3101
@@ -2877,7 +2876,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=189 dv=0
 EndChar
 
 StartChar: uniFB91
-Encoding: 64401 64401 109
+Encoding: 206 64401 109
 GlifName: uniF_B_91
 Width: 1046
 VWidth: 2834
@@ -2891,7 +2890,7 @@ Refer: 231 65244 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB92
-Encoding: 64402 64402 110
+Encoding: 207 64402 110
 GlifName: uniF_B_92
 Width: 1853
 VWidth: 2834
@@ -2908,7 +2907,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFB93
-Encoding: 64403 64403 111
+Encoding: 208 64403 111
 GlifName: uniF_B_93
 Width: 1959
 VWidth: 2834
@@ -2923,7 +2922,7 @@ Refer: 107 64399 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB94
-Encoding: 64404 64404 112
+Encoding: 209 64404 112
 GlifName: uniF_B_94
 Width: 939
 VWidth: 2834
@@ -2942,7 +2941,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=189 dv=0
 EndChar
 
 StartChar: uniFB95
-Encoding: 64405 64405 113
+Encoding: 210 64405 113
 GlifName: uniF_B_95
 Width: 1046
 VWidth: 2834
@@ -2958,7 +2957,7 @@ Refer: 231 65244 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB9E
-Encoding: 64414 64414 114
+Encoding: 211 64414 114
 GlifName: uniF_B_9E_
 Width: 1445
 VWidth: 3101
@@ -2972,7 +2971,7 @@ Refer: 83 1722 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB9F
-Encoding: 64415 64415 115
+Encoding: 212 64415 115
 GlifName: uniF_B_9F_
 Width: 1508
 VWidth: 3091
@@ -3003,7 +3002,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFBAC
-Encoding: 64428 64428 116
+Encoding: 219 64428 116
 GlifName: uniF_B_A_C_
 Width: 1454
 VWidth: 2834
@@ -3017,7 +3016,7 @@ Refer: 246 65259 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBAD
-Encoding: 64429 64429 117
+Encoding: 220 64429 117
 GlifName: uniF_B_A_D_
 Width: 1020
 VWidth: 2834
@@ -3031,7 +3030,7 @@ Refer: 247 65260 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBE8
-Encoding: 64488 64488 118
+Encoding: 241 64488 118
 GlifName: uniF_B_E_8
 Width: 614
 VWidth: 2834
@@ -3045,7 +3044,7 @@ Refer: 300 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBE9
-Encoding: 64489 64489 119
+Encoding: 242 64489 119
 GlifName: uniF_B_E_9
 Width: 690
 VWidth: 2834
@@ -3059,7 +3058,7 @@ Refer: 301 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBFC
-Encoding: 64508 64508 120
+Encoding: 243 64508 120
 GlifName: uniF_B_F_C_
 Width: 1495
 VWidth: 2834
@@ -3073,7 +3072,7 @@ Refer: 44 1609 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBFD
-Encoding: 64509 64509 121
+Encoding: 244 64509 121
 GlifName: uniF_B_F_D_
 Width: 1359
 VWidth: 2831
@@ -3087,7 +3086,7 @@ Refer: 251 65264 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBFE
-Encoding: 64510 64510 122
+Encoding: 245 64510 122
 GlifName: uniF_B_F_E_
 Width: 668
 VWidth: 2834
@@ -3106,7 +3105,7 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=30 dv=0
 EndChar
 
 StartChar: uniFBFF
-Encoding: 64511 64511 123
+Encoding: 246 64511 123
 GlifName: uniF_B_F_F_
 Width: 743
 VWidth: 2834
@@ -3124,7 +3123,7 @@ Substitution2: "Single Substitution 0 subtable" uniFBFF.long1
 EndChar
 
 StartChar: uniFE70
-Encoding: 65136 65136 124
+Encoding: 251 65136 124
 GlifName: uniF_E_70
 Width: 592
 VWidth: 2703
@@ -3141,7 +3140,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni064B
 EndChar
 
 StartChar: uniFE71
-Encoding: 65137 65137 125
+Encoding: 252 65137 125
 GlifName: uniF_E_71
 Width: 606
 VWidth: 2703
@@ -3159,7 +3158,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uni0640 uni06
 EndChar
 
 StartChar: uniFE72
-Encoding: 65138 65138 126
+Encoding: 253 65138 126
 GlifName: uniF_E_72
 Width: 743
 VWidth: 2703
@@ -3175,7 +3174,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni064C
 EndChar
 
 StartChar: uniFE73
-Encoding: 65139 65139 127
+Encoding: 254 65139 127
 GlifName: uniF_E_73
 Width: 701
 VWidth: 3091
@@ -3199,7 +3198,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFE74
-Encoding: 65140 65140 128
+Encoding: 255 65140 128
 GlifName: uniF_E_74
 Width: 592
 VWidth: 2703
@@ -3216,7 +3215,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni064D
 EndChar
 
 StartChar: uniFE76
-Encoding: 65142 65142 129
+Encoding: 256 65142 129
 GlifName: uniF_E_76
 Width: 592
 VWidth: 2703
@@ -3233,7 +3232,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni064E
 EndChar
 
 StartChar: uniFE77
-Encoding: 65143 65143 130
+Encoding: 257 65143 130
 GlifName: uniF_E_77
 Width: 606
 VWidth: 2703
@@ -3251,7 +3250,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uni0640 uni06
 EndChar
 
 StartChar: uniFE78
-Encoding: 65144 65144 131
+Encoding: 258 65144 131
 GlifName: uniF_E_78
 Width: 592
 VWidth: 2703
@@ -3267,7 +3266,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni064F
 EndChar
 
 StartChar: uniFE79
-Encoding: 65145 65145 132
+Encoding: 259 65145 132
 GlifName: uniF_E_79
 Width: 606
 VWidth: 2703
@@ -3285,7 +3284,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uni0640 uni06
 EndChar
 
 StartChar: uniFE7A
-Encoding: 65146 65146 133
+Encoding: 260 65146 133
 GlifName: uniF_E_7A_
 Width: 592
 VWidth: 2703
@@ -3302,7 +3301,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni0650
 EndChar
 
 StartChar: uniFE7B
-Encoding: 65147 65147 134
+Encoding: 261 65147 134
 GlifName: uniF_E_7B_
 Width: 606
 VWidth: 2703
@@ -3320,7 +3319,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uni0640 uni06
 EndChar
 
 StartChar: uniFE7C
-Encoding: 65148 65148 135
+Encoding: 262 65148 135
 GlifName: uniF_E_7C_
 Width: 592
 VWidth: 2703
@@ -3337,7 +3336,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni0651
 EndChar
 
 StartChar: uniFE7D
-Encoding: 65149 65149 136
+Encoding: 263 65149 136
 GlifName: uniF_E_7D_
 Width: 606
 VWidth: 2703
@@ -3355,7 +3354,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uni0640 uni06
 EndChar
 
 StartChar: uniFE7E
-Encoding: 65150 65150 137
+Encoding: 264 65150 137
 GlifName: uniF_E_7E_
 Width: 592
 VWidth: 2703
@@ -3372,7 +3371,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" space uni0652
 EndChar
 
 StartChar: uniFE7F
-Encoding: 65151 65151 138
+Encoding: 265 65151 138
 GlifName: uniF_E_7F_
 Width: 606
 VWidth: 2703
@@ -3390,7 +3389,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uni0640 uni06
 EndChar
 
 StartChar: uniFE80
-Encoding: 65152 65152 139
+Encoding: 266 65152 139
 GlifName: uniF_E_80
 Width: 889
 VWidth: 2834
@@ -3404,7 +3403,7 @@ Refer: 9 1569 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFE81
-Encoding: 65153 65153 140
+Encoding: 267 65153 140
 GlifName: uniF_E_81
 Width: 556
 VWidth: 2834
@@ -3419,7 +3418,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uniFE82
-Encoding: 65154 65154 141
+Encoding: 268 65154 141
 GlifName: uniF_E_82
 Width: 576
 VWidth: 2834
@@ -3434,7 +3433,7 @@ Refer: 297 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE83
-Encoding: 65155 65155 142
+Encoding: 269 65155 142
 GlifName: uniF_E_83
 Width: 556
 VWidth: 2834
@@ -3449,7 +3448,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uniFE84
-Encoding: 65156 65156 143
+Encoding: 270 65156 143
 GlifName: uniF_E_84
 Width: 576
 VWidth: 2834
@@ -3464,7 +3463,7 @@ Refer: 297 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE85
-Encoding: 65157 65157 144
+Encoding: 271 65157 144
 GlifName: uniF_E_85
 Width: 970
 VWidth: 2834
@@ -3478,7 +3477,7 @@ Refer: 12 1572 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE86
-Encoding: 65158 65158 145
+Encoding: 272 65158 145
 GlifName: uniF_E_86
 Width: 932
 VWidth: 2834
@@ -3493,7 +3492,7 @@ Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE87
-Encoding: 65159 65159 146
+Encoding: 273 65159 146
 GlifName: uniF_E_87
 Width: 556
 VWidth: 2834
@@ -3508,7 +3507,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uniFE88
-Encoding: 65160 65160 147
+Encoding: 274 65160 147
 GlifName: uniF_E_88
 Width: 576
 VWidth: 2834
@@ -3523,7 +3522,7 @@ Refer: 153 65166 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE89
-Encoding: 65161 65161 148
+Encoding: 275 65161 148
 GlifName: uniF_E_89
 Width: 1495
 VWidth: 2834
@@ -3537,7 +3536,7 @@ Refer: 14 1574 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE8A
-Encoding: 65162 65162 149
+Encoding: 276 65162 149
 GlifName: uniF_E_8A_
 Width: 1359
 VWidth: 2834
@@ -3552,7 +3551,7 @@ Refer: 251 65264 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE8B
-Encoding: 65163 65163 150
+Encoding: 277 65163 150
 GlifName: uniF_E_8B_
 Width: 658
 VWidth: 3096
@@ -3571,7 +3570,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=84 dv=0
 EndChar
 
 StartChar: uniFE8C
-Encoding: 65164 65164 151
+Encoding: 278 65164 151
 GlifName: uniF_E_8C_
 Width: 734
 VWidth: 3096
@@ -3587,7 +3586,7 @@ Refer: 301 -1 N 1 0 0 1 44 0 2
 EndChar
 
 StartChar: uniFE8D
-Encoding: 65165 65165 152
+Encoding: 279 65165 152
 GlifName: uniF_E_8D_
 Width: 556
 VWidth: 2834
@@ -3602,7 +3601,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uniFE8E
-Encoding: 65166 65166 153
+Encoding: 280 65166 153
 GlifName: uniF_E_8E_
 Width: 576
 VWidth: 3091
@@ -3626,7 +3625,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFE8F
-Encoding: 65167 65167 154
+Encoding: 281 65167 154
 GlifName: uniF_E_8F_
 Width: 1852
 VWidth: 2834
@@ -3640,7 +3639,7 @@ Refer: 16 1576 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE90
-Encoding: 65168 65168 155
+Encoding: 282 65168 155
 GlifName: uniF_E_90
 Width: 1933
 VWidth: 2834
@@ -3655,7 +3654,7 @@ Refer: 268 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE91
-Encoding: 65169 65169 156
+Encoding: 283 65169 156
 GlifName: uniF_E_91
 Width: 634
 VWidth: 2834
@@ -3676,7 +3675,7 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-50 dv=0
 EndChar
 
 StartChar: uniFE92
-Encoding: 65170 65170 157
+Encoding: 284 65170 157
 GlifName: uniF_E_92
 Width: 710
 VWidth: 2834
@@ -3695,7 +3694,7 @@ Substitution2: "Single Substitution 1-3" uniFE92.long2
 EndChar
 
 StartChar: uniFE93
-Encoding: 65171 65171 158
+Encoding: 285 65171 158
 GlifName: uniF_E_93
 Width: 1015
 VWidth: 2834
@@ -3709,7 +3708,7 @@ Refer: 17 1577 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE94
-Encoding: 65172 65172 159
+Encoding: 286 65172 159
 GlifName: uniF_E_94
 Width: 1102
 VWidth: 2834
@@ -3724,7 +3723,7 @@ Refer: 245 65258 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE95
-Encoding: 65173 65173 160
+Encoding: 287 65173 160
 GlifName: uniF_E_95
 Width: 1852
 VWidth: 2834
@@ -3738,7 +3737,7 @@ Refer: 18 1578 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE96
-Encoding: 65174 65174 161
+Encoding: 288 65174 161
 GlifName: uniF_E_96
 Width: 1933
 VWidth: 2834
@@ -3753,7 +3752,7 @@ Refer: 268 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE97
-Encoding: 65175 65175 162
+Encoding: 289 65175 162
 GlifName: uniF_E_97
 Width: 658
 VWidth: 2834
@@ -3773,7 +3772,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=63 dv=0
 EndChar
 
 StartChar: uniFE98
-Encoding: 65176 65176 163
+Encoding: 290 65176 163
 GlifName: uniF_E_98
 Width: 734
 VWidth: 2834
@@ -3790,7 +3789,7 @@ Substitution2: "Single Substitution 1-2" uniFE98.long
 EndChar
 
 StartChar: uniFE99
-Encoding: 65177 65177 164
+Encoding: 291 65177 164
 GlifName: uniF_E_99
 Width: 1852
 VWidth: 2834
@@ -3804,7 +3803,7 @@ Refer: 19 1579 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE9A
-Encoding: 65178 65178 165
+Encoding: 292 65178 165
 GlifName: uniF_E_9A_
 Width: 1933
 VWidth: 2834
@@ -3819,7 +3818,7 @@ Refer: 268 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE9B
-Encoding: 65179 65179 166
+Encoding: 293 65179 166
 GlifName: uniF_E_9B_
 Width: 658
 VWidth: 2834
@@ -3839,7 +3838,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=63 dv=0
 EndChar
 
 StartChar: uniFE9C
-Encoding: 65180 65180 167
+Encoding: 294 65180 167
 GlifName: uniF_E_9C_
 Width: 734
 VWidth: 2834
@@ -3856,7 +3855,7 @@ Substitution2: "Single Substitution 1-2" uniFE9C.long
 EndChar
 
 StartChar: uniFE9D
-Encoding: 65181 65181 168
+Encoding: 295 65181 168
 GlifName: uniF_E_9D_
 Width: 1431
 VWidth: 2834
@@ -3870,7 +3869,7 @@ Refer: 20 1580 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE9E
-Encoding: 65182 65182 169
+Encoding: 296 65182 169
 GlifName: uniF_E_9E_
 Width: 1440
 VWidth: 2834
@@ -3885,7 +3884,7 @@ Refer: 173 65186 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE9F
-Encoding: 65183 65183 170
+Encoding: 297 65183 170
 GlifName: uniF_E_9F_
 Width: 1402
 VWidth: 2834
@@ -3902,7 +3901,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-100 dv=0
 EndChar
 
 StartChar: uniFEA0
-Encoding: 65184 65184 171
+Encoding: 298 65184 171
 GlifName: uniF_E_A_0
 Width: 1396
 VWidth: 2834
@@ -3917,7 +3916,7 @@ Refer: 175 65188 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEA1
-Encoding: 65185 65185 172
+Encoding: 299 65185 172
 GlifName: uniF_E_A_1
 Width: 1431
 VWidth: 2829
@@ -3931,7 +3930,7 @@ Refer: 21 1581 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEA2
-Encoding: 65186 65186 173
+Encoding: 300 65186 173
 GlifName: uniF_E_A_2
 Width: 1440
 VWidth: 3091
@@ -3968,7 +3967,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEA3
-Encoding: 65187 65187 174
+Encoding: 301 65187 174
 GlifName: uniF_E_A_3
 Width: 1402
 VWidth: 3091
@@ -4000,7 +3999,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-100 dv=0
 EndChar
 
 StartChar: uniFEA4
-Encoding: 65188 65188 175
+Encoding: 302 65188 175
 GlifName: uniF_E_A_4
 Width: 1396
 VWidth: 3091
@@ -4035,7 +4034,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEA5
-Encoding: 65189 65189 176
+Encoding: 303 65189 176
 GlifName: uniF_E_A_5
 Width: 1431
 VWidth: 2834
@@ -4049,7 +4048,7 @@ Refer: 22 1582 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEA6
-Encoding: 65190 65190 177
+Encoding: 304 65190 177
 GlifName: uniF_E_A_6
 Width: 1440
 VWidth: 2834
@@ -4064,7 +4063,7 @@ Refer: 173 65186 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEA7
-Encoding: 65191 65191 178
+Encoding: 305 65191 178
 GlifName: uniF_E_A_7
 Width: 1402
 VWidth: 2834
@@ -4081,7 +4080,7 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-160 dv=0
 EndChar
 
 StartChar: uniFEA8
-Encoding: 65192 65192 179
+Encoding: 306 65192 179
 GlifName: uniF_E_A_8
 Width: 1396
 VWidth: 2834
@@ -4096,7 +4095,7 @@ Refer: 175 65188 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEA9
-Encoding: 65193 65193 180
+Encoding: 307 65193 180
 GlifName: uniF_E_A_9
 Width: 1040
 VWidth: 3103
@@ -4110,7 +4109,7 @@ Refer: 23 1583 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEAA
-Encoding: 65194 65194 181
+Encoding: 308 65194 181
 GlifName: uniF_E_A_A_
 Width: 1120
 VWidth: 3091
@@ -4140,7 +4139,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEAB
-Encoding: 65195 65195 182
+Encoding: 309 65195 182
 GlifName: uniF_E_A_B_
 Width: 1040
 VWidth: 2834
@@ -4154,7 +4153,7 @@ Refer: 24 1584 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEAC
-Encoding: 65196 65196 183
+Encoding: 310 65196 183
 GlifName: uniF_E_A_C_
 Width: 1120
 VWidth: 2834
@@ -4169,7 +4168,7 @@ Refer: 181 65194 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEAD
-Encoding: 65197 65197 184
+Encoding: 311 65197 184
 GlifName: uniF_E_A_D_
 Width: 762
 VWidth: 2834
@@ -4183,7 +4182,7 @@ Refer: 25 1585 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEAE
-Encoding: 65198 65198 185
+Encoding: 312 65198 185
 GlifName: uniF_E_A_E_
 Width: 822
 VWidth: 2242
@@ -4210,7 +4209,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEAF
-Encoding: 65199 65199 186
+Encoding: 313 65199 186
 GlifName: uniF_E_A_F_
 Width: 762
 VWidth: 2834
@@ -4224,7 +4223,7 @@ Refer: 26 1586 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEB0
-Encoding: 65200 65200 187
+Encoding: 314 65200 187
 GlifName: uniF_E_B_0
 Width: 822
 VWidth: 2834
@@ -4239,7 +4238,7 @@ Refer: 185 65198 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEB1
-Encoding: 65201 65201 188
+Encoding: 315 65201 188
 GlifName: uniF_E_B_1
 Width: 2480
 VWidth: 3101
@@ -4253,7 +4252,7 @@ Refer: 27 1587 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEB2
-Encoding: 65202 65202 189
+Encoding: 316 65202 189
 GlifName: uniF_E_B_2
 Width: 2563
 VWidth: 2144
@@ -4298,7 +4297,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEB3
-Encoding: 65203 65203 190
+Encoding: 317 65203 190
 GlifName: uniF_E_B_3
 Width: 1645
 VWidth: 2144
@@ -4338,7 +4337,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 EndChar
 
 StartChar: uniFEB4
-Encoding: 65204 65204 191
+Encoding: 318 65204 191
 GlifName: uniF_E_B_4
 Width: 1729
 VWidth: 2144
@@ -4381,7 +4380,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEB5
-Encoding: 65205 65205 192
+Encoding: 319 65205 192
 GlifName: uniF_E_B_5
 Width: 2480
 VWidth: 2834
@@ -4395,7 +4394,7 @@ Refer: 28 1588 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEB6
-Encoding: 65206 65206 193
+Encoding: 320 65206 193
 GlifName: uniF_E_B_6
 Width: 2563
 VWidth: 2834
@@ -4410,7 +4409,7 @@ Refer: 189 65202 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEB7
-Encoding: 65207 65207 194
+Encoding: 321 65207 194
 GlifName: uniF_E_B_7
 Width: 1645
 VWidth: 2834
@@ -4427,7 +4426,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 EndChar
 
 StartChar: uniFEB8
-Encoding: 65208 65208 195
+Encoding: 322 65208 195
 GlifName: uniF_E_B_8
 Width: 1729
 VWidth: 2834
@@ -4442,7 +4441,7 @@ Refer: 191 65204 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEB9
-Encoding: 65209 65209 196
+Encoding: 323 65209 196
 GlifName: uniF_E_B_9
 Width: 2616
 VWidth: 2834
@@ -4456,7 +4455,7 @@ Refer: 29 1589 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEBA
-Encoding: 65210 65210 197
+Encoding: 324 65210 197
 GlifName: uniF_E_B_A_
 Width: 2633
 VWidth: 3091
@@ -4499,7 +4498,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEBB
-Encoding: 65211 65211 198
+Encoding: 325 65211 198
 GlifName: uniF_E_B_B_
 Width: 1744
 VWidth: 3091
@@ -4536,7 +4535,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFEBC
-Encoding: 65212 65212 199
+Encoding: 326 65212 199
 GlifName: uniF_E_B_C_
 Width: 1761
 VWidth: 3091
@@ -4577,7 +4576,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEBD
-Encoding: 65213 65213 200
+Encoding: 327 65213 200
 GlifName: uniF_E_B_D_
 Width: 2616
 VWidth: 2834
@@ -4591,7 +4590,7 @@ Refer: 30 1590 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEBE
-Encoding: 65214 65214 201
+Encoding: 328 65214 201
 GlifName: uniF_E_B_E_
 Width: 2633
 VWidth: 2834
@@ -4606,7 +4605,7 @@ Refer: 197 65210 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEBF
-Encoding: 65215 65215 202
+Encoding: 329 65215 202
 GlifName: uniF_E_B_F_
 Width: 1744
 VWidth: 2987
@@ -4623,7 +4622,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFEC0
-Encoding: 65216 65216 203
+Encoding: 330 65216 203
 GlifName: uniF_E_C_0
 Width: 1761
 VWidth: 2834
@@ -4638,7 +4637,7 @@ Refer: 199 65212 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEC1
-Encoding: 65217 65217 204
+Encoding: 331 65217 204
 GlifName: uniF_E_C_1
 Width: 1577
 VWidth: 2834
@@ -4652,7 +4651,7 @@ Refer: 31 1591 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEC2
-Encoding: 65218 65218 205
+Encoding: 332 65218 205
 GlifName: uniF_E_C_2
 Width: 1594
 VWidth: 3091
@@ -4689,7 +4688,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEC3
-Encoding: 65219 65219 206
+Encoding: 333 65219 206
 GlifName: uniF_E_C_3
 Width: 1365
 VWidth: 3091
@@ -4722,7 +4721,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFEC4
-Encoding: 65220 65220 207
+Encoding: 334 65220 207
 GlifName: uniF_E_C_4
 Width: 1382
 VWidth: 3091
@@ -4759,7 +4758,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEC5
-Encoding: 65221 65221 208
+Encoding: 335 65221 208
 GlifName: uniF_E_C_5
 Width: 1577
 VWidth: 2834
@@ -4773,7 +4772,7 @@ Refer: 32 1592 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEC6
-Encoding: 65222 65222 209
+Encoding: 336 65222 209
 GlifName: uniF_E_C_6
 Width: 1594
 VWidth: 2834
@@ -4788,7 +4787,7 @@ Refer: 205 65218 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEC7
-Encoding: 65223 65223 210
+Encoding: 337 65223 210
 GlifName: uniF_E_C_7
 Width: 1365
 VWidth: 2834
@@ -4805,7 +4804,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFEC8
-Encoding: 65224 65224 211
+Encoding: 338 65224 211
 GlifName: uniF_E_C_8
 Width: 1382
 VWidth: 2834
@@ -4820,7 +4819,7 @@ Refer: 207 65220 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEC9
-Encoding: 65225 65225 212
+Encoding: 339 65225 212
 GlifName: uniF_E_C_9
 Width: 1327
 VWidth: 2987
@@ -4834,7 +4833,7 @@ Refer: 33 1593 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFECA
-Encoding: 65226 65226 213
+Encoding: 340 65226 213
 GlifName: uniF_E_C_A_
 Width: 1261
 VWidth: 3091
@@ -4871,7 +4870,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFECB
-Encoding: 65227 65227 214
+Encoding: 341 65227 214
 GlifName: uniF_E_C_B_
 Width: 1098
 VWidth: 3091
@@ -4903,7 +4902,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 EndChar
 
 StartChar: uniFECC
-Encoding: 65228 65228 215
+Encoding: 342 65228 215
 GlifName: uniF_E_C_C_
 Width: 1172
 VWidth: 3091
@@ -4938,7 +4937,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFECD
-Encoding: 65229 65229 216
+Encoding: 343 65229 216
 GlifName: uniF_E_C_D_
 Width: 1327
 VWidth: 2834
@@ -4952,7 +4951,7 @@ Refer: 34 1594 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFECE
-Encoding: 65230 65230 217
+Encoding: 344 65230 217
 GlifName: uniF_E_C_E_
 Width: 1261
 VWidth: 2834
@@ -4967,7 +4966,7 @@ Refer: 213 65226 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFECF
-Encoding: 65231 65231 218
+Encoding: 345 65231 218
 GlifName: uniF_E_C_F_
 Width: 1098
 VWidth: 2834
@@ -4984,7 +4983,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 EndChar
 
 StartChar: uniFED0
-Encoding: 65232 65232 219
+Encoding: 346 65232 219
 GlifName: uniF_E_D_0
 Width: 1172
 VWidth: 2834
@@ -4999,7 +4998,7 @@ Refer: 215 65228 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFED1
-Encoding: 65233 65233 220
+Encoding: 347 65233 220
 GlifName: uniF_E_D_1
 Width: 1836
 VWidth: 2834
@@ -5013,7 +5012,7 @@ Refer: 36 1601 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFED2
-Encoding: 65234 65234 221
+Encoding: 348 65234 221
 GlifName: uniF_E_D_2
 Width: 1933
 VWidth: 2834
@@ -5028,7 +5027,7 @@ Refer: 269 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFED3
-Encoding: 65235 65235 222
+Encoding: 349 65235 222
 GlifName: uniF_E_D_3
 Width: 967
 VWidth: 2834
@@ -5045,7 +5044,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 EndChar
 
 StartChar: uniFED4
-Encoding: 65236 65236 223
+Encoding: 350 65236 223
 GlifName: uniF_E_D_4
 Width: 1019
 VWidth: 2834
@@ -5060,7 +5059,7 @@ Refer: 271 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFED5
-Encoding: 65237 65237 224
+Encoding: 351 65237 224
 GlifName: uniF_E_D_5
 Width: 1477
 VWidth: 2834
@@ -5074,7 +5073,7 @@ Refer: 37 1602 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFED6
-Encoding: 65238 65238 225
+Encoding: 352 65238 225
 GlifName: uniF_E_D_6
 Width: 1439
 VWidth: 2834
@@ -5089,7 +5088,7 @@ Refer: 265 -1 S 1 0 0 1 693 1019 2
 EndChar
 
 StartChar: uniFED7
-Encoding: 65239 65239 226
+Encoding: 353 65239 226
 GlifName: uniF_E_D_7
 Width: 967
 VWidth: 2834
@@ -5107,7 +5106,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=73 dv=0
 EndChar
 
 StartChar: uniFED8
-Encoding: 65240 65240 227
+Encoding: 354 65240 227
 GlifName: uniF_E_D_8
 Width: 1019
 VWidth: 2834
@@ -5122,7 +5121,7 @@ Refer: 271 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFED9
-Encoding: 65241 65241 228
+Encoding: 355 65241 228
 GlifName: uniF_E_D_9
 Width: 1875
 VWidth: 3096
@@ -5137,7 +5136,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uniFEDA
-Encoding: 65242 65242 229
+Encoding: 356 65242 229
 GlifName: uniF_E_D_A_
 Width: 1893
 VWidth: 3094
@@ -5171,7 +5170,7 @@ Refer: 420 -1 N 1.035 0 0 1.035 -13 91 2
 EndChar
 
 StartChar: uniFEDB
-Encoding: 65243 65243 230
+Encoding: 357 65243 230
 GlifName: uniF_E_D_B_
 Width: 939
 VWidth: 3151
@@ -5203,7 +5202,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=189 dv=0
 EndChar
 
 StartChar: uniFEDC
-Encoding: 65244 65244 231
+Encoding: 358 65244 231
 GlifName: uniF_E_D_C_
 Width: 1046
 VWidth: 3091
@@ -5236,7 +5235,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEDD
-Encoding: 65245 65245 232
+Encoding: 359 65245 232
 GlifName: uniF_E_D_D_
 Width: 1381
 VWidth: 3091
@@ -5250,7 +5249,7 @@ Refer: 39 1604 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEDE
-Encoding: 65246 65246 233
+Encoding: 360 65246 233
 GlifName: uniF_E_D_E_
 Width: 1403
 VWidth: 3091
@@ -5281,7 +5280,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEDF
-Encoding: 65247 65247 234
+Encoding: 361 65247 234
 GlifName: uniF_E_D_F_
 Width: 630
 VWidth: 3091
@@ -5308,7 +5307,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uniFEE0
-Encoding: 65248 65248 235
+Encoding: 362 65248 235
 GlifName: uniF_E_E_0
 Width: 651
 VWidth: 3091
@@ -5337,7 +5336,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEE1
-Encoding: 65249 65249 236
+Encoding: 363 65249 236
 GlifName: uniF_E_E_1
 Width: 1278
 VWidth: 2754
@@ -5351,7 +5350,7 @@ Refer: 40 1605 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEE2
-Encoding: 65250 65250 237
+Encoding: 364 65250 237
 GlifName: uniF_E_E_2
 Width: 1328
 VWidth: 2744
@@ -5386,7 +5385,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEE3
-Encoding: 65251 65251 238
+Encoding: 365 65251 238
 GlifName: uniF_E_E_3
 Width: 1122
 VWidth: 3091
@@ -5419,7 +5418,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFEE4
-Encoding: 65252 65252 239
+Encoding: 366 65252 239
 GlifName: uniF_E_E_4
 Width: 1174
 VWidth: 3091
@@ -5455,7 +5454,7 @@ Substitution2: "Single Substitution 3-1" uniFEE4.long
 EndChar
 
 StartChar: uniFEE5
-Encoding: 65253 65253 240
+Encoding: 367 65253 240
 GlifName: uniF_E_E_5
 Width: 1445
 VWidth: 2834
@@ -5469,7 +5468,7 @@ Refer: 41 1606 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEE6
-Encoding: 65254 65254 241
+Encoding: 368 65254 241
 GlifName: uniF_E_E_6
 Width: 1508
 VWidth: 2834
@@ -5484,7 +5483,7 @@ Refer: 115 64415 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEE7
-Encoding: 65255 65255 242
+Encoding: 369 65255 242
 GlifName: uniF_E_E_7
 Width: 614
 VWidth: 2834
@@ -5501,7 +5500,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-60 dv=0
 EndChar
 
 StartChar: uniFEE8
-Encoding: 65256 65256 243
+Encoding: 370 65256 243
 GlifName: uniF_E_E_8
 Width: 690
 VWidth: 2834
@@ -5516,7 +5515,7 @@ Refer: 264 -1 S 1 0 0 1 216 953 2
 EndChar
 
 StartChar: uniFEE9
-Encoding: 65257 65257 244
+Encoding: 371 65257 244
 GlifName: uniF_E_E_9
 Width: 1015
 VWidth: 2834
@@ -5530,7 +5529,7 @@ Refer: 42 1607 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEEA
-Encoding: 65258 65258 245
+Encoding: 372 65258 245
 GlifName: uniF_E_E_A_
 Width: 1102
 VWidth: 3091
@@ -5563,7 +5562,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEEB
-Encoding: 65259 65259 246
+Encoding: 373 65259 246
 GlifName: uniF_E_E_B_
 Width: 1454
 VWidth: 3091
@@ -5602,7 +5601,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFEEC
-Encoding: 65260 65260 247
+Encoding: 374 65260 247
 GlifName: uniF_E_E_C_
 Width: 1020
 VWidth: 3091
@@ -5640,7 +5639,7 @@ Substitution2: "Single Substitution 3-1" uniFEEC.long
 EndChar
 
 StartChar: uniFEED
-Encoding: 65261 65261 248
+Encoding: 375 65261 248
 GlifName: uniF_E_E_D_
 Width: 970
 VWidth: 2834
@@ -5654,7 +5653,7 @@ Refer: 43 1608 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEEE
-Encoding: 65262 65262 249
+Encoding: 376 65262 249
 GlifName: uniF_E_E_E_
 Width: 932
 VWidth: 2245
@@ -5685,7 +5684,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEEF
-Encoding: 65263 65263 250
+Encoding: 377 65263 250
 GlifName: uniF_E_E_F_
 Width: 1495
 VWidth: 2834
@@ -5699,7 +5698,7 @@ Refer: 44 1609 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF0
-Encoding: 65264 65264 251
+Encoding: 378 65264 251
 GlifName: uniF_E_F_0
 Width: 1359
 VWidth: 2831
@@ -5731,7 +5730,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFEF1
-Encoding: 65265 65265 252
+Encoding: 379 65265 252
 GlifName: uniF_E_F_1
 Width: 1495
 VWidth: 2834
@@ -5745,7 +5744,7 @@ Refer: 45 1610 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF2
-Encoding: 65266 65266 253
+Encoding: 380 65266 253
 GlifName: uniF_E_F_2
 Width: 1359
 VWidth: 2834
@@ -5760,7 +5759,7 @@ Refer: 265 -1 N 1 0 0 1 489 -902 2
 EndChar
 
 StartChar: uniFEF3
-Encoding: 65267 65267 254
+Encoding: 381 65267 254
 GlifName: uniF_E_F_3
 Width: 668
 VWidth: 2834
@@ -5780,7 +5779,7 @@ Substitution2: "Single Substitution 0 subtable" uniFEF3.long1
 EndChar
 
 StartChar: uniFEF4
-Encoding: 65268 65268 255
+Encoding: 382 65268 255
 GlifName: uniF_E_F_4
 Width: 743
 VWidth: 2834
@@ -5800,7 +5799,7 @@ Substitution2: "Single Substitution 0 subtable" uniFEF4.long1
 EndChar
 
 StartChar: uniFEF5
-Encoding: 65269 65269 256
+Encoding: 383 65269 256
 GlifName: uniF_E_F_5
 Width: 1234
 VWidth: 2834
@@ -5822,7 +5821,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFE
 EndChar
 
 StartChar: uniFEF6
-Encoding: 65270 65270 257
+Encoding: 384 65270 257
 GlifName: uniF_E_F_6
 Width: 1264
 VWidth: 2834
@@ -5841,7 +5840,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFE
 EndChar
 
 StartChar: uniFEF7
-Encoding: 65271 65271 258
+Encoding: 385 65271 258
 GlifName: uniF_E_F_7
 Width: 1234
 VWidth: 2834
@@ -5863,7 +5862,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFE
 EndChar
 
 StartChar: uniFEF8
-Encoding: 65272 65272 259
+Encoding: 386 65272 259
 GlifName: uniF_E_F_8
 Width: 1264
 VWidth: 2834
@@ -5882,7 +5881,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFE
 EndChar
 
 StartChar: uniFEF9
-Encoding: 65273 65273 260
+Encoding: 387 65273 260
 GlifName: uniF_E_F_9
 Width: 1234
 VWidth: 2834
@@ -5904,7 +5903,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFE
 EndChar
 
 StartChar: uniFEFA
-Encoding: 65274 65274 261
+Encoding: 388 65274 261
 GlifName: uniF_E_F_A_
 Width: 1264
 VWidth: 2834
@@ -5923,7 +5922,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFE
 EndChar
 
 StartChar: uniFEFB
-Encoding: 65275 65275 262
+Encoding: 389 65275 262
 GlifName: uniF_E_F_B_
 Width: 1234
 VWidth: 3091
@@ -5958,7 +5957,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uniFEDF uniFE
 EndChar
 
 StartChar: uniFEFC
-Encoding: 65276 65276 263
+Encoding: 390 65276 263
 GlifName: uniF_E_F_C_
 Width: 1264
 VWidth: 3091
@@ -5995,7 +5994,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uniFEE0 uniFE
 EndChar
 
 StartChar: arabic_dot
-Encoding: 65536 -1 264
+Encoding: 391 -1 264
 GlifName: arabic_dot
 Width: 197
 VWidth: 2812
@@ -6014,7 +6013,7 @@ Validated: 1
 EndChar
 
 StartChar: arabic_2dots
-Encoding: 65537 -1 265
+Encoding: 392 -1 265
 GlifName: arabic_2dots
 Width: 517
 VWidth: 2812
@@ -6038,7 +6037,7 @@ Validated: 5
 EndChar
 
 StartChar: arabic_3dots
-Encoding: 65538 -1 266
+Encoding: 393 -1 266
 GlifName: arabic_3dots
 Width: 528
 VWidth: 2805
@@ -6067,7 +6066,7 @@ Validated: 1
 EndChar
 
 StartChar: arabic_3dots_a
-Encoding: 65539 -1 267
+Encoding: 394 -1 267
 GlifName: arabic_3dots_a
 Width: 528
 VWidth: 2820
@@ -6096,7 +6095,7 @@ Validated: 1
 EndChar
 
 StartChar: uni066E.fina
-Encoding: 65540 -1 268
+Encoding: 395 -1 268
 GlifName: uni066E_.fina
 Width: 1933
 VWidth: 3091
@@ -6129,7 +6128,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06A1.fina
-Encoding: 65541 -1 269
+Encoding: 396 -1 269
 GlifName: uni06A_1.fina
 Width: 1933
 VWidth: 3091
@@ -6168,7 +6167,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06A1.init
-Encoding: 65542 -1 270
+Encoding: 397 -1 270
 GlifName: uni06A_1.init
 Width: 967
 VWidth: 3091
@@ -6198,7 +6197,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06A1.medi
-Encoding: 65543 -1 271
+Encoding: 398 -1 271
 GlifName: uni06A_1.medi
 Width: 1019
 VWidth: 3091
@@ -6233,7 +6232,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni066F.fina
-Encoding: 65544 -1 272
+Encoding: 399 -1 272
 GlifName: uni066F_.fina
 Width: 1439
 VWidth: 2834
@@ -6268,7 +6267,7 @@ EndSplineSet
 EndChar
 
 StartChar: arabic_gaf_bar
-Encoding: 65545 -1 273
+Encoding: 400 -1 273
 GlifName: arabic_gaf_bar
 Width: 787
 VWidth: 2900
@@ -6286,7 +6285,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06D5.fina
-Encoding: 65546 -1 274
+Encoding: 401 -1 274
 GlifName: uni06D_5.fina
 Width: 1102
 VWidth: 2834
@@ -6300,7 +6299,7 @@ Refer: 245 65258 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0651064B
-Encoding: 65547 -1 275
+Encoding: 402 -1 275
 GlifName: uni0651064B_
 Width: 0
 VWidth: 2444
@@ -6321,7 +6320,7 @@ Ligature2: "'ccmp' Required Ligatures in Arabic lookup 4 subtable" uni064B uni06
 EndChar
 
 StartChar: uni0651064C
-Encoding: 65548 -1 276
+Encoding: 403 -1 276
 GlifName: uni0651064C_
 Width: 0
 VWidth: 2444
@@ -6341,7 +6340,7 @@ Ligature2: "'ccmp' Required Ligatures in Arabic lookup 4 subtable" uni064C uni06
 EndChar
 
 StartChar: uni064B0651
-Encoding: 65549 -1 277
+Encoding: 404 -1 277
 GlifName: uni064B_0651
 Width: 0
 VWidth: 2444
@@ -6362,7 +6361,7 @@ LCarets2: 1 0
 EndChar
 
 StartChar: uni0651064E
-Encoding: 65550 -1 278
+Encoding: 405 -1 278
 GlifName: uni0651064E_
 Width: 0
 VWidth: 2444
@@ -6383,7 +6382,7 @@ Ligature2: "'ccmp' Required Ligatures in Arabic lookup 4 subtable" uni064E uni06
 EndChar
 
 StartChar: uni0651064F
-Encoding: 65551 -1 279
+Encoding: 406 -1 279
 GlifName: uni0651064F_
 Width: 0
 VWidth: 2444
@@ -6403,7 +6402,7 @@ Ligature2: "'ccmp' Required Ligatures in Arabic lookup 4 subtable" uni064F uni06
 EndChar
 
 StartChar: uni064E0651
-Encoding: 65552 -1 280
+Encoding: 407 -1 280
 GlifName: uni064E_0651
 Width: 0
 VWidth: 2444
@@ -6424,7 +6423,7 @@ LCarets2: 1 0
 EndChar
 
 StartChar: uni0654064E
-Encoding: 65553 -1 281
+Encoding: 408 -1 281
 GlifName: uni0654064E_
 Width: 0
 VWidth: 2444
@@ -6445,7 +6444,7 @@ Ligature2: "'ccmp' Required Ligatures in Arabic lookup 4 subtable" uni064E uni06
 EndChar
 
 StartChar: uni0654064F
-Encoding: 65554 -1 282
+Encoding: 409 -1 282
 GlifName: uni0654064F_
 Width: 0
 VWidth: 2444
@@ -6465,7 +6464,7 @@ Ligature2: "'ccmp' Required Ligatures in Arabic lookup 4 subtable" uni064F uni06
 EndChar
 
 StartChar: guillemotleft
-Encoding: 171 171 283
+Encoding: 13 171 283
 GlifName: guillemotleft
 Width: 988
 VWidth: 2075
@@ -6491,7 +6490,7 @@ EndSplineSet
 EndChar
 
 StartChar: guillemotright
-Encoding: 187 187 284
+Encoding: 14 187 284
 GlifName: guillemotright
 Width: 988
 VWidth: 2075
@@ -6517,7 +6516,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06CA
-Encoding: 1738 1738 285
+Encoding: 134 1738 285
 GlifName: uni06C_A_
 Width: 970
 VWidth: 2834
@@ -6532,7 +6531,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06CA.fina
 EndChar
 
 StartChar: uni06CA.fina
-Encoding: 65555 -1 286
+Encoding: 410 -1 286
 GlifName: uni06C_A_.fina
 Width: 932
 VWidth: 2834
@@ -6547,7 +6546,7 @@ Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni202F
-Encoding: 8239 8239 287
+Encoding: 174 8239 287
 GlifName: uni202F_
 Width: 131
 VWidth: -3
@@ -6558,7 +6557,7 @@ Validated: 1
 EndChar
 
 StartChar: uni200B
-Encoding: 8203 8203 288
+Encoding: 161 8203 288
 GlifName: uni200B_
 Width: 0
 VWidth: -3
@@ -6569,7 +6568,7 @@ Validated: 1
 EndChar
 
 StartChar: afii61664
-Encoding: 8204 8204 289
+Encoding: 162 8204 289
 GlifName: afii61664
 Width: 0
 VWidth: -3
@@ -6578,7 +6577,7 @@ LayerCount: 2
 EndChar
 
 StartChar: afii57598
-Encoding: 8205 8205 290
+Encoding: 163 8205 290
 GlifName: afii301
 Width: 0
 VWidth: -3
@@ -6587,7 +6586,7 @@ LayerCount: 2
 EndChar
 
 StartChar: uni06C0
-Encoding: 1728 1728 291
+Encoding: 126 1728 291
 GlifName: uni06C_0
 Width: 1015
 VWidth: 3103
@@ -6606,7 +6605,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBA5.fina
 EndChar
 
 StartChar: uniFBA5.fina
-Encoding: 64421 64421 292
+Encoding: 213 64421 292
 GlifName: uniF_B_A_5.fina
 Width: 1102
 VWidth: 3103
@@ -6622,7 +6621,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uniFEEA uni06
 EndChar
 
 StartChar: NameMe.302
-Encoding: 65556 -1 293
+Encoding: 411 -1 293
 GlifName: N_ameM_e.302
 Width: 530
 VWidth: 3091
@@ -6648,7 +6647,7 @@ EndSplineSet
 EndChar
 
 StartChar: NameMe.303
-Encoding: 65557 -1 294
+Encoding: 412 -1 294
 GlifName: N_ameM_e.303
 Width: 545
 VWidth: 3091
@@ -6669,7 +6668,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFDF2
-Encoding: 65010 65010 295
+Encoding: 249 65010 295
 GlifName: uniF_D_F_2
 Width: 2738
 VWidth: 3103
@@ -6695,7 +6694,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 9 subtable" uni0627 uniFE
 EndChar
 
 StartChar: uniFDFC
-Encoding: 65020 65020 296
+Encoding: 250 65020 296
 GlifName: uniF_D_F_C_
 Width: 3237
 VWidth: 3101
@@ -6710,7 +6709,7 @@ Refer: 39 1604 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: NameMe.65564
-Encoding: 65558 -1 297
+Encoding: 413 -1 297
 GlifName: N_ameM_e.65564
 Width: 576
 VWidth: 3091
@@ -6731,7 +6730,7 @@ EndSplineSet
 EndChar
 
 StartChar: NameMe.65565
-Encoding: 65559 -1 298
+Encoding: 414 -1 298
 GlifName: N_ameM_e.65565
 Width: 696
 VWidth: 2996
@@ -6761,7 +6760,7 @@ Validated: 1
 EndChar
 
 StartChar: uni060D
-Encoding: 1549 1549 299
+Encoding: 18 1549 299
 GlifName: uni060D_
 Width: 899
 VWidth: 4090
@@ -6778,7 +6777,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni066E.init
-Encoding: 65560 -1 300
+Encoding: 415 -1 300
 GlifName: N_ameM_e.65541
 Width: 614
 VWidth: 2834
@@ -6801,7 +6800,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni066E.medi
-Encoding: 65561 -1 301
+Encoding: 416 -1 301
 GlifName: N_ameM_e.65542
 Width: 690
 VWidth: 2834
@@ -6829,7 +6828,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni0695
-Encoding: 1685 1685 302
+Encoding: 108 1685 302
 GlifName: uni0695
 Width: 762
 VWidth: 2248
@@ -6844,7 +6843,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0695.fina
 EndChar
 
 StartChar: uni06A4
-Encoding: 1700 1700 303
+Encoding: 114 1700 303
 GlifName: uni06A_4
 Width: 1836
 VWidth: 2147
@@ -6861,7 +6860,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB6B
 EndChar
 
 StartChar: uni06B5
-Encoding: 1717 1717 304
+Encoding: 121 1717 304
 GlifName: uni06B_5
 Width: 1381
 VWidth: 3096
@@ -6880,7 +6879,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06B5.fina
 EndChar
 
 StartChar: uni06C6
-Encoding: 1734 1734 305
+Encoding: 130 1734 305
 GlifName: uni06C_6
 Width: 970
 VWidth: 2248
@@ -6895,7 +6894,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBDA
 EndChar
 
 StartChar: uni06CE
-Encoding: 1742 1742 306
+Encoding: 138 1742 306
 GlifName: uni06C_E_
 Width: 1495
 VWidth: 3096
@@ -6912,7 +6911,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06CE.fina
 EndChar
 
 StartChar: uniFB6B
-Encoding: 64363 64363 307
+Encoding: 190 64363 307
 GlifName: uniF_B_6B_
 Width: 1933
 VWidth: 2147
@@ -6926,7 +6925,7 @@ Refer: 269 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB6C
-Encoding: 64364 64364 308
+Encoding: 191 64364 308
 GlifName: uniF_B_6C_
 Width: 967
 VWidth: 2147
@@ -6940,7 +6939,7 @@ Refer: 266 -1 S 1 0 0 1 185 1335 2
 EndChar
 
 StartChar: uniFB6D
-Encoding: 64365 64365 309
+Encoding: 192 64365 309
 GlifName: uniF_B_6D_
 Width: 1019
 VWidth: 2147
@@ -6954,7 +6953,7 @@ Refer: 271 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBDA
-Encoding: 64474 64474 310
+Encoding: 234 64474 310
 GlifName: uniF_B_D_A_
 Width: 932
 VWidth: 2248
@@ -6968,7 +6967,7 @@ Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0695.fina
-Encoding: 65562 -1 311
+Encoding: 417 -1 311
 GlifName: uni0695.fina
 Width: 822
 VWidth: 2147
@@ -6982,7 +6981,7 @@ Refer: 185 65198 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06CE.fina
-Encoding: 65563 -1 312
+Encoding: 418 -1 312
 GlifName: uni06C_E_.fina
 Width: 1359
 VWidth: 2147
@@ -6996,7 +6995,7 @@ Refer: 251 65264 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06CE.init
-Encoding: 65564 -1 313
+Encoding: 419 -1 313
 GlifName: uni06C_E_.init
 Width: 668
 VWidth: 2834
@@ -7014,7 +7013,7 @@ Substitution2: "Single Substitution 1-1" uni06CE.init.long4
 EndChar
 
 StartChar: uni06CE.medi
-Encoding: 65565 -1 314
+Encoding: 420 -1 314
 GlifName: uni06C_E_.medi
 Width: 743
 VWidth: 2834
@@ -7032,7 +7031,7 @@ Substitution2: "Single Substitution 1-1" uni06CE.medi.long4
 EndChar
 
 StartChar: uni06B5.fina
-Encoding: 65566 -1 315
+Encoding: 421 -1 315
 GlifName: uni06B_5.fina
 Width: 1403
 VWidth: 2147
@@ -7046,7 +7045,7 @@ Refer: 233 65246 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06B5.init
-Encoding: 65567 -1 316
+Encoding: 422 -1 316
 GlifName: uni06B_5.init
 Width: 630
 VWidth: 3096
@@ -7063,7 +7062,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uni06B5.medi
-Encoding: 65568 -1 317
+Encoding: 423 -1 317
 GlifName: uni06B_5.medi
 Width: 651
 VWidth: 3096
@@ -7077,7 +7076,7 @@ Refer: 235 65248 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06BE
-Encoding: 1726 1726 318
+Encoding: 125 1726 318
 GlifName: uni06B_E_
 Width: 1615
 VWidth: 2834
@@ -7100,7 +7099,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBAB
 EndChar
 
 StartChar: lamVabove_alef.isol
-Encoding: 65569 -1 319
+Encoding: 424 -1 319
 GlifName: lamV_above_alef.isol
 Width: 1234
 VWidth: 3096
@@ -7121,7 +7120,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uni06B5.init 
 EndChar
 
 StartChar: NameMe.65574
-Encoding: 65570 -1 320
+Encoding: 425 -1 320
 GlifName: N_ameM_e.65574
 Width: 1264
 VWidth: 3096
@@ -7139,7 +7138,7 @@ Ligature2: "'rlig' Required Ligatures in Arabic lookup 5 subtable" uni06B5.medi 
 EndChar
 
 StartChar: figuredash
-Encoding: 8210 8210 321
+Encoding: 166 8210 321
 GlifName: figuredash
 Width: 1025
 Flags: HW
@@ -7155,7 +7154,7 @@ EndSplineSet
 EndChar
 
 StartChar: afii57596
-Encoding: 8206 8206 322
+Encoding: 164 8206 322
 GlifName: uni200E_
 Width: 0
 VWidth: 0
@@ -7164,7 +7163,7 @@ LayerCount: 2
 EndChar
 
 StartChar: afii300
-Encoding: 8207 8207 323
+Encoding: 165 8207 323
 GlifName: uni200F_
 Width: 0
 VWidth: 0
@@ -7173,7 +7172,7 @@ LayerCount: 2
 EndChar
 
 StartChar: uni202A
-Encoding: 8234 8234 324
+Encoding: 169 8234 324
 GlifName: uni202A_
 Width: 0
 VWidth: 0
@@ -7184,7 +7183,7 @@ Validated: 1
 EndChar
 
 StartChar: uni202B
-Encoding: 8235 8235 325
+Encoding: 170 8235 325
 GlifName: uni202B_
 Width: 0
 VWidth: 0
@@ -7195,7 +7194,7 @@ Validated: 1
 EndChar
 
 StartChar: uni202C
-Encoding: 8236 8236 326
+Encoding: 171 8236 326
 GlifName: uni202C_
 Width: 0
 VWidth: 0
@@ -7206,7 +7205,7 @@ Validated: 1
 EndChar
 
 StartChar: uni202D
-Encoding: 8237 8237 327
+Encoding: 172 8237 327
 GlifName: uni202D_
 Width: 0
 VWidth: 0
@@ -7217,7 +7216,7 @@ Validated: 1
 EndChar
 
 StartChar: uni202E
-Encoding: 8238 8238 328
+Encoding: 173 8238 328
 GlifName: uni202E_
 Width: 0
 VWidth: 0
@@ -7228,7 +7227,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0671
-Encoding: 1649 1649 329
+Encoding: 96 1649 329
 GlifName: uni0671
 Width: 556
 VWidth: 2834
@@ -7244,7 +7243,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB51
 EndChar
 
 StartChar: uniFB50
-Encoding: 64336 64336 330
+Encoding: 179 64336 330
 GlifName: uniF_B_50
 Width: 556
 VWidth: 0
@@ -7258,7 +7257,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=240 dv=0
 EndChar
 
 StartChar: uniFB51
-Encoding: 64337 64337 331
+Encoding: 180 64337 331
 GlifName: uniF_B_51
 Width: 576
 VWidth: 3094
@@ -7272,7 +7271,7 @@ Refer: 297 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: NameMe.65583
-Encoding: 65571 -1 332
+Encoding: 426 -1 332
 GlifName: N_ameM_e.65583
 Width: 471
 VWidth: 2739
@@ -7302,7 +7301,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0656
-Encoding: 1622 1622 333
+Encoding: 74 1622 333
 GlifName: uni0656
 Width: 0
 VWidth: 2608
@@ -7317,7 +7316,7 @@ Refer: 75 1648 N 1 0 0 1 0 -1501 2
 EndChar
 
 StartChar: uni067C
-Encoding: 1660 1660 334
+Encoding: 99 1660 334
 GlifName: uni067C_
 Width: 1852
 VWidth: 2834
@@ -7335,7 +7334,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni067C.fina
 EndChar
 
 StartChar: uni0681
-Encoding: 1665 1665 335
+Encoding: 101 1665 335
 GlifName: uni0681
 Width: 1431
 VWidth: 3094
@@ -7352,7 +7351,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0681.fina
 EndChar
 
 StartChar: uni0685
-Encoding: 1669 1669 336
+Encoding: 102 1669 336
 GlifName: uni0685
 Width: 1431
 VWidth: 3094
@@ -7369,7 +7368,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0685.fina
 EndChar
 
 StartChar: uni0689
-Encoding: 1673 1673 337
+Encoding: 105 1673 337
 GlifName: uni0689
 Width: 1040
 VWidth: 3094
@@ -7384,7 +7383,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0689.fina
 EndChar
 
 StartChar: uni0693
-Encoding: 1683 1683 338
+Encoding: 107 1683 338
 GlifName: uni0693
 Width: 762
 VWidth: 2245
@@ -7399,7 +7398,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0693.fina
 EndChar
 
 StartChar: uni0696
-Encoding: 1686 1686 339
+Encoding: 109 1686 339
 GlifName: uni0696
 Width: 762
 VWidth: 2245
@@ -7415,7 +7414,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0696.fina
 EndChar
 
 StartChar: uni069A
-Encoding: 1690 1690 340
+Encoding: 111 1690 340
 GlifName: uni069A_
 Width: 2480
 VWidth: 2147
@@ -7433,7 +7432,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni069A.fina
 EndChar
 
 StartChar: uni06AB
-Encoding: 1707 1707 341
+Encoding: 117 1707 341
 GlifName: uni06A_B_
 Width: 1853
 VWidth: 3094
@@ -7453,7 +7452,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06AB.fina
 EndChar
 
 StartChar: uni06BC
-Encoding: 1724 1724 342
+Encoding: 123 1724 342
 GlifName: uni06B_C_
 Width: 1445
 VWidth: 2834
@@ -7470,7 +7469,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06BC.fina
 EndChar
 
 StartChar: uni06D0
-Encoding: 1744 1744 343
+Encoding: 140 1744 343
 GlifName: uni06D_0
 Width: 1495
 VWidth: 3094
@@ -7487,7 +7486,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06D0.fina
 EndChar
 
 StartChar: uni06CD
-Encoding: 1741 1741 344
+Encoding: 137 1741 344
 GlifName: uni06C_D_
 Width: 1684
 VWidth: 3094
@@ -7508,7 +7507,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06CD.fina
 EndChar
 
 StartChar: uni06D0.dots
-Encoding: 65572 -1 345
+Encoding: 427 -1 345
 GlifName: N_ameM_e.65587
 Width: 528
 VWidth: 2809
@@ -7531,7 +7530,7 @@ Validated: 5
 EndChar
 
 StartChar: uni06CD.fina
-Encoding: 65573 -1 346
+Encoding: 428 -1 346
 GlifName: uni06C_D_.fina
 Width: 1549
 VWidth: 2834
@@ -7551,7 +7550,7 @@ Refer: 251 65264 N 1 0 0 1 190 0 2
 EndChar
 
 StartChar: uni06D0.fina
-Encoding: 65574 -1 347
+Encoding: 429 -1 347
 GlifName: uni06D_0.fina
 Width: 1359
 VWidth: 3094
@@ -7565,7 +7564,7 @@ Refer: 345 -1 N 1 0 0 1 488 -982 2
 EndChar
 
 StartChar: uni067C.fina
-Encoding: 65575 -1 348
+Encoding: 430 -1 348
 GlifName: uni067C_.fina
 Width: 1933
 VWidth: 2834
@@ -7579,7 +7578,7 @@ Refer: 161 65174 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni067C.init
-Encoding: 65576 -1 349
+Encoding: 431 -1 349
 GlifName: uni067C_.init
 Width: 718
 VWidth: 2834
@@ -7595,7 +7594,7 @@ Refer: 453 -1 N 0.35 0 0 1 -14 0 2
 EndChar
 
 StartChar: uni067C.medi
-Encoding: 65577 -1 350
+Encoding: 432 -1 350
 GlifName: uni067C_.medi
 Width: 784
 VWidth: 2834
@@ -7611,7 +7610,7 @@ Refer: 265 -1 N 1 0 0 1 48 972 2
 EndChar
 
 StartChar: uni0681.fina
-Encoding: 65578 -1 351
+Encoding: 433 -1 351
 GlifName: uni0681.fina
 Width: 1440
 VWidth: 3094
@@ -7625,7 +7624,7 @@ Refer: 173 65186 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0681.init
-Encoding: 65579 -1 352
+Encoding: 434 -1 352
 GlifName: uni0681.init
 Width: 1402
 VWidth: 3094
@@ -7639,7 +7638,7 @@ Refer: 174 65187 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0681.medi
-Encoding: 65580 -1 353
+Encoding: 435 -1 353
 GlifName: uni0681.medi
 Width: 1396
 VWidth: 3094
@@ -7653,7 +7652,7 @@ Refer: 175 65188 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0685.fina
-Encoding: 65581 -1 354
+Encoding: 436 -1 354
 GlifName: uni0685.fina
 Width: 1440
 VWidth: 3094
@@ -7667,7 +7666,7 @@ Refer: 173 65186 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0685.init
-Encoding: 65582 -1 355
+Encoding: 437 -1 355
 GlifName: uni0685.init
 Width: 1402
 VWidth: 3094
@@ -7681,7 +7680,7 @@ Refer: 174 65187 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0685.medi
-Encoding: 65583 -1 356
+Encoding: 438 -1 356
 GlifName: uni0685.medi
 Width: 1396
 VWidth: 3094
@@ -7695,7 +7694,7 @@ Refer: 175 65188 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0689.fina
-Encoding: 65584 -1 357
+Encoding: 439 -1 357
 GlifName: uni0689.fina
 Width: 1120
 VWidth: 3094
@@ -7709,7 +7708,7 @@ Refer: 181 65194 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0693.fina
-Encoding: 65585 -1 358
+Encoding: 440 -1 358
 GlifName: uni0693.fina
 Width: 822
 VWidth: 2245
@@ -7723,7 +7722,7 @@ Refer: 185 65198 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0696.fina
-Encoding: 65586 -1 359
+Encoding: 441 -1 359
 GlifName: uni0696.fina
 Width: 822
 VWidth: 2245
@@ -7738,7 +7737,7 @@ Refer: 185 65198 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni069A.fina
-Encoding: 65587 -1 360
+Encoding: 442 -1 360
 GlifName: uni069A_.fina
 Width: 2563
 VWidth: 2147
@@ -7753,7 +7752,7 @@ Refer: 189 65202 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni069A.init
-Encoding: 65588 -1 361
+Encoding: 443 -1 361
 GlifName: uni069A_.init
 Width: 1645
 VWidth: 2147
@@ -7768,7 +7767,7 @@ Refer: 190 65203 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni069A.medi
-Encoding: 65589 -1 362
+Encoding: 444 -1 362
 GlifName: uni069A_.medi
 Width: 1729
 VWidth: 2147
@@ -7783,7 +7782,7 @@ Refer: 191 65204 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06AB.fina
-Encoding: 65590 -1 363
+Encoding: 445 -1 363
 GlifName: uni06A_B_.fina
 Width: 1959
 VWidth: 3094
@@ -7797,7 +7796,7 @@ Refer: 107 64399 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06AB.init
-Encoding: 65591 -1 364
+Encoding: 446 -1 364
 GlifName: uni06A_B_.init
 Width: 939
 VWidth: 3101
@@ -7814,7 +7813,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uni06AB.medi
-Encoding: 65592 -1 365
+Encoding: 447 -1 365
 GlifName: uni06A_B_.medi
 Width: 1046
 VWidth: 2834
@@ -7828,7 +7827,7 @@ Refer: 231 65244 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06BC.fina
-Encoding: 65593 -1 366
+Encoding: 448 -1 366
 GlifName: uni06B_C_.fina
 Width: 1508
 VWidth: 2834
@@ -7842,7 +7841,7 @@ Refer: 241 65254 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06BC.init
-Encoding: 65594 -1 367
+Encoding: 449 -1 367
 GlifName: uni06B_C_.init
 Width: 614
 VWidth: 2834
@@ -7857,7 +7856,7 @@ Substitution2: "Single Substitution 1-1" uni06BC.init.long
 EndChar
 
 StartChar: uni06BC.medi
-Encoding: 65595 -1 368
+Encoding: 450 -1 368
 GlifName: uni06B_C_.medi
 Width: 690
 VWidth: 2834
@@ -7872,7 +7871,7 @@ Substitution2: "Single Substitution 1-1" uni06BC.medi.long
 EndChar
 
 StartChar: uni06D0.init
-Encoding: 65596 -1 369
+Encoding: 451 -1 369
 GlifName: uni06D_0.init
 Width: 668
 VWidth: 2834
@@ -7888,7 +7887,7 @@ Substitution2: "Single Substitution 1-1" uni06D0.init.long
 EndChar
 
 StartChar: uni06D0.medi
-Encoding: 65597 -1 370
+Encoding: 452 -1 370
 GlifName: uni06D_0.medi
 Width: 734
 VWidth: 2834
@@ -7904,7 +7903,7 @@ Substitution2: "Single Substitution 1-1" uni06D0.medi.long
 EndChar
 
 StartChar: uni0679
-Encoding: 1657 1657 371
+Encoding: 98 1657 371
 GlifName: uni0679
 Width: 1852
 VWidth: 2834
@@ -7923,7 +7922,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB67
 EndChar
 
 StartChar: uni0688
-Encoding: 1672 1672 372
+Encoding: 104 1672 372
 GlifName: uni0688
 Width: 1040
 VWidth: 3094
@@ -7940,7 +7939,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB89
 EndChar
 
 StartChar: uni0691
-Encoding: 1681 1681 373
+Encoding: 106 1681 373
 GlifName: uni0691
 Width: 762
 VWidth: 2834
@@ -7957,7 +7956,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFB8D
 EndChar
 
 StartChar: uni06C1
-Encoding: 1729 1729 374
+Encoding: 127 1729 374
 GlifName: uni06C_1
 Width: 1015
 VWidth: 2834
@@ -7975,7 +7974,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBA7
 EndChar
 
 StartChar: uni06D2
-Encoding: 1746 1746 375
+Encoding: 141 1746 375
 GlifName: uni06D_2
 Width: 1878
 VWidth: -3
@@ -8006,7 +8005,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBAF
 EndChar
 
 StartChar: uni06D3
-Encoding: 1747 1747 376
+Encoding: 142 1747 376
 GlifName: uni06D_3
 Width: 1878
 VWidth: 0
@@ -8023,7 +8022,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBB1
 EndChar
 
 StartChar: uni06D4
-Encoding: 1748 1748 377
+Encoding: 143 1748 377
 GlifName: uni06D_4
 Width: 672
 VWidth: 3091
@@ -8040,7 +8039,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFBA7
-Encoding: 64423 64423 378
+Encoding: 214 64423 378
 GlifName: uniF_B_A_7
 Width: 997
 VWidth: 3091
@@ -8065,7 +8064,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFBA8
-Encoding: 64424 64424 379
+Encoding: 215 64424 379
 GlifName: uniF_B_A_8
 Width: 614
 VWidth: 3094
@@ -8087,7 +8086,7 @@ Refer: 300 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBA9
-Encoding: 64425 64425 380
+Encoding: 216 64425 380
 GlifName: uniF_B_A_9
 Width: 1020
 VWidth: 2144
@@ -8118,7 +8117,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFBAA
-Encoding: 64426 64426 381
+Encoding: 217 64426 381
 GlifName: uniF_B_A_A_
 Width: 1615
 VWidth: 2834
@@ -8131,7 +8130,7 @@ Refer: 318 1726 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFBAB
-Encoding: 64427 64427 382
+Encoding: 218 64427 382
 GlifName: uniF_B_A_B_
 Width: 1194
 VWidth: 2834
@@ -8151,7 +8150,7 @@ Refer: 247 65260 N 1 0 0 1 174 0 2
 EndChar
 
 StartChar: uniFBAE
-Encoding: 64430 64430 383
+Encoding: 221 64430 383
 GlifName: uniF_B_A_E_
 Width: 1878
 VWidth: 0
@@ -8164,7 +8163,7 @@ Refer: 375 1746 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBAF
-Encoding: 64431 64431 384
+Encoding: 222 64431 384
 GlifName: uniF_B_A_F_
 Width: 1679
 VWidth: 3094
@@ -8179,7 +8178,7 @@ Substitution2: "Single Substitution 4-1" uniFBAF.compact
 EndChar
 
 StartChar: uniFBB1
-Encoding: 64433 64433 385
+Encoding: 224 64433 385
 GlifName: uniF_B_B_1
 Width: 1679
 VWidth: 3094
@@ -8194,7 +8193,7 @@ Substitution2: "Single Substitution 4-1" uniFBB1.compact
 EndChar
 
 StartChar: uniFBB0
-Encoding: 64432 64432 386
+Encoding: 223 64432 386
 GlifName: uniF_B_B_0
 Width: 1878
 VWidth: 0
@@ -8207,7 +8206,7 @@ Refer: 376 1747 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0658
-Encoding: 1624 1624 387
+Encoding: 76 1624 387
 GlifName: uni0658
 Width: 0
 VWidth: 2347
@@ -8232,7 +8231,7 @@ Validated: 1
 EndChar
 
 StartChar: uniFBC0
-Encoding: 64448 64448 388
+Encoding: 226 64448 388
 GlifName: uniF_B_C_0
 Width: 810
 VWidth: 2748
@@ -8261,7 +8260,7 @@ Validated: 1
 EndChar
 
 StartChar: uniFB88
-Encoding: 64392 64392 389
+Encoding: 197 64392 389
 GlifName: uniF_B_88
 Width: 1040
 VWidth: 3094
@@ -8274,7 +8273,7 @@ Refer: 372 1672 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB89
-Encoding: 64393 64393 390
+Encoding: 198 64393 390
 GlifName: uniF_B_89
 Width: 1120
 VWidth: 3094
@@ -8288,7 +8287,7 @@ Refer: 181 65194 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB8C
-Encoding: 64396 64396 391
+Encoding: 201 64396 391
 GlifName: uniF_B_8C_
 Width: 762
 VWidth: 2834
@@ -8301,7 +8300,7 @@ Refer: 373 1681 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB8D
-Encoding: 64397 64397 392
+Encoding: 202 64397 392
 GlifName: uniF_B_8D_
 Width: 822
 VWidth: 2245
@@ -8315,7 +8314,7 @@ Refer: 185 65198 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBBF
-Encoding: 64447 64447 393
+Encoding: 225 64447 393
 GlifName: uniF_B_B_F_
 Width: 567
 VWidth: 0
@@ -8338,7 +8337,7 @@ Validated: 1
 EndChar
 
 StartChar: uniFB66
-Encoding: 64358 64358 394
+Encoding: 185 64358 394
 GlifName: uniF_B_66
 Width: 1852
 VWidth: 2834
@@ -8351,7 +8350,7 @@ Refer: 371 1657 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB67
-Encoding: 64359 64359 395
+Encoding: 186 64359 395
 GlifName: uniF_B_67
 Width: 1933
 VWidth: 2834
@@ -8365,7 +8364,7 @@ Refer: 268 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFB68
-Encoding: 64360 64360 396
+Encoding: 187 64360 396
 GlifName: uniF_B_68
 Width: 623
 VWidth: 2834
@@ -8382,7 +8381,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-50 dv=0
 EndChar
 
 StartChar: uniFB69
-Encoding: 64361 64361 397
+Encoding: 188 64361 397
 GlifName: uniF_B_69
 Width: 710
 VWidth: 2834
@@ -8397,7 +8396,7 @@ Refer: 301 -1 N 1 0 0 1 20 0 2
 EndChar
 
 StartChar: uniFBAF.compact
-Encoding: 65598 -1 398
+Encoding: 453 -1 398
 GlifName: uniF_B_A_F_.compact
 Width: 1289
 VWidth: 3091
@@ -8422,7 +8421,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFBB1.compact
-Encoding: 65599 -1 399
+Encoding: 454 -1 399
 GlifName: uniF_B_B_1.compact
 Width: 1289
 VWidth: 3094
@@ -8436,7 +8435,7 @@ Refer: 398 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06C2
-Encoding: 1730 1730 400
+Encoding: 128 1730 400
 GlifName: uni06C_2
 Width: 1015
 VWidth: 2834
@@ -8453,7 +8452,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06C2.fina
 EndChar
 
 StartChar: uni06C3
-Encoding: 1731 1731 401
+Encoding: 129 1731 401
 GlifName: uni06C_3
 Width: 1015
 VWidth: 2834
@@ -8468,7 +8467,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06C3.fina
 EndChar
 
 StartChar: uni06F4.locl
-Encoding: 65600 -1 402
+Encoding: 455 -1 402
 GlifName: uni06F_4.urdu
 Width: 1348
 VWidth: 3091
@@ -8496,7 +8495,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06F7.locl
-Encoding: 65601 -1 403
+Encoding: 456 -1 403
 GlifName: uni06F_7.urdu
 Width: 1179
 VWidth: 3091
@@ -8516,7 +8515,7 @@ Validated: 1
 EndChar
 
 StartChar: uni06C2.fina
-Encoding: 65602 -1 404
+Encoding: 457 -1 404
 GlifName: uni06C_2.fina
 Width: 997
 VWidth: 3094
@@ -8530,7 +8529,7 @@ Refer: 378 64423 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06C3.fina
-Encoding: 65603 -1 405
+Encoding: 458 -1 405
 GlifName: uni06C_3.fina
 Width: 997
 VWidth: 3094
@@ -8544,7 +8543,7 @@ Refer: 378 64423 N 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uni06C2.init
-Encoding: 65604 -1 406
+Encoding: 459 -1 406
 GlifName: uni06C_2.init
 Width: 614
 VWidth: 3094
@@ -8558,7 +8557,7 @@ Refer: 379 64424 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06C2.medi
-Encoding: 65605 -1 407
+Encoding: 460 -1 407
 GlifName: uni06C_2.medi
 Width: 1020
 VWidth: 2147
@@ -8572,7 +8571,7 @@ Refer: 380 64425 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06E9
-Encoding: 1769 1769 408
+Encoding: 148 1769 408
 GlifName: uni06E_9
 Width: 1215
 VWidth: 0
@@ -8624,7 +8623,7 @@ Validated: 1
 EndChar
 
 StartChar: uni06DE
-Encoding: 1758 1758 409
+Encoding: 147 1758 409
 GlifName: uni06D_E_
 Width: 2036
 VWidth: 0
@@ -8705,7 +8704,7 @@ Validated: 1
 EndChar
 
 StartChar: uni06DD
-Encoding: 1757 1757 410
+Encoding: 146 1757 410
 GlifName: uni06D_D_
 Width: 2472
 VWidth: 0
@@ -8782,7 +8781,7 @@ Validated: 1
 EndChar
 
 StartChar: uniFD3E
-Encoding: 64830 64830 411
+Encoding: 247 64830 411
 GlifName: uniF_D_3E_
 Width: 889
 VWidth: 2075
@@ -8827,7 +8826,7 @@ Validated: 1
 EndChar
 
 StartChar: uniFD3F
-Encoding: 64831 64831 412
+Encoding: 248 64831 412
 GlifName: uniF_D_3F_
 Width: 889
 VWidth: 2075
@@ -8872,7 +8871,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0610
-Encoding: 1552 1552 413
+Encoding: 19 1552 413
 GlifName: uni0610
 Width: 0
 VWidth: 2748
@@ -8907,7 +8906,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0611
-Encoding: 1553 1553 414
+Encoding: 20 1553 414
 GlifName: uni0611
 Width: 0
 VWidth: 2748
@@ -8945,7 +8944,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0612
-Encoding: 1554 1554 415
+Encoding: 21 1554 415
 GlifName: uni0612
 Width: 0
 VWidth: 2748
@@ -8987,7 +8986,7 @@ Validated: 1
 EndChar
 
 StartChar: uni06DC
-Encoding: 1756 1756 416
+Encoding: 145 1756 416
 GlifName: uni06D_C_
 Width: 0
 VWidth: 2748
@@ -9029,7 +9028,7 @@ Validated: 1
 EndChar
 
 StartChar: LamAlefWasla
-Encoding: 65606 -1 417
+Encoding: 461 -1 417
 GlifName: L_amA_lefW_asla
 Width: 1234
 VWidth: 2834
@@ -9050,7 +9049,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEDF uniFB
 EndChar
 
 StartChar: LamAlefWasla.fina
-Encoding: 65607 -1 418
+Encoding: 462 -1 418
 GlifName: L_amA_lefW_asla.fina
 Width: 1264
 VWidth: 2834
@@ -9068,7 +9067,7 @@ Ligature2: "'liga' Standard Ligatures in Arabic lookup 8 subtable" uniFEE0 uniFB
 EndChar
 
 StartChar: uni220E
-Encoding: 8718 8718 419
+Encoding: 175 8718 419
 GlifName: uni220E_
 Width: 983
 VWidth: 2075
@@ -9086,7 +9085,7 @@ Validated: 1
 EndChar
 
 StartChar: NameMe.65623
-Encoding: 65608 -1 420
+Encoding: 463 -1 420
 GlifName: N_ameM_e.65623
 Width: 1855
 VWidth: 2989
@@ -9110,7 +9109,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06AD
-Encoding: 1709 1709 421
+Encoding: 119 1709 421
 GlifName: uni06A_D_
 Width: 1875
 VWidth: 3094
@@ -9130,7 +9129,7 @@ Substitution2: "'init' Initial Forms in Arabic lookup 3 subtable" uniFBD5
 EndChar
 
 StartChar: uniFBD3
-Encoding: 64467 64467 422
+Encoding: 227 64467 422
 GlifName: uniF_B_D_3
 Width: 1875
 VWidth: 3094
@@ -9144,7 +9143,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uniFBD4
-Encoding: 64468 64468 423
+Encoding: 228 64468 423
 GlifName: uniF_B_D_4
 Width: 1893
 VWidth: 3094
@@ -9158,7 +9157,7 @@ Refer: 229 65242 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBD5
-Encoding: 64469 64469 424
+Encoding: 229 64469 424
 GlifName: uniF_B_D_5
 Width: 939
 VWidth: 3101
@@ -9173,7 +9172,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=189 dv=0
 EndChar
 
 StartChar: uniFBD6
-Encoding: 64470 64470 425
+Encoding: 230 64470 425
 GlifName: uniF_B_D_6
 Width: 1046
 VWidth: 2834
@@ -9187,7 +9186,7 @@ Refer: 231 65244 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBD7
-Encoding: 64471 64471 426
+Encoding: 231 64471 426
 GlifName: uniF_B_D_7
 Width: 970
 VWidth: 2248
@@ -9200,7 +9199,7 @@ Refer: 428 1735 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBD8
-Encoding: 64472 64472 427
+Encoding: 232 64472 427
 GlifName: uniF_B_D_8
 Width: 932
 VWidth: 2248
@@ -9214,7 +9213,7 @@ Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06C7
-Encoding: 1735 1735 428
+Encoding: 131 1735 428
 GlifName: uni06C_7
 Width: 970
 VWidth: 2248
@@ -9229,7 +9228,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBD8
 EndChar
 
 StartChar: uni06CB
-Encoding: 1739 1739 429
+Encoding: 135 1739 429
 GlifName: uni06C_B_
 Width: 970
 VWidth: 2248
@@ -9244,7 +9243,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBDF
 EndChar
 
 StartChar: uniFBDE
-Encoding: 64478 64478 430
+Encoding: 237 64478 430
 GlifName: uniF_B_D_E_
 Width: 970
 VWidth: 2248
@@ -9257,7 +9256,7 @@ Refer: 429 1739 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBDF
-Encoding: 64479 64479 431
+Encoding: 238 64479 431
 GlifName: uniF_B_D_F_
 Width: 932
 VWidth: 2248
@@ -9271,7 +9270,7 @@ Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBD9
-Encoding: 64473 64473 432
+Encoding: 233 64473 432
 GlifName: uniF_B_D_9
 Width: 970
 VWidth: 2248
@@ -9284,7 +9283,7 @@ Refer: 305 1734 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06AA
-Encoding: 1706 1706 433
+Encoding: 116 1706 433
 GlifName: uni06A_A_
 Width: 2070
 VWidth: 3091
@@ -9320,7 +9319,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06AA.fina
 EndChar
 
 StartChar: uni06AA.fina
-Encoding: 65609 -1 434
+Encoding: 464 -1 434
 GlifName: uni06A_A_.fina
 Width: 2122
 VWidth: 3091
@@ -9357,7 +9356,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06AA.medi
-Encoding: 65610 -1 435
+Encoding: 465 -1 435
 GlifName: uni06A_A_.medi
 Width: 1701
 VWidth: 3091
@@ -9392,7 +9391,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06AA.init
-Encoding: 65611 -1 436
+Encoding: 466 -1 436
 GlifName: uni06A_A_.init
 Width: 1659
 VWidth: 3091
@@ -9423,7 +9422,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uni06C9
-Encoding: 1737 1737 437
+Encoding: 133 1737 437
 GlifName: uni06C_9
 Width: 970
 VWidth: 2248
@@ -9438,7 +9437,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBE3
 EndChar
 
 StartChar: uniFBE3
-Encoding: 64483 64483 438
+Encoding: 240 64483 438
 GlifName: uniF_B_E_3
 Width: 932
 VWidth: 2248
@@ -9452,7 +9451,7 @@ Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBE2
-Encoding: 64482 64482 439
+Encoding: 239 64482 439
 GlifName: uniF_B_E_2
 Width: 970
 VWidth: 2248
@@ -9465,7 +9464,7 @@ Refer: 437 1737 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni066F.init
-Encoding: 65612 -1 440
+Encoding: 467 -1 440
 GlifName: uni066F_.init
 Width: 967
 VWidth: 3094
@@ -9478,7 +9477,7 @@ Refer: 270 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni066F.medi
-Encoding: 65613 -1 441
+Encoding: 468 -1 441
 GlifName: uni066F_.medi
 Width: 1019
 VWidth: 3094
@@ -9491,7 +9490,7 @@ Refer: 271 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06BA.init
-Encoding: 65614 -1 442
+Encoding: 469 -1 442
 GlifName: uni06B_A_.init
 Width: 614
 VWidth: 2834
@@ -9504,7 +9503,7 @@ Refer: 300 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06BA.medi
-Encoding: 65615 -1 443
+Encoding: 470 -1 443
 GlifName: uni06B_A_.medi
 Width: 690
 VWidth: 2834
@@ -9517,7 +9516,7 @@ Refer: 301 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni063D
-Encoding: 1597 1597 444
+Encoding: 51 1597 444
 GlifName: uni063D_
 Width: 1495
 VWidth: 3096
@@ -9534,7 +9533,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni063D.fina
 EndChar
 
 StartChar: uni0763
-Encoding: 1891 1891 445
+Encoding: 160 1891 445
 GlifName: uni0763
 Width: 1853
 VWidth: 3103
@@ -9554,7 +9553,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0763.fina
 EndChar
 
 StartChar: uni063D.fina
-Encoding: 65616 -1 446
+Encoding: 471 -1 446
 GlifName: uni063D_.fina
 Width: 1359
 VWidth: 2147
@@ -9568,7 +9567,7 @@ Refer: 251 65264 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni063D.init
-Encoding: 65617 -1 447
+Encoding: 472 -1 447
 GlifName: uni063D_.init
 Width: 668
 VWidth: 2834
@@ -9586,7 +9585,7 @@ Substitution2: "Single Substitution 1-1" uni063D.init.long4
 EndChar
 
 StartChar: uni063D.medi
-Encoding: 65618 -1 448
+Encoding: 473 -1 448
 GlifName: uni063D_.medi
 Width: 743
 VWidth: 2834
@@ -9604,7 +9603,7 @@ Substitution2: "Single Substitution 1-1" uni063D.medi.long4
 EndChar
 
 StartChar: uni0763.fina
-Encoding: 65619 -1 449
+Encoding: 474 -1 449
 GlifName: uni0763.fina
 Width: 1959
 VWidth: 3094
@@ -9618,7 +9617,7 @@ Refer: 107 64399 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0763.init
-Encoding: 65620 -1 450
+Encoding: 475 -1 450
 GlifName: uni0763.init
 Width: 939
 VWidth: 3101
@@ -9635,7 +9634,7 @@ Position2: "Single Positioning lookup 0 subtable" dx=0 dy=0 dh=137 dv=0
 EndChar
 
 StartChar: uni0763.medi
-Encoding: 65621 -1 451
+Encoding: 476 -1 451
 GlifName: uni0763.medi
 Width: 1046
 VWidth: 2834
@@ -9649,7 +9648,7 @@ Refer: 231 65244 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni065B
-Encoding: 1627 1627 452
+Encoding: 78 1627 452
 GlifName: uni065B_
 Width: 0
 VWidth: 2347
@@ -9674,7 +9673,7 @@ Validated: 1
 EndChar
 
 StartChar: extender
-Encoding: 65622 -1 453
+Encoding: 477 -1 453
 GlifName: N_ameM_e.65635
 Width: 299
 VWidth: 3091
@@ -9693,7 +9692,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni25CC
-Encoding: 9676 9676 454
+Encoding: 178 9676 454
 GlifName: uni25C_C_
 Width: 1246
 VWidth: 2075
@@ -9756,7 +9755,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0660.tnum
-Encoding: 65623 -1 455
+Encoding: 478 -1 455
 GlifName: uni0660.tnum
 Width: 1409
 VWidth: 2784
@@ -9768,7 +9767,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0661.tnum
-Encoding: 65624 -1 456
+Encoding: 479 -1 456
 GlifName: uni0661.tnum
 Width: 1409
 VWidth: 3094
@@ -9779,7 +9778,7 @@ Refer: 60 1633 N 1 0 0 1 417 0 2
 EndChar
 
 StartChar: uni0662.tnum
-Encoding: 65625 -1 457
+Encoding: 480 -1 457
 GlifName: uni0662.tnum
 Width: 1409
 VWidth: 3094
@@ -9791,7 +9790,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0663.tnum
-Encoding: 65626 -1 458
+Encoding: 481 -1 458
 GlifName: uni0663.tnum
 Width: 1409
 VWidth: 3094
@@ -9802,7 +9801,7 @@ Refer: 62 1635 N 1 0 0 1 16.4995 0 2
 EndChar
 
 StartChar: uni0664.tnum
-Encoding: 65627 -1 459
+Encoding: 482 -1 459
 GlifName: uni0664.tnum
 Width: 1409
 VWidth: 3094
@@ -9814,7 +9813,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0665.tnum
-Encoding: 65628 -1 460
+Encoding: 483 -1 460
 GlifName: uni0665.tnum
 Width: 1409
 VWidth: 3094
@@ -9825,7 +9824,7 @@ Refer: 64 1637 N 1 0 0 1 132.5 0 2
 EndChar
 
 StartChar: uni0666.tnum
-Encoding: 65629 -1 461
+Encoding: 484 -1 461
 GlifName: uni0666.tnum
 Width: 1409
 VWidth: 3094
@@ -9837,7 +9836,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0667.tnum
-Encoding: 65630 -1 462
+Encoding: 485 -1 462
 GlifName: uni0667.tnum
 Width: 1409
 VWidth: 3094
@@ -9849,7 +9848,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0668.tnum
-Encoding: 65631 -1 463
+Encoding: 486 -1 463
 GlifName: uni0668.tnum
 Width: 1409
 VWidth: 3094
@@ -9861,7 +9860,7 @@ Validated: 1
 EndChar
 
 StartChar: uni0669.tnum
-Encoding: 65632 -1 464
+Encoding: 487 -1 464
 GlifName: uni0669.tnum
 Width: 1409
 VWidth: 2147
@@ -9872,7 +9871,7 @@ Refer: 68 1641 N 1 0 0 1 211.5 0 2
 EndChar
 
 StartChar: uni06F0.tnum
-Encoding: 65633 -1 465
+Encoding: 488 -1 465
 GlifName: uni06F_0.tnum
 Width: 1409
 VWidth: 2784
@@ -9884,7 +9883,7 @@ Validated: 1
 EndChar
 
 StartChar: uni06F1.tnum
-Encoding: 65634 -1 466
+Encoding: 489 -1 466
 GlifName: uni06F_1.tnum
 Width: 1409
 VWidth: 3094
@@ -9895,7 +9894,7 @@ Refer: 87 1777 N 1 0 0 1 417 0 2
 EndChar
 
 StartChar: uni06F2.tnum
-Encoding: 65635 -1 467
+Encoding: 490 -1 467
 GlifName: uni06F_2.tnum
 Width: 1409
 VWidth: 3094
@@ -9906,7 +9905,7 @@ Refer: 88 1778 N 1 0 0 1 155.5 0 2
 EndChar
 
 StartChar: uni06F3.tnum
-Encoding: 65636 -1 468
+Encoding: 491 -1 468
 GlifName: uni06F_3.tnum
 Width: 1409
 VWidth: 3094
@@ -9917,7 +9916,7 @@ Refer: 89 1779 N 1 0 0 1 16.4995 0 2
 EndChar
 
 StartChar: uni06F4.tnum
-Encoding: 65637 -1 469
+Encoding: 492 -1 469
 GlifName: uni06F_4.tnum
 Width: 1409
 VWidth: 3094
@@ -9928,7 +9927,7 @@ Refer: 90 1780 S 1 0 0 1 88.5 0 2
 EndChar
 
 StartChar: uni06F5.tnum
-Encoding: 65638 -1 470
+Encoding: 493 -1 470
 GlifName: uni06F_5.tnum
 Width: 1409
 VWidth: 3094
@@ -9939,7 +9938,7 @@ Refer: 91 1781 N 1 0 0 1 70.5 0 2
 EndChar
 
 StartChar: uni06F6.tnum
-Encoding: 65639 -1 471
+Encoding: 494 -1 471
 GlifName: uni06F_6.tnum
 Width: 1409
 VWidth: 3094
@@ -9951,7 +9950,7 @@ Validated: 1
 EndChar
 
 StartChar: uni06F7.tnum
-Encoding: 65640 -1 472
+Encoding: 495 -1 472
 GlifName: uni06F_7.tnum
 Width: 1409
 VWidth: 3094
@@ -9962,7 +9961,7 @@ Refer: 93 1783 N 1 0 0 1 71.5 0 2
 EndChar
 
 StartChar: uni06F8.tnum
-Encoding: 65641 -1 473
+Encoding: 496 -1 473
 GlifName: uni06F_8.tnum
 Width: 1409
 VWidth: 3094
@@ -9973,7 +9972,7 @@ Refer: 94 1784 N 1 0 0 1 71.5 0 2
 EndChar
 
 StartChar: uni06F9.tnum
-Encoding: 65642 -1 474
+Encoding: 497 -1 474
 GlifName: uni06F_9.tnum
 Width: 1409
 VWidth: 2147
@@ -9984,7 +9983,7 @@ Refer: 95 1785 N 1 0 0 1 211.5 0 2
 EndChar
 
 StartChar: uni06F4.locl.tnum
-Encoding: 65643 -1 475
+Encoding: 498 -1 475
 GlifName: uni06F_4.locl.tnum
 Width: 1409
 VWidth: 3094
@@ -9995,7 +9994,7 @@ Refer: 402 -1 N 1 0 0 1 -1 0 2
 EndChar
 
 StartChar: uni06F7.locl.tnum
-Encoding: 65644 -1 476
+Encoding: 499 -1 476
 GlifName: uni06F_7.locl.tnum
 Width: 1409
 VWidth: 3094
@@ -10007,7 +10006,7 @@ Validated: 1
 EndChar
 
 StartChar: plus
-Encoding: 43 43 477
+Encoding: 4 43 477
 GlifName: plus
 Width: 1138
 Flags: HW
@@ -10031,7 +10030,7 @@ EndSplineSet
 EndChar
 
 StartChar: hyphen
-Encoding: 45 45 478
+Encoding: 5 45 478
 GlifName: hyphen
 Width: 995
 Flags: HW
@@ -10047,7 +10046,7 @@ EndSplineSet
 EndChar
 
 StartChar: multiply
-Encoding: 215 215 479
+Encoding: 15 215 479
 GlifName: multiply
 Width: 1088
 Flags: HW
@@ -10071,7 +10070,7 @@ EndSplineSet
 EndChar
 
 StartChar: divide
-Encoding: 247 247 480
+Encoding: 16 247 480
 GlifName: divide
 Width: 1204
 Flags: HW
@@ -10097,7 +10096,7 @@ EndSplineSet
 EndChar
 
 StartChar: minus
-Encoding: 8722 8722 481
+Encoding: 176 8722 481
 GlifName: minus
 Width: 995
 Flags: HW
@@ -10107,7 +10106,7 @@ Refer: 478 45 S 1 0 0 1 0 0 2
 EndChar
 
 StartChar: uniFBFE.long1
-Encoding: 65645 -1 482
+Encoding: 500 -1 482
 GlifName: uniF_B_F_E_.long1
 Width: 738
 VWidth: 2834
@@ -10122,7 +10121,7 @@ Refer: 265 -1 S 1 0 0 1 -14 -400 2
 EndChar
 
 StartChar: uniFBFE.long2
-Encoding: 65646 -1 483
+Encoding: 501 -1 483
 GlifName: uniF_B_F_E_.long2
 Width: 778
 VWidth: 2834
@@ -10137,7 +10136,7 @@ Refer: 265 -1 N 1 0 0 1 26 -400 2
 EndChar
 
 StartChar: uniFBFE.long3
-Encoding: 65647 -1 484
+Encoding: 502 -1 484
 GlifName: uniF_B_F_E_.long3
 Width: 838
 VWidth: 2834
@@ -10152,7 +10151,7 @@ Refer: 265 -1 N 1 0 0 1 86 -400 2
 EndChar
 
 StartChar: uniFBFE.long4
-Encoding: 65648 -1 485
+Encoding: 503 -1 485
 GlifName: uniF_B_F_E_.long4
 Width: 948
 VWidth: 2834
@@ -10167,7 +10166,7 @@ Refer: 300 -1 N 1 0 0 1 334 0 2
 EndChar
 
 StartChar: uniFBFF.long1
-Encoding: 65649 -1 486
+Encoding: 504 -1 486
 GlifName: uniF_B_F_F_.long1
 Width: 813
 VWidth: 2834
@@ -10182,7 +10181,7 @@ Refer: 301 -1 N 1 0 0 1 124 0 2
 EndChar
 
 StartChar: uniFBFF.long2
-Encoding: 65650 -1 487
+Encoding: 505 -1 487
 GlifName: uniF_B_F_F_.long2
 Width: 854
 VWidth: 2834
@@ -10197,7 +10196,7 @@ Refer: 265 -1 N 1 0 0 1 26 -400 2
 EndChar
 
 StartChar: uniFBFF.long3
-Encoding: 65651 -1 488
+Encoding: 506 -1 488
 GlifName: uniF_B_F_F_.long3
 Width: 914
 VWidth: 2834
@@ -10212,7 +10211,7 @@ Refer: 265 -1 N 1 0 0 1 86 -400 2
 EndChar
 
 StartChar: uniFBFF.long4
-Encoding: 65652 -1 489
+Encoding: 507 -1 489
 GlifName: uniF_B_F_F_.long4
 Width: 1023
 VWidth: 2834
@@ -10227,7 +10226,7 @@ Refer: 453 -1 N 1.06 0 0 1 -0.7393 0 2
 EndChar
 
 StartChar: uniFB58.long1
-Encoding: 65653 -1 490
+Encoding: 508 -1 490
 GlifName: uniF_B_58.long1
 Width: 738
 VWidth: 3094
@@ -10242,7 +10241,7 @@ Refer: 267 -1 S 1 0 0 1 -16 -395 2
 EndChar
 
 StartChar: uniFB58.long2
-Encoding: 65654 -1 491
+Encoding: 509 -1 491
 GlifName: uniF_B_58.long2
 Width: 778
 VWidth: 3094
@@ -10257,7 +10256,7 @@ Refer: 267 -1 S 1 0 0 1 24 -395 2
 EndChar
 
 StartChar: uniFB58.long3
-Encoding: 65655 -1 492
+Encoding: 510 -1 492
 GlifName: uniF_B_58.long3
 Width: 838
 VWidth: 3094
@@ -10272,7 +10271,7 @@ Refer: 267 -1 N 1 0 0 1 84 -395 2
 EndChar
 
 StartChar: uniFB58.long4
-Encoding: 65656 -1 493
+Encoding: 511 -1 493
 GlifName: uniF_B_58.long4
 Width: 948
 VWidth: 3094
@@ -10287,7 +10286,7 @@ Refer: 267 -1 S 1 0 0 1 194 -395 2
 EndChar
 
 StartChar: uniFB59.long1
-Encoding: 65657 -1 494
+Encoding: 512 -1 494
 GlifName: uniF_B_59.long1
 Width: 813
 VWidth: 2834
@@ -10302,7 +10301,7 @@ Refer: 301 -1 N 1 0 0 1 124 0 2
 EndChar
 
 StartChar: uniFB59.long2
-Encoding: 65658 -1 495
+Encoding: 513 -1 495
 GlifName: uniF_B_59.long2
 Width: 854
 VWidth: 2834
@@ -10317,7 +10316,7 @@ Refer: 267 -1 N 1 0 0 1 24 -395 2
 EndChar
 
 StartChar: uniFB59.long3
-Encoding: 65659 -1 496
+Encoding: 514 -1 496
 GlifName: uniF_B_59.long3
 Width: 914
 VWidth: 2834
@@ -10332,7 +10331,7 @@ Refer: 267 -1 N 1 0 0 1 84 -395 2
 EndChar
 
 StartChar: uniFB59.long4
-Encoding: 65660 -1 497
+Encoding: 515 -1 497
 GlifName: uniF_B_59.long4
 Width: 1023
 VWidth: 2834
@@ -10347,7 +10346,7 @@ Refer: 301 -1 N 1 0 0 1 333 0 2
 EndChar
 
 StartChar: uni06CE.init.long1
-Encoding: 65661 -1 498
+Encoding: 516 -1 498
 GlifName: uni06C_E_.init.long1
 Width: 738
 VWidth: 2834
@@ -10361,7 +10360,7 @@ Refer: 58 1626 S 1 0 0 1 -143 -480 2
 EndChar
 
 StartChar: uni06CE.init.long2
-Encoding: 65662 -1 499
+Encoding: 517 -1 499
 GlifName: uni06C_E_.init.long2
 Width: 778
 VWidth: 2834
@@ -10375,7 +10374,7 @@ Refer: 58 1626 S 1 0 0 1 -103 -480 2
 EndChar
 
 StartChar: uni06CE.init.long3
-Encoding: 65663 -1 500
+Encoding: 518 -1 500
 GlifName: uni06C_E_.init.long3
 Width: 838
 VWidth: 2834
@@ -10389,7 +10388,7 @@ Refer: 58 1626 S 1 0 0 1 -43 -480 2
 EndChar
 
 StartChar: uni06CE.init.long4
-Encoding: 65664 -1 501
+Encoding: 519 -1 501
 GlifName: uni06C_E_.init.long4
 Width: 948
 VWidth: 2834
@@ -10403,7 +10402,7 @@ Refer: 58 1626 S 1 0 0 1 67 -480 2
 EndChar
 
 StartChar: uni06CE.medi.long1
-Encoding: 65665 -1 502
+Encoding: 520 -1 502
 GlifName: uni06C_E_.medi.long1
 Width: 813
 VWidth: 2834
@@ -10417,7 +10416,7 @@ Refer: 58 1626 S 1 0 0 1 -85 -594 2
 EndChar
 
 StartChar: uni06CE.medi.long2
-Encoding: 65666 -1 503
+Encoding: 521 -1 503
 GlifName: uni06C_E_.medi.long2
 Width: 854
 VWidth: 2834
@@ -10431,7 +10430,7 @@ Refer: 58 1626 S 1 0 0 1 -45 -594 2
 EndChar
 
 StartChar: uni06CE.medi.long3
-Encoding: 65667 -1 504
+Encoding: 522 -1 504
 GlifName: uni06C_E_.medi.long3
 Width: 914
 VWidth: 2834
@@ -10445,7 +10444,7 @@ Refer: 58 1626 S 1 0 0 1 15 -594 2
 EndChar
 
 StartChar: uni06CE.medi.long4
-Encoding: 65668 -1 505
+Encoding: 523 -1 505
 GlifName: uni06C_E_.medi.long4
 Width: 1023
 VWidth: 2834
@@ -10459,7 +10458,7 @@ Refer: 489 -1 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni063D.init.long1
-Encoding: 65669 -1 506
+Encoding: 524 -1 506
 GlifName: uni063D_.init.long1
 Width: 738
 VWidth: 2834
@@ -10473,7 +10472,7 @@ Refer: 452 1627 S 1 0 0 1 -156 -471 2
 EndChar
 
 StartChar: uni063D.init.long2
-Encoding: 65670 -1 507
+Encoding: 525 -1 507
 GlifName: uni063D_.init.long2
 Width: 778
 VWidth: 2834
@@ -10487,7 +10486,7 @@ Refer: 452 1627 S 1 0 0 1 -116 -471 2
 EndChar
 
 StartChar: uni063D.init.long3
-Encoding: 65671 -1 508
+Encoding: 526 -1 508
 GlifName: uni063D_.init.long3
 Width: 838
 VWidth: 2834
@@ -10501,7 +10500,7 @@ Refer: 452 1627 S 1 0 0 1 -56 -471 2
 EndChar
 
 StartChar: uni063D.init.long4
-Encoding: 65672 -1 509
+Encoding: 527 -1 509
 GlifName: uni063D_.init.long4
 Width: 948
 VWidth: 2834
@@ -10515,7 +10514,7 @@ Refer: 452 1627 S 1 0 0 1 54 -471 2
 EndChar
 
 StartChar: uni063D.medi.long1
-Encoding: 65673 -1 510
+Encoding: 528 -1 510
 GlifName: uni063D_.medi.long1
 Width: 813
 VWidth: 2834
@@ -10529,7 +10528,7 @@ Refer: 452 1627 S 1 0 0 1 -156 -550 2
 EndChar
 
 StartChar: uni063D.medi.long2
-Encoding: 65674 -1 511
+Encoding: 529 -1 511
 GlifName: uni063D_.medi.long2
 Width: 854
 VWidth: 2834
@@ -10543,7 +10542,7 @@ Refer: 452 1627 S 1 0 0 1 -126 -550 2
 EndChar
 
 StartChar: uni063D.medi.long3
-Encoding: 65675 -1 512
+Encoding: 530 -1 512
 GlifName: uni063D_.medi.long3
 Width: 914
 VWidth: 2834
@@ -10557,7 +10556,7 @@ Refer: 452 1627 S 1 0 0 1 -66 -550 2
 EndChar
 
 StartChar: uni063D.medi.long4
-Encoding: 65676 -1 513
+Encoding: 531 -1 513
 GlifName: uni063D_.medi.long4
 Width: 1023
 VWidth: 2834
@@ -10571,7 +10570,7 @@ Refer: 452 1627 N 1 0 0 1 44 -550 2
 EndChar
 
 StartChar: uniFEF3.long1
-Encoding: 65677 -1 514
+Encoding: 532 -1 514
 GlifName: uniF_E_F_3.long1
 Width: 738
 VWidth: 2834
@@ -10584,7 +10583,7 @@ Refer: 482 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF3.long2
-Encoding: 65678 -1 515
+Encoding: 533 -1 515
 GlifName: uniF_E_F_3.long2
 Width: 778
 VWidth: 2834
@@ -10597,7 +10596,7 @@ Refer: 483 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF3.long3
-Encoding: 65679 -1 516
+Encoding: 534 -1 516
 GlifName: uniF_E_F_3.long3
 Width: 838
 VWidth: 2834
@@ -10610,7 +10609,7 @@ Refer: 484 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF3.long4
-Encoding: 65680 -1 517
+Encoding: 535 -1 517
 GlifName: uniF_E_F_3.long4
 Width: 948
 VWidth: 2834
@@ -10623,7 +10622,7 @@ Refer: 485 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF4.long1
-Encoding: 65681 -1 518
+Encoding: 536 -1 518
 GlifName: uniF_E_F_4.long1
 Width: 813
 VWidth: 2834
@@ -10636,7 +10635,7 @@ Refer: 486 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF4.long2
-Encoding: 65682 -1 519
+Encoding: 537 -1 519
 GlifName: uniF_E_F_4.long2
 Width: 854
 VWidth: 2834
@@ -10649,7 +10648,7 @@ Refer: 487 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF4.long3
-Encoding: 65683 -1 520
+Encoding: 538 -1 520
 GlifName: uniF_E_F_4.long3
 Width: 914
 VWidth: 2834
@@ -10662,7 +10661,7 @@ Refer: 488 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFEF4.long4
-Encoding: 65684 -1 521
+Encoding: 539 -1 521
 GlifName: uniF_E_F_4.long4
 Width: 1023
 VWidth: 2834
@@ -10675,7 +10674,7 @@ Refer: 489 -1 S 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFE91.long1
-Encoding: 65685 -1 522
+Encoding: 540 -1 522
 GlifName: uniF_E_91.long1
 Width: 674
 VWidth: 2834
@@ -10692,7 +10691,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-50 dv=0
 EndChar
 
 StartChar: uniFE91.long2
-Encoding: 65686 -1 523
+Encoding: 541 -1 523
 GlifName: uniF_E_91.long2
 Width: 824
 VWidth: 2834
@@ -10709,7 +10708,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-50 dv=0
 EndChar
 
 StartChar: uniFE92.long1
-Encoding: 65687 -1 524
+Encoding: 542 -1 524
 GlifName: uniF_E_92.long1
 Width: 750
 VWidth: 2834
@@ -10724,7 +10723,7 @@ Refer: 264 -1 S 1 0 0 1 129 -400 2
 EndChar
 
 StartChar: uniFE92.long2
-Encoding: 65688 -1 525
+Encoding: 543 -1 525
 GlifName: uniF_E_92.long2
 Width: 900
 VWidth: 2834
@@ -10739,7 +10738,7 @@ Refer: 264 -1 S 1 0 0 1 279 -400 2
 EndChar
 
 StartChar: uniFE97.long
-Encoding: 65689 -1 526
+Encoding: 544 -1 526
 GlifName: uniF_E_97.long
 Width: 708
 VWidth: 2834
@@ -10756,7 +10755,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-50 dv=0
 EndChar
 
 StartChar: uniFE98.long
-Encoding: 65690 -1 527
+Encoding: 545 -1 527
 GlifName: uniF_E_98.long
 Width: 783
 VWidth: 2834
@@ -10771,7 +10770,7 @@ Refer: 301 -1 N 1 0 0 1 94 0 2
 EndChar
 
 StartChar: uniFE9B.long
-Encoding: 65691 -1 528
+Encoding: 546 -1 528
 GlifName: uniF_E_9B_.long
 Width: 708
 VWidth: 2834
@@ -10788,7 +10787,7 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-140 dv=0
 EndChar
 
 StartChar: uniFE9C.long
-Encoding: 65692 -1 529
+Encoding: 547 -1 529
 GlifName: uniF_E_9C_.long
 Width: 783
 VWidth: 2834
@@ -10803,7 +10802,7 @@ Refer: 453 -1 N 0.35 0 0 1 -14 0 2
 EndChar
 
 StartChar: uniFEE3.long
-Encoding: 65693 -1 530
+Encoding: 548 -1 530
 GlifName: uniF_E_E_3.long
 Width: 1162
 VWidth: 3091
@@ -10819,7 +10818,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uniFEE4.long
-Encoding: 65694 -1 531
+Encoding: 549 -1 531
 GlifName: uniF_E_E_4.long
 Width: 1194
 VWidth: 3091
@@ -10833,7 +10832,7 @@ Refer: 239 65252 N 1 0 0 1 40 0 2
 EndChar
 
 StartChar: uniFEEC.long
-Encoding: 65695 -1 532
+Encoding: 550 -1 532
 GlifName: uniF_E_E_C_.long
 Width: 1100
 VWidth: 3091
@@ -10847,7 +10846,7 @@ Refer: 247 65260 N 1 0 0 1 80 0 2
 EndChar
 
 StartChar: uni06BC.init.long
-Encoding: 65696 -1 533
+Encoding: 551 -1 533
 GlifName: uni06B_C_.init.long
 Width: 734
 VWidth: 2834
@@ -10862,7 +10861,7 @@ Refer: 242 65255 N 1 0 0 1 120 0 2
 EndChar
 
 StartChar: uni06BC.medi.long
-Encoding: 65697 -1 534
+Encoding: 552 -1 534
 GlifName: uni06B_C_.medi.long
 Width: 820
 VWidth: 2834
@@ -10877,7 +10876,7 @@ Refer: 243 65256 N 1 0 0 1 120 0 2
 EndChar
 
 StartChar: uni067C.init.long
-Encoding: 65698 -1 535
+Encoding: 553 -1 535
 GlifName: uni067C_.init.long
 Width: 732
 VWidth: 2834
@@ -10893,7 +10892,7 @@ Refer: 265 -1 S 1 0 0 1 71 1039 2
 EndChar
 
 StartChar: uni067C.medi.long
-Encoding: 65699 -1 536
+Encoding: 554 -1 536
 GlifName: uni067C_.medi.long
 Width: 808
 VWidth: 2834
@@ -10909,7 +10908,7 @@ Refer: 265 -1 S 1 0 0 1 72 952 2
 EndChar
 
 StartChar: uni06D0.init.long
-Encoding: 65700 -1 537
+Encoding: 555 -1 537
 GlifName: uni06D_0.init.long
 Width: 798
 VWidth: 2834
@@ -10924,7 +10923,7 @@ Refer: 345 -1 N 1 0 0 1 98 -533 2
 EndChar
 
 StartChar: uni06D0.medi.long
-Encoding: 65701 -1 538
+Encoding: 556 -1 538
 GlifName: uni06D_0.medi.long
 Width: 874
 VWidth: 2834
@@ -10939,7 +10938,7 @@ Refer: 345 -1 N 1 0 0 1 98 -533 2
 EndChar
 
 StartChar: parenleft
-Encoding: 40 40 539
+Encoding: 2 40 539
 GlifName: parenleft
 Width: 730
 Flags: HW
@@ -10960,7 +10959,7 @@ Position2: "Single Positioning lookup 6 subtable" dx=0 dy=0 dh=160 dv=0
 EndChar
 
 StartChar: parenright
-Encoding: 41 41 540
+Encoding: 3 41 540
 GlifName: parenright
 Width: 730
 Flags: HW
@@ -10979,7 +10978,7 @@ Validated: 1
 EndChar
 
 StartChar: bracketleft
-Encoding: 91 91 541
+Encoding: 10 91 541
 GlifName: bracketleft
 Width: 577
 Flags: HW
@@ -11002,7 +11001,7 @@ Position2: "Single Positioning lookup 6 subtable" dx=0 dy=0 dh=160 dv=0
 EndChar
 
 StartChar: bracketright
-Encoding: 93 93 542
+Encoding: 11 93 542
 GlifName: bracketright
 Width: 577
 Flags: HW
@@ -11023,7 +11022,7 @@ Validated: 1
 EndChar
 
 StartChar: slash
-Encoding: 47 47 543
+Encoding: 7 47 543
 GlifName: slash
 Width: 719
 Flags: HW
@@ -11041,7 +11040,7 @@ Position2: "Single Positioning lookup 6 subtable" dx=0 dy=0 dh=180 dv=0
 EndChar
 
 StartChar: NameMe.65703
-Encoding: 65703 -1 544
+Encoding: 557 -1 544
 GlifName: N_ameM_e.65703
 Width: 556
 VWidth: 2834
@@ -11058,7 +11057,7 @@ EndSplineSet
 EndChar
 
 StartChar: equal
-Encoding: 61 61 545
+Encoding: 9 61 545
 GlifName: equal
 Width: 1164
 Flags: HW
@@ -11079,7 +11078,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFB6A
-Encoding: 64362 64362 546
+Encoding: 189 64362 546
 GlifName: uniF_B_6A_
 Width: 1836
 VWidth: 2147
@@ -11092,7 +11091,7 @@ Refer: 303 1700 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni2215
-Encoding: 8725 8725 547
+Encoding: 177 8725 547
 Width: 719
 Flags: HW
 LayerCount: 2
@@ -11101,7 +11100,7 @@ Refer: 543 47 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: arabic_dot_r
-Encoding: 65704 -1 548
+Encoding: 558 -1 548
 Width: 197
 VWidth: 2812
 Flags: HW
@@ -11117,7 +11116,7 @@ EndSplineSet
 EndChar
 
 StartChar: arabic_2dots_r
-Encoding: 65705 -1 549
+Encoding: 559 -1 549
 Width: 517
 VWidth: 2812
 Flags: HW
@@ -11138,7 +11137,7 @@ EndSplineSet
 EndChar
 
 StartChar: arabic_3dots_r
-Encoding: 65706 -1 550
+Encoding: 560 -1 550
 Width: 528
 VWidth: 2805
 Flags: HW
@@ -11164,7 +11163,7 @@ EndSplineSet
 EndChar
 
 StartChar: arabic_3dots_a_r
-Encoding: 65707 -1 551
+Encoding: 561 -1 551
 Width: 528
 VWidth: 2820
 Flags: HW
@@ -11190,7 +11189,7 @@ EndSplineSet
 EndChar
 
 StartChar: uni06D0.dots_r
-Encoding: 65708 -1 552
+Encoding: 562 -1 552
 Width: 528
 VWidth: 2809
 Flags: HW
@@ -11211,7 +11210,7 @@ EndSplineSet
 EndChar
 
 StartChar: endash
-Encoding: 8211 8211 553
+Encoding: 167 8211 553
 Width: 1345
 Flags: HW
 LayerCount: 2
@@ -11226,7 +11225,7 @@ EndSplineSet
 EndChar
 
 StartChar: emdash
-Encoding: 8212 8212 554
+Encoding: 168 8212 554
 Width: 1600
 Flags: HW
 LayerCount: 2
@@ -11241,7 +11240,7 @@ EndSplineSet
 EndChar
 
 StartChar: uniFBDB
-Encoding: 64475 64475 555
+Encoding: 235 64475 555
 Width: 970
 VWidth: 2242
 Flags: HW
@@ -11253,7 +11252,7 @@ Refer: 557 1736 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uniFBDC
-Encoding: 64476 64476 556
+Encoding: 236 64476 556
 Width: 932
 VWidth: 2245
 Flags: HW
@@ -11266,7 +11265,7 @@ Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06C8
-Encoding: 1736 1736 557
+Encoding: 132 1736 557
 Width: 970
 VWidth: 2242
 Flags: HW
@@ -11280,7 +11279,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uniFBDC
 EndChar
 
 StartChar: uni06A0
-Encoding: 1696 1696 558
+Encoding: 112 1696 558
 Width: 1327
 VWidth: 3091
 Flags: HW
@@ -11297,7 +11296,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06A0.fina
 EndChar
 
 StartChar: uni06BD
-Encoding: 1725 1725 559
+Encoding: 124 1725 559
 Width: 1445
 VWidth: 3091
 Flags: HW
@@ -11313,7 +11312,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06BD.fina
 EndChar
 
 StartChar: uni06CF
-Encoding: 1743 1743 560
+Encoding: 139 1743 560
 Width: 970
 VWidth: 2242
 Flags: HW
@@ -11327,7 +11326,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06CF.fina
 EndChar
 
 StartChar: uni0762
-Encoding: 1890 1890 561
+Encoding: 159 1890 561
 Width: 1853
 VWidth: 3091
 Flags: HW
@@ -11345,7 +11344,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni0762.fina
 EndChar
 
 StartChar: uni06A0.fina
-Encoding: 65709 -1 562
+Encoding: 563 -1 562
 Width: 1261
 VWidth: 3091
 Flags: HW
@@ -11358,7 +11357,7 @@ Refer: 213 65226 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06A0.init
-Encoding: 65710 -1 563
+Encoding: 564 -1 563
 Width: 1098
 VWidth: 3091
 Flags: HW
@@ -11373,7 +11372,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-80 dv=0
 EndChar
 
 StartChar: uni06A0.medi
-Encoding: 65711 -1 564
+Encoding: 565 -1 564
 Width: 1172
 VWidth: 3091
 Flags: HW
@@ -11386,7 +11385,7 @@ Refer: 215 65228 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06BD.fina
-Encoding: 65712 -1 565
+Encoding: 566 -1 565
 Width: 1508
 VWidth: 3091
 Flags: HW
@@ -11399,7 +11398,7 @@ Refer: 115 64415 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06CF.fina
-Encoding: 65713 -1 566
+Encoding: 567 -1 566
 Width: 932
 VWidth: 2242
 Flags: HW
@@ -11412,7 +11411,7 @@ Refer: 264 -1 S 1 0 0 1 363 1035 2
 EndChar
 
 StartChar: uni0762.fina
-Encoding: 65714 -1 567
+Encoding: 568 -1 567
 Width: 1959
 VWidth: 3091
 Flags: HW
@@ -11425,7 +11424,7 @@ Refer: 107 64399 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni0762.init
-Encoding: 65715 -1 568
+Encoding: 569 -1 568
 Width: 939
 VWidth: 3151
 Flags: HW
@@ -11440,7 +11439,7 @@ Position2: "Single Positioning lookup 1 subtable" dx=0 dy=0 dh=-150 dv=0
 EndChar
 
 StartChar: uni0762.medi
-Encoding: 65716 -1 569
+Encoding: 570 -1 569
 Width: 1046
 VWidth: 3091
 Flags: HW
@@ -11453,7 +11452,7 @@ Refer: 231 65244 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06AC
-Encoding: 1708 1708 570
+Encoding: 118 1708 570
 Width: 1875
 VWidth: 3094
 Flags: HW
@@ -11470,7 +11469,7 @@ Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06AC.fina
 EndChar
 
 StartChar: uni06AC.fina
-Encoding: 65717 -1 571
+Encoding: 571 -1 571
 Width: 1893
 VWidth: 3094
 Flags: HW
@@ -11483,7 +11482,7 @@ Refer: 229 65242 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06AC.init
-Encoding: 65718 -1 572
+Encoding: 572 -1 572
 Width: 939
 VWidth: 3151
 Flags: HW
@@ -11497,7 +11496,7 @@ Position2: "Single Positioning lookup 2 subtable" dx=0 dy=0 dh=-190 dv=0
 EndChar
 
 StartChar: uni06AC.medi
-Encoding: 65719 -1 573
+Encoding: 573 -1 573
 Width: 1046
 VWidth: 3091
 Flags: HW
