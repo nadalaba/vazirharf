@@ -2,6 +2,7 @@
 #
 # makefont - Font Builder for vazirharf-font (github)
 # Written in 2015-2022 by Saber Rasetikerdar <saber.rastikerdar@gmail.com>
+# Modified in 2025 by Nad Alaba <alaba.nadim@gmail.com>
 # Works only on Linux.
 #
 # Requirements:
