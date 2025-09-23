@@ -11,7 +11,7 @@ rd-fonts:
 zip:
 	@./scripts/make-package.sh
 
-all: 
+all:
 	make fonts
 	make rd-fonts
 	make zip
