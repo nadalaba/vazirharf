@@ -3,7 +3,7 @@
   "version": "34.0.0",
   "author": "Nad Alaba <alaba.nadim@gmail.com>",
   "license": "OFL",
-  "description": "Vazirharf is a fork of Vazirmatn font using contextual alternates for Lam-Alef instead of ligatures.",
+  "description": "Vazirharf is a Persian/Arabic font fork of Vazirmatn that replaces Lam-Alef ligatures with contextual alternates.",
   "keywords": [
     "font",
     "farsi",
