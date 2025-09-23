@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1758658877
+ModificationTime: 1758659712
 PfmFamily: 33
 TTFWeight: 100
 TTFWidth: 5
@@ -212,7 +212,7 @@ ChainSub2: coverage "'calt' Contextual Alternates lookup 7 subtable 1" 0 0 0 1
  1
   SeqLookup: 0 "Single Substitution 0"
 EndFPST
-LangName: 1033 "" "" "" "" "" "Version 34.000" "" "" "Nad Alaba" "Saber Rastikerdar" "The first version of Vazirmatn (formerly named Vazir) was based on DejaVu 2.35 (was committed to the public domain) to begin designing and developing this new typeface. Non-Arabic (Latin) glyphs and data in the full version are imported from Roboto Variable font (version v3.004) under the Apache License, Version 2.0. https://github.com/davelab6/Roboto-Classic" "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "https://scripts.sil.org/OFL" "" "Vazirharf" "Thin"
+LangName: 1033 "" "" "" "" "" "Version 34.000" "" "" "Nad Alaba" "Saber Rastikerdar" "Vazirharf is a fork of Vazirmatn designed to split Lam-Alef required ligatures into two distinct glyphs. The first version of Vazirmatn (formerly named Vazir) was based on DejaVu 2.35 (was committed to the public domain) to begin designing and developing this new typeface. Non-Arabic (Latin) glyphs and data in the full version are imported from Roboto Variable font (version v3.004) under the Apache License, Version 2.0. https://github.com/davelab6/Roboto-Classic." "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "https://scripts.sil.org/OFL" "" "Vazirharf" "Thin"
 GaspTable: 1 65535 15 1
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
