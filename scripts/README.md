@@ -1,6 +1,6 @@
-# Vazirmatn Font Builder
+# Vazirharf Font Builder
 
-The script tool for building files for [vazirmatn](https://github.com/rastikerdar/vazirmatn). By default this tool clones the repository of Roboto-Classic Variable font into the folder `latin` and then merge it into Vazirmatn. However, You can use the `--no-latin` option to skip this step.
+The script tool for building files for [vazirharf](https://github.com/nadalaba/vazirharf). By default this tool clones the repository of Roboto-Classic Variable font into the folder `latin` and then merge it into Vazirharf. However, You can use the `--no-latin` option to skip this step.
 
 ## Requirements
 
@@ -25,8 +25,8 @@ $ sudo apt install fontforge python3-fontforge fontmake fonttools gftools zip se
 Next:
 
 ```
-$ git clone https://github.com/rastikerdar/vazirmatn.git
-$ cd vazirmatn/
+$ git clone https://github.com/nadalaba/vazirharf.git
+$ cd vazirharf/
 $ make all
 ```
 
@@ -43,7 +43,7 @@ Options for `make-fonts.sh`:
 
 ```
 --repo-dir=    # default is current directory
---temp-dir=     # default is "/tmp/vazirmatn-font-output-temp"
+--temp-dir=     # default is "/tmp/vazirharf-font-output-temp"
 --output-dir=  # default is current directory
 --rd-font
 --only-ttf

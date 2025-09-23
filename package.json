@@ -1,9 +1,9 @@
 {
-  "name": "vazirmatn",
-  "version": "33.0.3",
-  "author": "Saber Rastikerdar <saber.rastikerdar@gmail.com>",
+  "name": "vazirharf",
+  "version": "34.0.0",
+  "author": "Nad Alaba <saber.rastikerdar@gmail.com>",
   "license": "OFL",
-  "description": "Vazirmatn is a Persian/Arabic font. وزیرمتن یک فونت فارسی/عربی است",
+  "description": "Vazirharf is a fork of Vazirmatn font using contextual alternates for Lam-Alef instead of ligatures.",
   "keywords": [
     "font",
     "farsi",
@@ -15,19 +15,19 @@
     "fonts",
     "misc",
     "Round-Dots",
-    "Vazirmatn-font-face.css",
-    "Vazirmatn-Variable-font-face.css",
+    "Vazirharf-font-face.css",
+    "Vazirharf-Variable-font-face.css",
     "README.md",
     "OFL.txt",
     "AUTHORS.txt"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rastikerdar/vazirmatn"
+    "url": "git+https://github.com/nadalaba/vazirharf"
   },
   "bugs": {
-    "url": "https://github.com/rastikerdar/vazirmatn/issues"
+    "url": "https://github.com/nadalaba/vazirharf/issues"
   },
-  "homepage": "https://github.com/rastikerdar/vazirmatn#readme",
+  "homepage": "https://github.com/nadalaba/vazirharf#readme",
   "dependencies": {}
 }
