@@ -1,0 +1,5 @@
+Please visit the project website to view the documentation pages:
+https://NadAlaba.github.io/vazirharf/
+
+Project repository:
+https://github.com/NadAlaba/vazirharf
