@@ -27,67 +27,67 @@
     </axis>
   </axes>
   <sources>
-    <source familyname="Vazirmatn" name="Vazirmatn-Thin" stylename="Vazirmatn-Thin" filename="Vazirmatn-Thin.ufo">
+    <source familyname="Vazirharf RD" name="Vazirharf-RD-Thin" stylename="Vazirharf-RD-Thin" filename="Vazirharf-RD-Thin.ufo">
       <location>
         <dimension name="weight" xvalue="-1" />
       </location>
     </source>
-    <source familyname="Vazirmatn" name="Vazirmatn" stylename="Vazirmatn-Regular" filename="Vazirmatn-Regular.ufo">
+    <source familyname="Vazirharf RD" name="Vazirharf RD" stylename="Vazirharf-RD-Regular" filename="Vazirharf-RD-Regular.ufo">
       <info copy="1"/>
       <location>
         <dimension name="weight" xvalue="-0.100000" />
       </location>
     </source>
-    <source familyname="Vazirmatn" name="Vazirmatn-Black" stylename="Vazirmatn-Black" filename="Vazirmatn-Black.ufo">
+    <source familyname="Vazirharf RD" name="Vazirharf-RD-Black" stylename="Vazirharf-RD-Black" filename="Vazirharf-RD-Black.ufo">
       <location>
         <dimension name="weight" xvalue="1.125000" />
       </location>
     </source>
   </sources>
   <instances>
-    <instance familyname="Vazirmatn" name="Vazirmatn-Thin.ufo" stylename="Thin" filename="instances/Vazirmatn-Thin.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-Thin.ufo" stylename="Thin" filename="instances/Vazirharf-RD-Thin.ufo">
       <location>
         <dimension name="weight" xvalue="-1" />
       </location>
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-ExtraLight.ufo" stylename="ExtraLight" filename="instances/Vazirmatn-ExtraLight.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-ExtraLight.ufo" stylename="ExtraLight" filename="instances/Vazirharf-RD-ExtraLight.ufo">
       <location>
         <dimension name="weight" xvalue="-0.550000" />
       </location>
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-Light.ufo" stylename="Light" filename="instances/Vazirmatn-Light.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-Light.ufo" stylename="Light" filename="instances/Vazirharf-RD-Light.ufo">
       <location>
         <dimension name="weight" xvalue="-0.325000" />
       </location>
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-Regular.ufo" stylename="Regular" filename="instances/Vazirmatn-Regular.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-Regular.ufo" stylename="Regular" filename="instances/Vazirharf-RD-Regular.ufo">
       <location>
         <dimension name="weight" xvalue="-0.100000" />
       </location>
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-Medium.ufo" stylename="Medium" filename="instances/Vazirmatn-Medium.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-Medium.ufo" stylename="Medium" filename="instances/Vazirharf-RD-Medium.ufo">
       <location>
         <dimension name="weight" xvalue="0.350000" />
       </location>
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-SemiBold.ufo" stylename="SemiBold" filename="instances/Vazirmatn-SemiBold.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-SemiBold.ufo" stylename="SemiBold" filename="instances/Vazirharf-RD-SemiBold.ufo">
       <location>
         <dimension name="weight" xvalue="0.540000" />
       </location>
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-Bold.ufo" stylename="Bold" filename="instances/Vazirmatn-Bold.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-Bold.ufo" stylename="Bold" filename="instances/Vazirharf-RD-Bold.ufo">
       <location>
         <dimension name="weight" xvalue="0.730000" />
       </location>
@@ -95,7 +95,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-ExtraBold.ufo" stylename="ExtraBold" filename="instances/Vazirmatn-ExtraBold.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-ExtraBold.ufo" stylename="ExtraBold" filename="instances/Vazirharf-RD-ExtraBold.ufo">
       <location>
         <dimension name="weight" xvalue="0.9275" />
       </location>
@@ -103,7 +103,7 @@
       <kerning />
       <info />
     </instance>
-    <instance familyname="Vazirmatn" name="Vazirmatn-Black.ufo" stylename="Black" filename="instances/Vazirmatn-Black.ufo">
+    <instance familyname="Vazirharf RD" name="Vazirharf-RD-Black.ufo" stylename="Black" filename="instances/Vazirharf-RD-Black.ufo">
       <location>
         <dimension name="weight" xvalue="1.125000" />
       </location>

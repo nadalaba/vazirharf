@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# makefont - Font Builder for vazirmatn-font (github)
+# makefont - Font Builder for vazirharf-font (github)
 # Written in 2015-2022 by Saber Rasetikerdar <saber.rastikerdar@gmail.com>
 # Works only on Linux.
 #
@@ -19,7 +19,7 @@
 #     ./makefont.sh [options]
 #         options:
 #         --repo-dir=.
-#         --temp-dir="/tmp/vazirmatn-font-output-temp"
+#         --temp-dir="/tmp/vazirharf-font-output-temp"
 #         --output-dir=.
 #         --rd-font
 #         --only-ttf
@@ -39,16 +39,16 @@
 #    - Unlink transformed references
 # - Check if all anchors in 3 main source files (sources/*.sfd) are the same
 # - Make all ttf instances (9 weights) from 3 masters (Thin, Regular, Black):
-#     - Prepare every single Vazirmatn weight (UFO):
+#     - Prepare every single Vazirharf weight (UFO):
 #         - Generate ttf from Roboto-$weight UFO (all the latin related jobs could be skipped entirely by --no-latin command option)
 #         - Generate feature.fea file from the ttf (removing ss01, tnum, pnum)
-#         - Generate UFO for Vazirmatn-$weight
-#         - Generate a subset lib.plist for Vazirmatn UFO file by merging Roboto subset and Vazir subset
-#         - Merge Roboto's feature.fea into Vazirmatn's feature.fea
-#         - Merge all glyph files (*.glif) from Roboto UFO into Vazirmatn UFO
+#         - Generate UFO for Vazirharf-$weight
+#         - Generate a subset lib.plist for Vazirharf UFO file by merging Roboto subset and Vazir subset
+#         - Merge Roboto's feature.fea into Vazirharf's feature.fea
+#         - Merge all glyph files (*.glif) from Roboto UFO into Vazirharf UFO
 #         - Merge "ss01" (farsi-digits) and "tnum" (tabular numbers) into the final feature.fea
-#     - Export subset_unicodes.txt by merging subsets of Roboto and Vazirmatn (regular version but will be used for all weights)
-#     - Generate ufo instances/*.ufo from Vazirmatn.designspace
+#     - Export subset_unicodes.txt by merging subsets of Roboto and Vazirharf (regular version but will be used for all weights)
+#     - Generate ufo instances/*.ufo from Vazirharf.designspace
 #     - Fix anchors positions by correcting feature.fea file for each weight (ufo)
 #     - Generate all ttfs from all instances/*.ufo into instance_ttf/*.ttf
 #     - Fixing OS/2.fsSelection bit 7 (USE_TYPO_METRICS) for all ttfs in instance_ttf/*
@@ -86,7 +86,7 @@ STARTTIME=$SECONDS
 SCRIPT_DIR=$(dirname "$0")
 
 REPO_DIR="."
-TEMP_DIR="/tmp/vazirmatn-font-output-temp"
+TEMP_DIR="/tmp/vazirharf-font-output-temp"
 OUTPUT_DIR="."
 RD_FONT=
 ONLY_TTF=
@@ -103,7 +103,7 @@ for i in "$@"; do
         REPO_DIR="${i#*=}"
         ;;
     --temp-dir=*)
-        TEMP_DIR="${i#*=}/vazirmatn-font-output-temp"
+        TEMP_DIR="${i#*=}/vazirharf-font-output-temp"
         ;;
     --output-dir=*)
         OUTPUT_DIR="${i#*=}"
@@ -138,11 +138,11 @@ for i in "$@"; do
     esac
 done
 
-FONT_FAMILY_NAME="Vazirmatn"
-FONT_FILE_NAME="Vazirmatn"
+FONT_FAMILY_NAME="Vazirharf"
+FONT_FILE_NAME="Vazirharf"
 if [ -n "$RD_FONT" ]; then
-    FONT_FAMILY_NAME="Vazirmatn RD"
-    FONT_FILE_NAME="Vazirmatn-RD"
+    FONT_FAMILY_NAME="Vazirharf RD"
+    FONT_FILE_NAME="Vazirharf-RD"
 fi
 
 LATIN_DIR="${REPO_DIR}/latin"
@@ -195,13 +195,13 @@ fi
 
 log "Preparing sfd files"
 if [ -n "$RD_FONT" ]; then
-    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirmatn-Thin.sfd" "${BUILD_DIR}/Vazirmatn-RD-Thin.sfd" || error
-    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirmatn-Regular.sfd" "${BUILD_DIR}/Vazirmatn-RD-Regular.sfd" || error
-    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirmatn-Black.sfd" "${BUILD_DIR}/Vazirmatn-RD-Black.sfd" || error
+    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Thin.sfd" "${BUILD_DIR}/Vazirharf-RD-Thin.sfd" || error
+    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Regular.sfd" "${BUILD_DIR}/Vazirharf-RD-Regular.sfd" || error
+    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Black.sfd" "${BUILD_DIR}/Vazirharf-RD-Black.sfd" || error
 else
-    cp "${SOURCES_DIR}/Vazirmatn-Thin.sfd" "${BUILD_DIR}/" || error
-    cp "${SOURCES_DIR}/Vazirmatn-Regular.sfd" "${BUILD_DIR}/" || error
-    cp "${SOURCES_DIR}/Vazirmatn-Black.sfd" "${BUILD_DIR}/" || error
+    cp "${SOURCES_DIR}/Vazirharf-Thin.sfd" "${BUILD_DIR}/" || error
+    cp "${SOURCES_DIR}/Vazirharf-Regular.sfd" "${BUILD_DIR}/" || error
+    cp "${SOURCES_DIR}/Vazirharf-Black.sfd" "${BUILD_DIR}/" || error
 fi
 
 log "Unlinking transformed references"
@@ -251,7 +251,7 @@ function create_instance() {
     [ -n "${LATIN_DIR}" ] && { cat "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo/features.fea" >>"${BUILD_DIR}/Roboto-$weight-Feature.fea" || error; }
     [ -n "${LATIN_DIR}" ] && { mv "${BUILD_DIR}/Roboto-$weight-Feature.fea" "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo/features.fea" || error; }
 
-    # merging Roboto glyphs into Vazirmatn
+    # merging Roboto glyphs into Vazirharf
     [ -n "${LATIN_DIR}" ] && log "Merging ${LATIN_DIR}/Roboto/sources/Roboto-$weight.ufo/glyphs/ into ${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo/glyphs/"
     [ -n "${LATIN_DIR}" ] && { cp -n "${LATIN_DIR}/Roboto/sources/Roboto-$weight.ufo/glyphs/"*.glif "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo/glyphs/" || error; }
     [ -n "${LATIN_DIR}" ] && { python3 "${SCRIPT_DIR}/merge-glyphs-plist.py" "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo/glyphs/contents.plist" "${LATIN_DIR}/Roboto/sources/Roboto-$weight.ufo/glyphs/contents.plist" "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo/glyphs/contents.plist" || error; }
@@ -272,16 +272,16 @@ create_instance 'Regular'
 create_instance 'Black'
 
 log "Generating ${BUILD_DIR}/subset_unicodes.txt"
-python3 "${SCRIPT_DIR}/export-glyph-unicodes.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/vazirmatn_subset_unicodes.txt" || error
+python3 "${SCRIPT_DIR}/export-glyph-unicodes.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/vazirharf_subset_unicodes.txt" || error
 [ -n "${LATIN_DIR}" ] && { cat "${SCRIPT_DIR}/roboto_subset_unicodes.txt" >>"${BUILD_DIR}/subset_unicodes.txt" || error; }
-cat "${BUILD_DIR}/vazirmatn_subset_unicodes.txt" >>"${BUILD_DIR}/subset_unicodes.txt" || error
+cat "${BUILD_DIR}/vazirharf_subset_unicodes.txt" >>"${BUILD_DIR}/subset_unicodes.txt" || error
 
 cp "${SCRIPT_DIR}/$FONT_FILE_NAME.designspace" "${BUILD_DIR}/" || error
 
 log "Generating ufo instances from ${BUILD_DIR}/$FONT_FILE_NAME.designspace"
 fontmake --round-instances -f --subset -o ufo -m "${BUILD_DIR}/$FONT_FILE_NAME.designspace" -i --output-dir="${BUILD_DIR}/instances" || error
 
-log "Fixing Anchors because fontmake doesn't interpolate anchors in Vazirmatn properly!"
+log "Fixing Anchors because fontmake doesn't interpolate anchors in Vazirharf properly!"
 function fixAnchors() {
     local anchors="Anchor110,Anchor107,Anchor109,Anchor106"
     local main_weight=$1
@@ -365,7 +365,7 @@ if [ -z "$NO_VARIABLE" ]; then
     python3 "${SCRIPT_DIR}/add-stat.py" "${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf" || error
     
     # log "Adding avar table to the variable ttf"
-    # python3 "${SCRIPT_DIR}/add-avar.py" "${BUILD_DIR}/Vazirmatn.designspace" "${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf" || error
+    # python3 "${SCRIPT_DIR}/add-avar.py" "${BUILD_DIR}/Vazirharf.designspace" "${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf" || error
     
     log "Subsetting ${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf into ${BUILD_DIR}/$FONT_FILE_NAME[wght].ttf"
     pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-Variable.ttf" --unicodes-file="${BUILD_DIR}/subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME[wght].ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
@@ -382,7 +382,7 @@ if [ -z "$NO_MISC" ]; then
         log "Generating all variations ttf (FD, NL, UI) for $weight"
 
         # Non-Latin subset
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf" --unicodes-file="${BUILD_DIR}/vazirmatn_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf" --unicodes-file="${BUILD_DIR}/vazirharf_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
         # Non-Latin NL
         python3 "${SCRIPT_DIR}/set-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-subset.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-temp.ttf" "$FONT_FAMILY_NAME NL" "$weight" || error
@@ -438,7 +438,7 @@ if [ -z "$NO_MISC" ]; then
 
     log "Generating Non-Latin variable"
     # Non-Latin variable subset
-    pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME[wght].ttf" --unicodes-file="${BUILD_DIR}/vazirmatn_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-Variable-NL-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+    pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME[wght].ttf" --unicodes-file="${BUILD_DIR}/vazirharf_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-Variable-NL-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
     # Non-Latin NL variable
     python3 "${SCRIPT_DIR}/set-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-Variable-NL-subset.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-NL[wght].ttf" "$FONT_FAMILY_NAME NL" Regular || error
 
