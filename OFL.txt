@@ -1,4 +1,6 @@
 Copyright 2015 The Vazirmatn Project Authors (https://github.com/rastikerdar/vazirmatn)
+Contextual Lam-Alef modifications copyright (c) 2025 Nad Alaba <alaba.nadim@gmail.com> 
+with Reserved Font Name "Vazirharf".
 
 This Font Software is licensed under the SIL Open Font License, Version 1.1.
 This license is copied below, and is also available with a FAQ at:
