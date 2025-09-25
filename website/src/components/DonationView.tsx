@@ -172,7 +172,7 @@ export const DonationView = () => {
       {donations.length > 0 && <DonationList donations={sortedDonations} />}
       <Box mt={1}>
         <a
-          href="https://github.com/rastikerdar/vazirmatn/blob/gh-pages/donations.json"
+          href="https://github.com/NadAlaba/vazirharf/blob/gh-pages/donations.json"
           target="_blank"
         >
           {t("list_source")}

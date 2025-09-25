@@ -16,7 +16,7 @@ declare module "@mui/material/Button" {
 }
 
 const FONT_FAMILY =
-  '"Vazirmatn", "Roboto", "Tahoma", "Helvetica", "Arial", sans-serif';
+  '"Vazirharf", "Roboto", "Tahoma", "Helvetica", "Arial", sans-serif';
 
 const { palette } = createTheme();
 
