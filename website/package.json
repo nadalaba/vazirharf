@@ -1,10 +1,10 @@
 {
-  "name": "vazirmatn-website",
+  "name": "vazirharf-website",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export -o out/vazirmatn",
+    "build": "next build && next export -o out/vazirharf",
     "start": "next start -p 3001",
     "lint": "next lint",
     "post-update": "echo \"codesandbox preview only, need an update\" && yarn upgrade --latest",

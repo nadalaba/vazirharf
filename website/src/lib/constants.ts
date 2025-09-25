@@ -1,9 +1,9 @@
-export const SITE_NAME = "فونت وزیرمتن Vazirmatn";
-export const SITE_BASE_PATH = "https://rastikerdar.github.io/vazirmatn";
+export const SITE_NAME = "فونت وزیرحرف Vazirharf";
+export const SITE_BASE_PATH = "https://nadalaba.github.io/vazirharf";
 export const BASE_PATH =
-  process.env.NEXT_PUBLIC_BASE_PATH === "/" ? "" : "/vazirmatn";
+  process.env.NEXT_PUBLIC_BASE_PATH === "/" ? "" : "/vazirharf";
 export const DOWNLOAD_BASE_URL =
-  "https://github.com/rastikerdar/vazirmatn/releases/download";
+  "https://github.com/nadalaba/vazirharf/releases/download";
 
 export const TAG_NAME = process.env.NEXT_PUBLIC_TAG_NAME
   ? process.env.NEXT_PUBLIC_TAG_NAME
@@ -11,11 +11,11 @@ export const TAG_NAME = process.env.NEXT_PUBLIC_TAG_NAME
   ? process.env.NEXT_PUBLIC_LAST_TAG_NAME
   : "v0.0.0";
 
-export const DOWNLOAD_URL = `${DOWNLOAD_BASE_URL}/${TAG_NAME}/vazirmatn-${TAG_NAME}.zip`;
+export const DOWNLOAD_URL = `${DOWNLOAD_BASE_URL}/${TAG_NAME}/vazirharf-${TAG_NAME}.zip`;
 
-export const VAZIRMATN_CDN_URL = process.env.NEXT_PUBLIC_CDN_URL
+export const VAZIRHARF_CDN_URL = process.env.NEXT_PUBLIC_CDN_URL
   ? process.env.NEXT_PUBLIC_CDN_URL
-  : `https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@${TAG_NAME}`;
+  : `https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@${TAG_NAME}`;
 
-export const VAZIRMATN_CSS_URL = `${VAZIRMATN_CDN_URL}/Vazirmatn-font-face.css`;
-export const VAZIRMATN_RD_CSS_URL = `${VAZIRMATN_CDN_URL}/Round-Dots/Vazirmatn-RD-font-face.css`;
+export const VAZIRHARF_CSS_URL = `${VAZIRHARF_CDN_URL}/Vazirharf-font-face.css`;
+export const VAZIRHARF_RD_CSS_URL = `${VAZIRHARF_CDN_URL}/Round-Dots/Vazirharf-RD-font-face.css`;

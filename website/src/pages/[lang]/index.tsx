@@ -83,7 +83,7 @@ export function IndexLayout() {
                 sx={{ fontWeight: "normal", mt: 1 }}
               >
                 {/* {t("version")} {TAG_NAME} */}
-                {t("version")} v33.003
+                {t("version")} v34.000
               </Typography>
             </Box>
           </Grid>
@@ -122,7 +122,7 @@ export function IndexLayout() {
               {t("lab")}
             </Button>
           </Link>
-          <Link href="https://github.com/rastikerdar/vazirmatn" noLinkStyle>
+          <Link href="https://github.com/nadalaba/vazirharf" noLinkStyle>
             <Button
               variant="outlined"
               color="inherit"
@@ -158,6 +158,10 @@ export function IndexLayout() {
           }}
         >
           {t("other_free_fonts")}:&nbsp;
+          <a href="https://rastikerdar.github.io/vazirmatn/" target="_blank">
+            وزیرمتن
+          </a>
+          ،&nbsp;
           <a href="https://rastikerdar.github.io/sahel-font/" target="_blank">
             ساحل
           </a>
