@@ -48,7 +48,7 @@ export function getLanguages(): string[] {
 }
 
 export function getDefaultLang(): string {
-  return "fa";
+  return "en";
 }
 
 export default i18n;
