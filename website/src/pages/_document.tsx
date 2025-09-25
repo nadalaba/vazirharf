@@ -5,8 +5,8 @@ import createCache from "@emotion/cache";
 import i18n, { getLanguageDirection } from "../i18n";
 import {
   BASE_PATH,
-  VAZIRMATN_CSS_URL,
-  VAZIRMATN_RD_CSS_URL,
+  VAZIRHARF_CSS_URL,
+  VAZIRHARF_RD_CSS_URL,
 } from "../lib/constants";
 
 const emotionCache = createCache({
@@ -23,8 +23,8 @@ export default class MyDocument extends Document {
           {/* <meta name="theme-color" content={theme.palette.primary.main} /> */}
 
           <link rel="shortcut icon" href={`${BASE_PATH}/images/favicon.ico`} />
-          <link rel="stylesheet" href={`${VAZIRMATN_CSS_URL}`} />
-          <link rel="stylesheet" href={`${VAZIRMATN_RD_CSS_URL}`} />
+          <link rel="stylesheet" href={`${VAZIRHARF_CSS_URL}`} />
+          <link rel="stylesheet" href={`${VAZIRHARF_RD_CSS_URL}`} />
           <meta
             name="google-site-verification"
             content="fH67FIc8xNjgi4rXOewEOyoD47R-Lea64zGEwz-L77U"

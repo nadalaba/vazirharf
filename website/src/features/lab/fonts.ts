@@ -1,4 +1,4 @@
-import { VAZIRMATN_CDN_URL } from "../../lib/constants";
+import { VAZIRHARF_CDN_URL } from "../../lib/constants";
 
 export type Font = {
   cssURL: string;
@@ -10,16 +10,23 @@ export type Font = {
 
 export const fonts: Array<Font> = [
   {
-    cssURL: `${VAZIRMATN_CDN_URL}/Vazirmatn-font-face.css`,
-    family: "vazirmatn",
-    cssFamily: "vazirmatn, roboto, sans-serif",
+    cssURL: `${VAZIRHARF_CDN_URL}/Vazirharf-font-face.css`,
+    family: "vazirharf",
+    cssFamily: "vazirharf, roboto, sans-serif",
     isVariable: false,
     isLocal: false,
   },
   {
-    cssURL: `${VAZIRMATN_CDN_URL}/Round-Dots/Vazirmatn-RD-font-face.css`,
-    family: "vazirmatn rd",
-    cssFamily: "vazirmatn rd, roboto, sans-serif",
+    cssURL: `${VAZIRHARF_CDN_URL}/Round-Dots/Vazirharf-RD-font-face.css`,
+    family: "vazirharf rd",
+    cssFamily: "vazirharf rd, roboto, sans-serif",
+    isVariable: false,
+    isLocal: false,
+  },
+  {
+    cssURL: `https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css`,
+    family: "vazirmatn",
+    cssFamily: "vazirmatn, roboto, sans-serif",
     isVariable: false,
     isLocal: false,
   },

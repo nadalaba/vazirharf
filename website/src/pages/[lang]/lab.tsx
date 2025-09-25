@@ -9,7 +9,7 @@ const LabPage = () => {
   return (
     <Layout disableFooter>
       <Head>
-        <title>{t("vazirmatn_font_labratory")}</title>
+        <title>{t("vazirharf_font_labratory")}</title>
       </Head>
       <Lab />
     </Layout>
