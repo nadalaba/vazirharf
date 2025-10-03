@@ -17,37 +17,38 @@ interface NextLinkComposedProps
   href?: NextLinkProps["href"];
 }
 
-export const NextLinkComposed = React.forwardRef<
-  HTMLAnchorElement,
-  NextLinkComposedProps
->(function NextLinkComposed(props, ref) {
-  const {
-    to,
-    linkAs,
-    href,
-    replace,
-    scroll,
-    shallow,
-    prefetch,
-    locale,
-    ...other
-  } = props;
+export const NextLinkComposed = styled(
+  React.forwardRef<HTMLAnchorElement, NextLinkComposedProps>(
+    function NextLinkComposed(props, ref) {
+      const {
+        to,
+        linkAs,
+        href,
+        replace,
+        scroll,
+        shallow,
+        prefetch,
+        locale,
+        ...other
+      } = props;
 
-  return (
-    <NextLink
-      href={to}
-      prefetch={prefetch}
-      as={linkAs}
-      replace={replace}
-      scroll={scroll}
-      shallow={shallow}
-      passHref
-      locale={locale}
-    >
-      <Anchor ref={ref} {...other} />
-    </NextLink>
-  );
-});
+      return (
+        <NextLink
+          href={to}
+          prefetch={prefetch}
+          as={linkAs}
+          replace={replace}
+          scroll={scroll}
+          shallow={shallow}
+          passHref
+          locale={locale}
+          ref={ref}
+          {...other}
+        />
+      );
+    }
+  )
+)({});
 
 export type StyledLinkProps = {
   activeClassName?: string;
