@@ -47,7 +47,7 @@ export function GlyphPanel() {
   };
 
   const handleAllGlyphsClick = () => {
-    let text = createGlyphsText(getGlyphCollection(selectedCollection));
+    const text = createGlyphsText(getGlyphCollection(selectedCollection));
     dispatch(setText(text));
     dispatch(setContentEditable(true));
   };
