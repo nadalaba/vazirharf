@@ -29,6 +29,7 @@ export function IndexLayout() {
       >
         <Grid
           container
+          sx={{ width: '100%' }}
           mt={1}
           mb={4}
           px={2}
@@ -37,7 +38,7 @@ export function IndexLayout() {
           alignItems="center"
           rowGap={2}
         >
-          <Grid item lg={6} md={6} xs={12}>
+          <Grid size={{lg: 6, md: 6, xs:12}}>
             <Box
               my={2}
               sx={{
@@ -57,7 +58,7 @@ export function IndexLayout() {
               </Typography>
             </Box>
           </Grid>
-          <Grid item lg={6} md={6} xs={12}>
+          <Grid size={{lg: 6, md: 6, xs:12}}>
             <Box sx={{ textAlign: "center" }}>
               <Button
                 sx={{
@@ -158,58 +159,58 @@ export function IndexLayout() {
           }}
         >
           {t("other_free_fonts")}:&nbsp;
-          <a href="https://rastikerdar.github.io/vazirmatn/" target="_blank">
+          <a href="https://rastikerdar.github.io/vazirmatn/" target="_blank" rel="noreferrer">
             وزیرمتن
           </a>
           ،&nbsp;
-          <a href="https://rastikerdar.github.io/sahel-font/" target="_blank">
+          <a href="https://rastikerdar.github.io/sahel-font/" target="_blank" rel="noreferrer">
             ساحل
           </a>
           ،&nbsp;
           <a
             href="https://rastikerdar.github.io/parastoo-font/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             پرستو
           </a>
           ،&nbsp;
-          <a href="https://rastikerdar.github.io/samim-font/" target="_blank">
+          <a href="https://rastikerdar.github.io/samim-font/" target="_blank" rel="noreferrer">
             صمیم
           </a>
           ،&nbsp;
-          <a href="https://rastikerdar.github.io/tanha-font/" target="_blank">
+          <a href="https://rastikerdar.github.io/tanha-font/" target="_blank" rel="noreferrer">
             تنها
           </a>
           ،&nbsp;
-          <a href="https://rastikerdar.github.io/gandom-font/" target="_blank">
+          <a href="https://rastikerdar.github.io/gandom-font/" target="_blank" rel="noreferrer">
             گندم
           </a>
           ،&nbsp;
-          <a href="https://rastikerdar.github.io/shabnam-font/" target="_blank">
+          <a href="https://rastikerdar.github.io/shabnam-font/" target="_blank" rel="noreferrer">
             شبنم
           </a>
           ،&nbsp;
-          <a href="https://rastikerdar.github.io/nahid-font/" target="_blank">
+          <a href="https://rastikerdar.github.io/nahid-font/" target="_blank" rel="noreferrer">
             ناهید
           </a>
           ،&nbsp;
           <a
             href="https://rastikerdar.github.io/vazir-code-font/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             وزیرکد
           </a>
           <br />
           {t("from_other_designers")}:&nbsp;
-          <a href="http://libre.font-store.ir/NikaFont/" target="_blank">
+          <a href="http://libre.font-store.ir/NikaFont/" target="_blank" rel="noreferrer">
             نیکا
           </a>
           ،&nbsp;
-          <a href="https://aminabedi68.github.io/Estedad/" target="_blank">
+          <a href="https://aminabedi68.github.io/Estedad/" target="_blank" rel="noreferrer">
             استعداد
           </a>
           ،&nbsp;
-          <a href="https://pfont.github.io/" target="_blank">
+          <a href="https://pfont.github.io/" target="_blank" rel="noreferrer">
             پی‌فونت
           </a>
         </Box>

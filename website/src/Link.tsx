@@ -113,20 +113,23 @@ const StyledLink = React.forwardRef<HTMLAnchorElement, StyledLinkProps>(
         {...other}
       />
     );
-  },
+  }
 );
 
 function pathnameWithoutLang(pathname: string | null | undefined) {
-  if (!pathname || !pathname.startsWith("/")) {
-    return pathname;
+  if (!pathname) {
+    return "/";
+  }
+  if (!pathname.startsWith("/")) {
+    pathname = "/" + pathname;
   }
   const parts = pathname.split("/");
   // if path doesn't have lang
-  if (parts.length > 2 && !getLanguages().includes(parts[1])) {
+  if (!getLanguages().includes(parts[1])) {
     return parts.join("/");
   }
   // remove lang
-  return parts.length > 2 ? parts.slice(2).join("/") : "/";
+  return parts.length > 2 ? `/${parts.slice(2).join("/")}` : "/";
 }
 
 export type LinkProps = {
@@ -137,7 +140,7 @@ export type LinkProps = {
 // https://nextjs.org/docs/api-reference/next/link
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(
   props,
-  ref,
+  ref
 ) {
   const { href, lang, as, ...other } = props;
 
@@ -151,7 +154,7 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(
 
   const localeHref: string = !isExternal
     ? lang
-      ? `/${lang}/${pathnameWithoutLang(pathname)}`
+      ? `/${lang}${pathnameWithoutLang(pathname)}`
       : `/${i18n.language}${pathname}`
     : href;
 
