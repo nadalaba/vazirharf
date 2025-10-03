@@ -2,16 +2,21 @@
 
 For learning Next.js SSG, Multilanguage website, GitHub actions, ...
 
-## Install the dependencies
+## Install `pnpm`
 
 ```shell
-$ yarn 
+npm install -g pnpm
+```
+## Install dependencies
+
+```shell
+pnpm i
 ```
 
 ## Run
 
 ```shell
-$ yarn dev
+pnpm dev
 ```
 
 Open url [http://localhost:3000/vazirharf](http://localhost:3000/vazirharf)

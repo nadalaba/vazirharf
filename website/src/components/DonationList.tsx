@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import { FixedSizeList as List } from "react-window";
+import { List, type RowComponentProps } from "react-window";
 import { useTranslation } from "react-i18next";
 
 import { getLanguageDirection } from "../i18n";
@@ -47,17 +47,15 @@ export const DonationList = (props: Props) => {
       }}
     >
       <List
-        height={listHeight}
-        itemCount={rowCount}
-        itemSize={itemHeight}
-        width={wiewWidth}
-        direction={getLanguageDirection(i18n.language)}
+        rowCount={rowCount}
+        rowHeight={itemHeight}
+        dir={getLanguageDirection(i18n.language)}
+        rowProps={{}}
         overscanCount={4}
-      >
-        {({ index, style }) => {
+        rowComponent={({ index, style }: RowComponentProps) => {
           const items = donations.slice(
             index * itemsPerRow,
-            index * itemsPerRow + itemsPerRow,
+            index * itemsPerRow + itemsPerRow
           );
           return (
             <Box style={style}>
@@ -70,6 +68,7 @@ export const DonationList = (props: Props) => {
               >
                 {items.map((d) => (
                   <div
+                    key={d.name + d.date}
                     style={{
                       width: `${itemWidth}px`,
                       fontSize: "0.7rem",
@@ -104,7 +103,7 @@ export const DonationList = (props: Props) => {
                             ? d.img
                             : `https://s.gravatar.com/avatar/${d.date.replace(
                                 /(\s)|(:)|(\/)/g,
-                                "",
+                                ""
                               )}?noemail&s=50&d=wavatar`
                         }
                         // loading="lazy"
@@ -135,7 +134,7 @@ export const DonationList = (props: Props) => {
             </Box>
           );
         }}
-      </List>
+      />
     </Box>
   );
 };

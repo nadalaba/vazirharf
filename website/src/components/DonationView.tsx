@@ -173,7 +173,7 @@ export const DonationView = () => {
       <Box mt={1}>
         <a
           href="https://github.com/nadalaba/vazirharf/blob/gh-pages/donations.json"
-          target="_blank"
+          target="_blank"  rel="noreferrer"
         >
           {t("list_source")}
         </a>
