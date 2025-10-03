@@ -7,7 +7,7 @@ import { styled, useTheme } from "@mui/material/styles";
 
 import { getDocBySlug, getAllDocs } from "../../../lib/api";
 import Link from "../../../Link";
-import { Doc } from "../../../types";
+import type { Doc } from "../../../types";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import { SITE_NAME } from "../../../lib/constants";
 import { Layout } from "../../../components/Layout";
