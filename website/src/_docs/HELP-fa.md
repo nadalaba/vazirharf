@@ -1,7 +1,9 @@
 ---
 title: 'راهنمای فونت وزیرحرف - پرسش و پاسخ'
 date: '2025-09-23T17:00:57Z'
-author: 'Saber Rastikerdar + Nad Alaba'
+author:
+  - Saber Rastikerdar
+  - Nad Alaba
 ---
 
 ### مجوز استفاده از فونت وزیرحرف چیست؟
@@ -116,6 +118,7 @@ author: 'Saber Rastikerdar + Nad Alaba'
 ```
 
 </div>
+
 ### چگونه در لیبره‌آفیس LibreOffice از امکان ارقام هم‌عرض و یا تمام ارقام فارسی استفاده کنم؟
 
 در لیبره‌آفیس از منوی Format گزینه Character را انتخاب و سپس در برگه Font دکمه Features را انتخاب نمایید. دو گزینه Stylistic Set 1 و Tabular Number برای این منظور می‌باشند.
