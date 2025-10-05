@@ -51,12 +51,11 @@
   "donation": {
     "amount": "Amount",
     "date": "Date",
-    "donations_from": "Donations from 2015 until now",
+    "donations_from": "Donations from 2025 until now",
     "list_source": "Source of this list",
     "order_by": "Order by",
     "other_free_fonts": "Other free fonts",
     "payment_title": "❤️ If you want to donate for the work done:",
-    "toman_payment": "Toman donation",
-    "toman": "Toman"
+    "fetching_donations": "Fetching donations list..."
   }
 }
