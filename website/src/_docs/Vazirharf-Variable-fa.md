@@ -1,7 +1,9 @@
 ---
 title: 'راهنمای فونت وزیرحرف وریبل یا متغیر (Variable)'
 date: '2022-04-18T09:41:38Z'
-author: 'Saber Rastikerdar + Nad Alaba'
+author:
+  - Saber Rastikerdar
+  - Nad Alaba
 ---
 
 ## فونت متغیر چیست؟
