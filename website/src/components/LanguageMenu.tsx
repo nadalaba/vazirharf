@@ -47,7 +47,7 @@ export function LanguageMenu() {
                   color: theme.palette.text.primary,
                 }}
                 href={{ pathname, query }}
-                as={asPath}
+                as={asPath.replace(new RegExp(`-${i18n.language}$`), `-${lang}`)}
                 lang={lang}
                 onClick={() => {
                   popupState.close();

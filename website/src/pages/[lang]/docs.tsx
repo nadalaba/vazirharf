@@ -3,7 +3,7 @@ import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
-import { getAllDocs } from "../../lib/api";
+import { getDocs } from "../../lib/api";
 import { SITE_NAME } from "../../lib/constants";
 import { Doc } from "../../types";
 import Link from "../../Link";
@@ -11,11 +11,11 @@ import { Layout } from "../../components/Layout";
 import { GetStaticProps } from "../../lib/getStatic";
 
 type Props = {
-  allDocs: Doc[];
+  docs: Doc[];
   lang: string;
 };
 
-const Index = ({ allDocs, lang }: Props) => {
+const Index = ({ docs, lang }: Props) => {
   const theme = useTheme();
 
   return (
@@ -42,7 +42,7 @@ const Index = ({ allDocs, lang }: Props) => {
           }}
         >
           <article>
-            {allDocs.map((doc) => (
+            {docs.map((doc) => (
               <div key={doc.slug}>
                 <Typography
                   variant="subtitle1"
@@ -75,9 +75,9 @@ const Index = ({ allDocs, lang }: Props) => {
 export default Index;
 
 export async function getStaticProps({ params }: GetStaticProps) {
-  const allDocs = getAllDocs(["title", "date", "slug", "author", "locale"]);
+  const docs = getDocs(["title", "date", "slug", "author", "locale"], params.lang);
   return {
-    props: { lang: params.lang, allDocs },
+    props: { lang: params.lang, docs },
   };
 }
 
