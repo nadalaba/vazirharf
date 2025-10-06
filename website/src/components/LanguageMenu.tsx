@@ -8,8 +8,10 @@ import i18n, { getLanguages, getLocalCaption } from "../i18n";
 import { useTheme } from "@mui/material/styles";
 import { useRouter } from "next/router";
 import Link from "../Link";
+import { useTranslation } from "react-i18next";
 
 export function LanguageMenu() {
+  const { t } = useTranslation(undefined, {keyPrefix: 'header'});
   const theme = useTheme();
   const router = useRouter();
   const { pathname, query, asPath } = router;
@@ -23,7 +25,7 @@ export function LanguageMenu() {
             variant="text"
             startIcon={<LanguageIcon fontSize="small" />}
             sx={{ color: theme.palette.text.primary, ml: 1 }}
-            title={"Select Language"}
+            title={t("select_language")}
           >
             {getLocalCaption(i18n.language)}
           </Button>
