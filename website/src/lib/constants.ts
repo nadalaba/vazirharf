@@ -1,4 +1,4 @@
-export const SITE_NAME = "فونت وزیرحرف Vazirharf";
+export const SITE_NAME = "وزیرحرف Vazirharf";
 export const SITE_BASE_PATH = "https://NadAlaba.github.io/vazirharf";
 export const BASE_PATH =
   process.env.NEXT_PUBLIC_BASE_PATH === "/" ? "" : "/vazirharf";

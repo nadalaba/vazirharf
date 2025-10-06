@@ -57,5 +57,11 @@
     "other_free_fonts": "Other free fonts",
     "payment_title": "❤️ If you want to donate for the work done:",
     "fetching_donations": "Fetching donations list..."
+  },
+  "docs": {
+    "docs_pages": "Vazirharf Font Docs"
+  },
+  "meta": {
+    "site_description": "Official page of Vazirharf font."
   }
 }

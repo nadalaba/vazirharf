@@ -4,11 +4,11 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 
 import { getDocs } from "../../lib/api";
-import { SITE_NAME } from "../../lib/constants";
 import { Doc } from "../../types";
 import Link from "../../Link";
 import { Layout } from "../../components/Layout";
 import { GetStaticProps } from "../../lib/getStatic";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   docs: Doc[];
@@ -16,12 +16,13 @@ type Props = {
 };
 
 const Index = ({ docs, lang }: Props) => {
+  const { t } = useTranslation(undefined, { keyPrefix: "docs" });
   const theme = useTheme();
 
   return (
     <Layout>
       <Head>
-        <title>صفحات راهنما | {SITE_NAME}</title>
+        <title>{t("docs_pages")}</title>
       </Head>
       <Box
         sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
