@@ -4,7 +4,8 @@
     "docs": "راهنما",
     "home": "خانه",
     "lab": "آزمایشگاه",
-    "night_mode": "حالت شب"
+    "night_mode": "حالت شب",
+    "select_language": "انتخاب زبان"
   },
   "lab": {
     "all_combinations": "همه ترکیبات",
@@ -33,6 +34,7 @@
     "vazirharf rd": "نقطه‌گرد",
     "vazirharf variable": "متغیر",
     "vazirharf": "وزیرحرف",
+    "vazirmatn": "وزیرمتن",
     "weight": "وزن",
     "vazirharf_font_labratory": "آزمایشگاه فونت وزیرحرف"
   },
@@ -56,5 +58,11 @@
     "order_by": "ترتیب بر مبنای",
     "payment_title": "❤️ در صورت تمایل به حمایت از فعالیت‌های صورت گرفته:",
     "fetching_donations": "در حال دریافت فهرست کمک‌ها..."
+  },
+  "docs": {
+    "docs_pages": "صفحات راهنمای فونت وزیرحرف"
+  },
+  "meta": {
+    "site_description": "صفحه رسمی فونت وزیرحرف."
   }
 }

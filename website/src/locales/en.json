@@ -4,7 +4,8 @@
     "docs": "Documents",
     "home": "Home",
     "lab": "Lab",
-    "night_mode": "Night mode"
+    "night_mode": "Night mode",
+    "select_language": "Select Language"
   },
   "lab": {
     "all_combinations": "All Combinations",
@@ -33,6 +34,7 @@
     "vazirharf rd": "Round Dots",
     "vazirharf variable": "Variable",
     "vazirharf": "Vazirharf",
+    "vazirmatn": "Vazirmatn",
     "weight": "Weight",
     "vazirharf_font_labratory": "Vazirharf Font Labratory"
   },
@@ -43,7 +45,7 @@
     "from_other_designers": "From other designers",
     "github": "GitHub",
     "hero_tail": "Vazirharf is a simple and legible Persian/Arabic typeface",
-    "hero_title": "Vazirharf Font",
+    "hero_title": "Vazirharf وزیرحرف",
     "lab": "Lab",
     "other_free_fonts": "Other free fonts",
     "version": "Version"
@@ -57,5 +59,11 @@
     "other_free_fonts": "Other free fonts",
     "payment_title": "❤️ If you want to donate for the work done:",
     "fetching_donations": "Fetching donations list..."
+  },
+  "docs": {
+    "docs_pages": "Vazirharf Font Docs"
+  },
+  "meta": {
+    "site_description": "Official page of Vazirharf font."
   }
 }
