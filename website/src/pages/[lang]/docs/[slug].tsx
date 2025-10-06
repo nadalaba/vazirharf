@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { styled, useTheme } from "@mui/material/styles";
 
-import { getDocBySlug, getAllDocs } from "../../../lib/api";
+import { getDocBySlug, getDocs } from "../../../lib/api";
 import Link from "../../../Link";
 import type { Doc } from "../../../types";
 import markdownToHtml from "../../../lib/markdownToHtml";
@@ -75,7 +75,7 @@ const Doc = ({ doc }: Props) => {
               <article dir="auto">
                 <Head>
                   <title>
-                    {doc.title} | {SITE_NAME}
+                    {`${doc.title} | ${SITE_NAME}`}
                   </title>
                 </Head>
                 <Typography
@@ -131,7 +131,7 @@ export async function getStaticProps({ params }: GetStaticProps) {
     "slug",
     "author",
     "content",
-  ]);
+  ], params.lang);
   const content = await markdownToHtml(doc.content || "");
 
   return {
@@ -145,10 +145,10 @@ export async function getStaticProps({ params }: GetStaticProps) {
 }
 
 export async function getStaticPaths() {
-  const docs = getAllDocs(["slug"]);
   const paths = [];
 
   for (const lang of getLanguages()) {
+    const docs = getDocs(["slug"], lang);
     for (const doc of docs) {
       paths.push({
         params: { lang, slug: doc.slug },
