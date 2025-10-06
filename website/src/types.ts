@@ -1,5 +1,6 @@
 export type Doc = {
   slug: string;
+  lang: string | null;
   title: string;
   author: string;
   date: string;
