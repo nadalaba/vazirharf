@@ -22,14 +22,7 @@ export const HeroTitle = () => {
       gutterBottom
       sx={{ fontWeight: "900", mb: 1, fontFamily: font }}
     >
-      {t(
-        "hero_title",
-        i18n.language == "en"
-          ? {
-              lng: "fa",
-            }
-          : undefined,
-      )}
+      {t("hero_title")}
     </Typography>
   );
 };
