@@ -25,7 +25,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nadalaba/vazirharf"
+    "url": "git+https://github.com/nadalaba/vazirharf.git"
   },
   "bugs": {
     "url": "https://github.com/nadalaba/vazirharf/issues"
