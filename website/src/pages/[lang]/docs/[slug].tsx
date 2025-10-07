@@ -5,9 +5,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { styled, useTheme } from "@mui/material/styles";
 
-import { getDocBySlug, getAllDocs } from "../../../lib/api";
+import { getDocBySlug, getDocs } from "../../../lib/api";
 import Link from "../../../Link";
-import { Doc } from "../../../types";
+import type { Doc } from "../../../types";
 import markdownToHtml from "../../../lib/markdownToHtml";
 import { SITE_NAME } from "../../../lib/constants";
 import { Layout } from "../../../components/Layout";
@@ -145,10 +145,10 @@ export async function getStaticProps({ params }: GetStaticProps) {
 }
 
 export async function getStaticPaths() {
-  const docs = getAllDocs(["slug"]);
   const paths = [];
 
   for (const lang of getLanguages()) {
+    const docs = getDocs(["slug"], lang);
     for (const doc of docs) {
       paths.push({
         params: { lang, slug: doc.slug },

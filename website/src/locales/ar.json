@@ -7,20 +7,20 @@
     "night_mode": "الوضع الليلي"
   },
   "lab": {
-    "all_combinations": "كل الأحرف المركبة",
+    "all_combinations": "كل التركيبات الممكنة",
     "all_glyphs": "كُل المحارف",
     "alpha": "الشفافية",
     "arabic": "عربي",
     "calt": "calt",
     "font": "نوع الخط",
     "gilak": "Gilak",
-    "glyph": "حرف",
+    "glyph": "محرف",
     "glyphs": "محارف",
     "jawi": "جاوية",
-    "justify": "مُحاذة",
+    "justify": "مُحاذاة",
     "kurdish": "الكردية",
     "latin": "Latin",
-    "numbers": "أعداد",
+    "numbers": "أرقام",
     "old vazir": "وزير قديم",
     "pashtu": "Pashtu",
     "persian": "فارسي",
@@ -30,20 +30,20 @@
     "texts": "النصوص",
     "tnum": "tnum",
     "urdu": "أردو",
-    "vazirmatn rd": "نقاط دائرية",
-    "vazirmatn variable": "فاربيل",
-    "vazirmatn": "وزيرمتن",
+    "vazirharf rd": "نقاط دائرية",
+    "vazirharf variable": "متغير",
+    "vazirharf": "وزیرحرف",
     "weight": "الوزن",
-    "vazirmatn_font_labratory": "المختبر خط وزيرمتن"
+    "vazirharf_font_labratory": "مختبر خط وزیرحرف"
   },
   "index": {
-    "docs": "المستندات",
+    "docs": "الإرشادات",
     "downlod_full_package": "تنزيل الحزمة الكاملة",
-    "font_description": "مشروع وزيرمتن عبارة عن عائلة محرف عربية فارسية ذات تسعة أوزان بدأت في عام 2015 تحت اسم وزير واستمر تصميمها وتطويرها عبر سنوات. يعد وزيرمتن خطًا ذو شكل بسيط وسلس وهذا ما يجعله مناسبًا في العديد من السياقات. تم استخدام خط Roboto للأحرف اللاتينية. ويعد برمجية حرة مفتوحة المصدر.",
+    "font_description": "مشروع وزیرحرف عبارة عن عائلة خطوط عربية فارسية ذات تسعة أوزان، تفرع عن مشروع وزيرمتن الذي بدأ في عام 2015 تحت اسم وزير. يعد وزیرحرف خطًا ذو شكل بسيط وسلس وهذا ما يجعله مناسبًا في العديد من السياقات. تم استخدام خط Roboto للأحرف اللاتينية. ويعد برمجية حرة مفتوحة المصدر.",
     "from_other_designers": "من مصممين آخرين",
     "github": "GitHub",
     "hero_tail": "بسيط ومقروء",
-    "hero_title": "خط وزيرمتن",
+    "hero_title": "خط وزیرحرف",
     "lab": "المختبر",
     "other_free_fonts": "خطوط حرة أخرى",
     "version": "الإصدار"
@@ -51,11 +51,16 @@
   "donation": {
     "amount": "المبلغ",
     "date": "التاريخ",
-    "donations_from": "التبرعات من عام 2015 حتى الآن",
+    "donations_from": "التبرعات من عام 2025 حتى الآن",
     "list_source": "مصدر هذه القائمة",
     "order_by": "ترتيب بحسب",
     "payment_title": "❤️ إن كنت ترغب في دعم المشروع والعمل الذي تم إنجازه:",
-    "toman_payment": "Toman donation",
-    "toman": "Toman"
+    "fetching_donations": "جارٍ جلب قائمة التبرعات..."
+  },
+  "docs": {
+    "docs_pages": "إرشادات خط وزیرحرف"
+  },
+  "meta": {
+    "site_description": "الصفحة الرسمية لخط وزیرحرف."
   }
 }

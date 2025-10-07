@@ -30,20 +30,20 @@
     "texts": "Texts",
     "tnum": "tnum",
     "urdu": "Urdu",
-    "vazirmatn rd": "Round Dots",
-    "vazirmatn variable": "Variable",
-    "vazirmatn": "Vazirmatn",
+    "vazirharf rd": "Round Dots",
+    "vazirharf variable": "Variable",
+    "vazirharf": "Vazirharf",
     "weight": "Weight",
-    "vazirmatn_font_labratory": "Vazirmatn Font Labratory"
+    "vazirharf_font_labratory": "Vazirharf Font Labratory"
   },
   "index": {
     "docs": "Docs",
     "downlod_full_package": "Download full package",
-    "font_description": "Vazirmatn project is a Persian-Arabic typeface family with nine weights started in 2015 under the name of Vazir and its design and development continued during these years. The Vazirmatn font has a simple and smooth form and can be used in most contexts. For Latin glyphs the Roboto font has been used. This is a free and open source software.",
+    "font_description": "Vazirharf project is a Persian-Arabic typeface family with nine weights, forked from Vazirmatn project that started in 2015 under the name of Vazir. The Vazirharf font has a simple and smooth form and can be used in most contexts. For Latin glyphs the Roboto font has been used. This is a free and open source software.",
     "from_other_designers": "From other designers",
     "github": "GitHub",
-    "hero_tail": "Vazirmatn is a simple and legible Persian/Arabic typeface",
-    "hero_title": "Vazirmatn Font",
+    "hero_tail": "Vazirharf is a simple and legible Persian/Arabic typeface",
+    "hero_title": "Vazirharf Font",
     "lab": "Lab",
     "other_free_fonts": "Other free fonts",
     "version": "Version"
@@ -51,12 +51,17 @@
   "donation": {
     "amount": "Amount",
     "date": "Date",
-    "donations_from": "Donations from 2015 until now",
+    "donations_from": "Donations from 2025 until now",
     "list_source": "Source of this list",
     "order_by": "Order by",
     "other_free_fonts": "Other free fonts",
     "payment_title": "❤️ If you want to donate for the work done:",
-    "toman_payment": "Toman donation",
-    "toman": "Toman"
+    "fetching_donations": "Fetching donations list..."
+  },
+  "docs": {
+    "docs_pages": "Vazirharf Font Docs"
+  },
+  "meta": {
+    "site_description": "Official page of Vazirharf font."
   }
 }

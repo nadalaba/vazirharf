@@ -1,4 +1,4 @@
-# Next.js source code for Vazirmatn website
+# Next.js source code for Vazirharf website
 
 For learning Next.js SSG, Multilanguage website, GitHub actions, ...
 
@@ -14,7 +14,7 @@ $ yarn
 $ yarn dev
 ```
 
-Open url [http://localhost:3000/vazirmatn](http://localhost:3000/vazirmatn)
+Open url [http://localhost:3000/vazirharf](http://localhost:3000/vazirharf)
 
 ## Evironmental variables
 
@@ -22,8 +22,8 @@ Use this value from shell or a create a local file named `.env.local` in the roo
 
 ```shell
 NEXT_PUBLIC_LAST_TAG_NAME= # e.g. 32.0.0
-NEXT_PUBLIC_CDN_URL= # base folder including vazirmatn css files (Vazirmatn-font-face.css, ...). e.g. "https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v32.0.0/"
-NEXT_PUBLIC_BASE_PATH="/vazirmatn" # will be http://localhost:3000/vazirmatn
+NEXT_PUBLIC_CDN_URL= # base folder including vazirharf css files (Vazirharf-font-face.css, ...). e.g. "https://cdn.jsdelivr.net/gh/NadAlaba/vazirharf@v34.000/"
+NEXT_PUBLIC_BASE_PATH="/vazirharf" # will be http://localhost:3000/vazirharf
 ```
 
 ## Translation

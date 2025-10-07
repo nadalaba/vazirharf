@@ -1,0 +1,42 @@
+FONTLOG for Vazirharf
+----------------------
+This FONTLOG provides information about the Vazirharf typeface.
+
+This is a modified version of "Vazirmatn" by Saber Rastikerdar <saber.rastikerdar@gmail.com>.
+Copyright 2015 The Vazirmatn Project Authors (https://github.com/rastikerdar/vazirmatn).
+Licensed under the SIL Open Font License, Version 1.1.
+
+Contextual Lam-Alef modifications copyright (c) 2025 Nad Alaba <alaba.nadim@gmail.com> 
+with Reserved Font Name "Vazirharf".
+Licensed under the SIL Open Font License, Version 1.1.
+
+Vazirharf is designed to split Lam-Alef ligatures into two distinct glyphs, 
+enhancing compatibility with typing platforms where highlighting individual 
+letters (harf) within a ligature is necessary—without sacrificing the visual 
+integrity of the original design.
+
+Modifications:
+- All Lam-Alef combinations (e.g. لا، لآ، لأ، لإ، لٱ، ڵا...) now use two separate glyphs 
+  instead of one.
+- These combinations are handled through contextual alternates rather than static 
+  ligature glyphs.
+- Lam-Alef lookups previously defined under `'liga'` and `'rlig'` have been removed.
+  The new behavior is implemented via `'rclt'` (Required Contextual Alternates).
+
+The first version of Vazirmatn (formerly named Vazir) was based on DejaVu 2.35 
+(was committed to the public domain) to begin designing and developing this new
+typeface. Non-Arabic (Latin) glyphs and data in the full version are imported 
+from Roboto Variable font (version v3.004) under the Apache License, 
+Version 2.0. https://github.com/davelab6/Roboto-Classic
+
+Information for Contributors
+-----------------------------
+Vazirharf is released under the OFL 1.1 - http://scripts.sil.org/OFL For information
+on what you're allowed to change or modify, consult the OFL.txt and
+OFL-FAQ.txt files. The OFL-FAQ also gives a very general rationale and various
+recommendations regarding why you would want to contribute to the project or
+make your own version of the font.
+
+Acknowledgements
+-----------------
+Thanks to The Vazirmatn Project Authors for the original design.

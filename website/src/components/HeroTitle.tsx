@@ -4,10 +4,10 @@ import Typography from "@mui/material/Typography";
 
 export const HeroTitle = () => {
   const { t, i18n } = useTranslation(undefined, { keyPrefix: "index" });
-  const [font, setFont] = useState("vazirmatn");
+  const [font, setFont] = useState("vazirharf");
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setFont(font === "vazirmatn" ? "vazirmatn rd" : "vazirmatn");
+      setFont(font === "vazirharf" ? "vazirharf rd" : "vazirharf");
     }, 5000);
 
     return () => {

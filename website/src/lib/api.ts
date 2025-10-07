@@ -1,6 +1,7 @@
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
+import { getLanguages } from "../i18n";
 
 const docsDirectory = join(process.cwd(), "src/_docs");
 
@@ -37,8 +38,17 @@ export function getDocBySlug(slug: string, fields: string[] = []) {
   return items;
 }
 
-export function getAllDocs(fields: string[] = []) {
-  const slugs = getDocSlugs();
+export function getDocs(fields: string[] = [], lang?: string) {
+  let slugs = getDocSlugs();
+  if (lang) {
+    const excludeLangs = getLanguages().filter((lng) => lng !== lang);
+    slugs = slugs.filter((slug) => {
+      const slugWithoutExtension = slug.replace(/\.md$/, "");
+      return !excludeLangs.some((exclLang) =>
+        slugWithoutExtension.endsWith(`-${exclLang}`)
+      );
+    });
+  }
   const docs = slugs
     .map((slug) => getDocBySlug(slug, fields))
     // sort docs by date in descending order
