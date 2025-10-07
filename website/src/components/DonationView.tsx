@@ -17,11 +17,10 @@ const BTC_ADDRESS = "bc1qesms3zcc4um0m3mv94jrmtjnfd98jucm29d7yh";
 const ETH_ADDRESS = "0xCEee44eF4BD8A2B7af0917EC517449f32E448a65";
 
 export const DonationView = () => {
-  const { t, i18n } = useTranslation(undefined, { keyPrefix: "donation" });
+  const { t } = useTranslation(undefined, { keyPrefix: "donation" });
   const [donations, setDonations] = useState<Donation[]>([]);
   const [sortBy, setSortBy] = useState<"amount" | "date">("amount");
-  const [btcPaymentShow, setBtcPaymentShow] = useState(false);
-  const [ethPaymentShow, setEthPaymentShow] = useState(false);
+  const [paymentShow, setPaymentShow] = useState<"off" | "btc" | "eth">("off");
   const _ = useWindowSize();
   const totalAmount = donations.reduce((pv, cv) => pv + cv.amount, 0);
   const formattedTotalAmount = formatNumber(totalAmount, "٬");
@@ -63,8 +62,9 @@ export const DonationView = () => {
           color="primary"
           variant="outlined"
           onClick={() => {
-            setEthPaymentShow(false);
-            setBtcPaymentShow(!btcPaymentShow);
+            paymentShow === "btc"
+              ? setPaymentShow("off")
+              : setPaymentShow("btc");
           }}
           sx={{ borderRadius: "25px" }}
         >
@@ -74,8 +74,9 @@ export const DonationView = () => {
           color="primary"
           variant="outlined"
           onClick={() => {
-            setBtcPaymentShow(false);
-            setEthPaymentShow(!ethPaymentShow);
+            paymentShow === "eth"
+              ? setPaymentShow("off")
+              : setPaymentShow("eth");
           }}
           sx={{ borderRadius: "25px" }}
         >
@@ -84,7 +85,7 @@ export const DonationView = () => {
       </Box>
       <Box
         id="btc-address"
-        sx={{ display: btcPaymentShow ? "block" : "none", mb: 3 }}
+        sx={{ display: paymentShow === "btc" ? "block" : "none", mb: 3 }}
       >
         <div>
           <b>Bitcoin</b>
@@ -111,7 +112,7 @@ export const DonationView = () => {
       </Box>
       <Box
         id="eth-address"
-        sx={{ display: ethPaymentShow ? "block" : "none", mb: 3 }}
+        sx={{ display: paymentShow === "eth" ? "block" : "none", mb: 3 }}
       >
         <div>
           <b>Ethereum</b>
