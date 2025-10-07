@@ -43,6 +43,5 @@
     "eslint": "9.36.0",
     "eslint-config-next": "15.5.4",
     "typescript": "5.9.2"
-  },
-  "packageManager": "pnpm@10.17.1"
+  }
 }

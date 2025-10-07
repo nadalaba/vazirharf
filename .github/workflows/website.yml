@@ -11,12 +11,19 @@ on:
       - master
     paths:
       - website/**
+      - '.github/workflows/website.yml'
+  pull_request:
+    branches: 
+      - master
+    types:
+      - closed
   release:
     types:
       - published
 
 jobs:
-  build:
+  build-website:
+    if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -24,15 +31,23 @@ jobs:
 
     steps:
       - uses: actions/checkout@v5
-      - name: Setup node 22
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - name: Setup node
         uses: actions/setup-node@v5
         with:
           node-version: 22
+          cache: 'pnpm'
+          cache-dependency-path: website/pnpm-lock.yaml
 
       - name: Install packages
         run: pnpm install
 
-      - name: Build
+      - name: Build next js
         env:
           NEXT_PUBLIC_TAG_NAME: ${{ github.event.release.tag_name }}
           LATEST_RELEASE_URL: ${{ github.api_url }}/repos/${{ github.repository }}/releases/latest
@@ -43,12 +58,14 @@ jobs:
 
       - name: Init new repo in out folder and commit generated files and push to gh-pages
         env:
-          REPO_URL: ${{ github.server_url }}/${{ github.repository }}.git
+          AUTHENTICATED_REPO_URL: https://${{ github.repository_owner }}:${{ github.token }}@github.com/${{ github.repository }}.git
         run: |
           cd out/vazirharf
+          # disable the Jekyll build step for already generated static site
+          > .nojekyll
           git init
           git add -A
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m 'deploy'
-          git push --force $REPO_URL HEAD:gh-pages
+          git push --force $AUTHENTICATED_REPO_URL HEAD:gh-pages
