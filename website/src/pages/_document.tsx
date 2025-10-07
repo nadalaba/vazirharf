@@ -27,7 +27,7 @@ export default class MyDocument extends Document {
           <link rel="stylesheet" href={`${VAZIRHARF_RD_CSS_URL}`} />
           <meta
             name="google-site-verification"
-            content="fH67FIc8xNjgi4rXOewEOyoD47R-Lea64zGEwz-L77U"
+            content="8V-RQNs3c782s0E32CYMaxnBb_ID6zgS_xR5E_PJJj8"
           />
 
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
@@ -77,9 +77,9 @@ MyDocument.getInitialProps = async (ctx) => {
   ctx.renderPage = () =>
     originalRenderPage({
       enhanceApp: (App: any) =>
-        (function EnhanceApp(props) {
+        function EnhanceApp(props) {
           return <App emotionCache={cache} {...props} />;
-        }),
+        },
     });
 
   const initialProps = await Document.getInitialProps(ctx);
