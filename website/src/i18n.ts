@@ -17,9 +17,9 @@ type Resources = {
 
 // the translations
 export const resources: Resources = {
-  fa: { translation: faStrings, caption: "Persian", localCaption: "فارسی" },
-  ar: { translation: arStrings, caption: "Arabic", localCaption: "العربية" },
   en: { translation: enStrings, caption: "English", localCaption: "English" },
+  ar: { translation: arStrings, caption: "Arabic", localCaption: "العربية" },
+  fa: { translation: faStrings, caption: "Persian", localCaption: "فارسی" },
 };
 
 i18n
