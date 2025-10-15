@@ -215,6 +215,7 @@ export function IndexLayout() {
           </a>
         </Box>
         <Box
+          dir="ltr"
           maxWidth="md"
           sx={{
             width: "100%",

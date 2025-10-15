@@ -24,7 +24,7 @@ export const TextArea: FC = () => {
       prev.size === next.size &&
       prev.weight === next.weight &&
       prev.alpha === next.alpha &&
-      prev.isVariable === next.isVariable,
+      prev.isVariable === next.isVariable
   );
   const {
     font,
@@ -41,7 +41,14 @@ export const TextArea: FC = () => {
 
   useEffect(() => {
     if (text === "") {
-      dispatch(setText(i18n.language === "ar" ? texts[2].text : texts[1].text));
+      dispatch(
+        setText(
+          (i18n.language === "fa"
+            ? texts.find((textObj) => textObj.name === "persian")?.text
+            : texts.find((textObj) => textObj.name === "arabic")?.text) ??
+            texts[2].text
+        )
+      );
     }
   }, []);
 
