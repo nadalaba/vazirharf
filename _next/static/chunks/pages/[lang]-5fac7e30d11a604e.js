@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[860],{1765:(_,n,u)=>{(window.__NEXT_P=window.__NEXT_P||[]).push(["/[lang]",function(){return u(3821)}])}},_=>{_.O(0,[531,391,821,636,593,792],()=>_(_.s=1765)),_N_E=_.O()}]);
