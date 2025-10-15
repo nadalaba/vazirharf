@@ -13,7 +13,7 @@ export function Footer() {
         backgroundColor: theme.palette.background.paper,
       })}
     >
-      <Typography variant="body2" color="textSecondary" align="center">
+      <Typography variant="body2" sx={{ color: "textSecondary" }} align="center">
         <Link href={`https://github.com/nadalaba/vazirharf`}>
           View on GitHub
         </Link>{" | "}

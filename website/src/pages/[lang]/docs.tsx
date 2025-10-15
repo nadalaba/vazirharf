@@ -47,8 +47,8 @@ const Index = ({ allDocs, lang }: Props) => {
                 <Typography
                   variant="subtitle1"
                   component="h2"
-                  color="text"
                   sx={{
+                    color: "text",
                     borderBottom: 1,
                     borderBottomColor: theme.palette.divider,
                     mb: 2,
