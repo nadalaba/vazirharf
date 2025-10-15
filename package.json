@@ -25,11 +25,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NadAlaba/vazirharf"
+    "url": "git+https://github.com/nadalaba/vazirharf.git"
   },
   "bugs": {
-    "url": "https://github.com/NadAlaba/vazirharf/issues"
+    "url": "https://github.com/nadalaba/vazirharf/issues"
   },
-  "homepage": "https://github.com/NadAlaba/vazirharf#readme",
+  "homepage": "https://github.com/nadalaba/vazirharf#readme",
   "dependencies": {}
 }
