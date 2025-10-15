@@ -81,8 +81,8 @@ const Doc = ({ doc }: Props) => {
                 <Typography
                   variant="h5"
                   component="h1"
-                  color="text"
                   sx={{
+                    color: "text",
                     borderBottom: 1,
                     borderBottomColor: theme.palette.divider,
                     mb: 2,
