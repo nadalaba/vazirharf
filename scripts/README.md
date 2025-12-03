@@ -1,8 +1,50 @@
 # Vazirharf Font Builder
 
-The script tool for building files for [vazirharf](https://github.com/NadAlaba/vazirharf). By default this tool clones the repository of Roboto-Classic Variable font into the folder `latin` and then merge it into Vazirharf. However, You can use the `--no-latin` option to skip this step.
+Font files can be built either **with Docker** (recommended) or **manually without Docker**.
 
-## Requirements
+## Building with Docker (Preferred)
+
+To build all font files and package them into a `.zip` archive:
+
+```sh
+git clone https://github.com/nadalaba/vazirharf.git
+cd vazirharf
+docker build -o . .
+```
+
+The build output will be placed in the repository’s root directory.
+To export build files to a different directory, specify the path:
+
+```sh
+docker build -o path/to/build/directory .
+```
+
+## Building without Docker
+
+Font files can be built either **with Docker** (recommended) or **manually without Docker**.
+
+## Building with Docker (Preferred)
+
+To build all font files and package them into a `.zip` archive:
+
+```sh
+git clone https://github.com/nadalaba/vazirharf.git
+cd vazirharf
+docker build -o . .
+```
+
+The build output will be placed in the repository’s root directory.
+To export build files to a different directory, specify the path:
+
+```sh
+docker build -o path/to/build/directory .
+```
+
+## Building without Docker
+
+The script tool for building files for [vazirharf](https://github.com/nadalaba/vazirharf). By default this tool clones the repository of Roboto-Classic Variable font into the folder `latin` and then merge it into Vazirharf. However, You can use the `--no-latin` option to skip this step.
+
+### Requirements
 
 - fontforge https://fontforge.org/
 - python3
@@ -13,26 +55,27 @@ The script tool for building files for [vazirharf](https://github.com/NadAlaba/v
 - git (access to fetch Roboto Variable repository https://github.com/googlefonts/Roboto-Classic)
 - sed
 - zip
+- make
 
-## How it works
+### How it works
 
 Make sure you have installed all the requirements. For Debian distro you can use this command:
 
-```
-$ sudo apt install fontforge python3-fontforge fontmake fonttools gftools zip sed git
+```sh
+sudo apt install fontforge python3-fontforge fontmake fonttools gftools zip sed git make
 ```
 
 Next:
 
-```
-$ git clone https://github.com/NadAlaba/vazirharf.git
-$ cd vazirharf/
-$ make all
+```sh
+git clone https://github.com/nadalaba/vazirharf.git
+cd vazirharf/
+make all
 ```
 
 `make all` means in order:
 
-```
+```sh
 make fonts
 make rd-fonts
 make zip
