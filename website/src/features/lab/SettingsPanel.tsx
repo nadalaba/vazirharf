@@ -1,9 +1,11 @@
+"use client"
+
 import { useDispatch, useSelector } from "react-redux";
-import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Checkbox from "@mui/material/Checkbox";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import { useTranslations } from "next-intl";
 
 import {
   setSize,
@@ -13,11 +15,12 @@ import {
   setCalt,
   setTnum,
 } from "./labSlice";
-import { RootState } from "./reducers";
-import { LabState } from "./labSlice";
+import type { LabState } from "./labSlice";
+import type { RootState } from "./reducers";
+
 
 export function SettingsPanel() {
-  const { t } = useTranslation(undefined, { keyPrefix: "lab" });
+  const t = useTranslations("lab");
   const dispatch = useDispatch();
   const labState: LabState = useSelector(
     (state: RootState) => state.labReducer,
@@ -72,7 +75,7 @@ export function SettingsPanel() {
             max={isSmallScreen ? "90" : "200"}
             step="1"
             value={size}
-            onInput={(e: any) => dispatch(setSize(e.target.value as number))}
+            onInput={(e) => dispatch(setSize(parseFloat(e.currentTarget.value) || 0))}
             style={{ width: "130px" }}
           />
           <Box
@@ -103,7 +106,7 @@ export function SettingsPanel() {
             max="900"
             step={isVariable ? "1" : "100"}
             value={weight}
-            onInput={(e: any) => dispatch(setWeight(e.target.value as number))}
+            onInput={(e) => dispatch(setWeight(parseFloat(e.currentTarget.value) || 0))}
             style={{ width: "100px" }}
           />
           <Box
@@ -134,7 +137,7 @@ export function SettingsPanel() {
           min="10"
           max="100"
           value={alpha}
-          onInput={(e: any) => dispatch(setAlpha(e.target.value as number))}
+          onInput={(e) => dispatch(setAlpha(parseFloat(e.currentTarget.value) || 0))}
           style={{ width: "80px" }}
         />
       </Box>{" "}

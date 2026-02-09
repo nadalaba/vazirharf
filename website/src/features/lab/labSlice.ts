@@ -27,7 +27,7 @@ export const initialState: LabState = {
   tnum: false,
   text: "",
   contentEditable: true,
-  selectedCollection: "persian",
+  selectedCollection: "arabic",
 };
 
 const labSlice = createSlice({

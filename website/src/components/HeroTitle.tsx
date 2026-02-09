@@ -1,9 +1,11 @@
+"use client"
+
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import Typography from "@mui/material/Typography";
+import { useTranslations } from "next-intl";
 
 export const HeroTitle = () => {
-  const { t, i18n } = useTranslation(undefined, { keyPrefix: "index" });
+  const t = useTranslations("index");
   const [font, setFont] = useState("vazirharf");
   useEffect(() => {
     const timeout = setTimeout(() => {

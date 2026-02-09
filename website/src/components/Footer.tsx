@@ -1,3 +1,5 @@
+"use client"
+
 import Box from "@mui/material/Box";
 import { Theme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
@@ -10,7 +12,7 @@ export function Footer() {
         px: 1,
         py: 1,
         mt: "auto",
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.vars?.palette.background.paper,
       })}
     >
       <Typography variant="body2" sx={{ color: "textSecondary" }} align="center">

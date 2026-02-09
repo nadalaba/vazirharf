@@ -1,16 +1,17 @@
-import { useRef } from "react";
+"use client";
+
+import Image from "next/image";
+import { useRef, useEffect, useState } from "react";
+import { List, type RowComponentProps } from "react-window";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import { List, type RowComponentProps } from "react-window";
-import { useTranslation } from "react-i18next";
+import {useLocale} from 'next-intl';
 
-import { getLanguageDirection } from "../i18n";
-import {
-  convertNumberToPersian,
-  formatNumber,
-  useWindowSize,
-} from "../lib/utils";
-import { Donation } from "../types";
+import { languages } from "@/i18n/settings";
+
+import { convertNumberToPersian, formatNumber } from "@/lib/utils";
+import { useWindowSize } from "@/lib/windowSize";
+import { Donation } from "@/types";
 
 type Props = {
   donations: Donation[];
@@ -18,15 +19,21 @@ type Props = {
 
 export const DonationList = (props: Props) => {
   const theme = useTheme();
-  const { i18n } = useTranslation();
-  const _ = useWindowSize(); // rerender on resize
+  const locale = useLocale();
+  useWindowSize(); // rerender on resize
   const { donations } = props;
 
   const listRef = useRef<HTMLDivElement | null>(null);
-  const wiewWidth = listRef.current?.scrollWidth || 0;
+  const [viewWidth, setViewWidth] = useState(0);
+
+  useEffect(() => {
+    if (listRef.current) {
+      setViewWidth(listRef.current.scrollWidth);
+    }
+  }, []);
   const itemWidth = 65;
   const itemHeight = 140;
-  const itemsPerRow = Math.floor(wiewWidth / itemWidth);
+  const itemsPerRow = Math.floor(viewWidth / itemWidth);
   const rowCount = Math.ceil(donations.length / itemsPerRow);
   const listHeight = 300;
 
@@ -41,7 +48,7 @@ export const DonationList = (props: Props) => {
         mt: 1,
         height: `${listHeight}px`,
         border: 1,
-        borderColor: theme.palette.divider,
+        borderColor: theme.vars?.palette.divider,
         borderRadius: "5px",
         overflow: "hidden",
       }}
@@ -49,7 +56,7 @@ export const DonationList = (props: Props) => {
       <List
         rowCount={rowCount}
         rowHeight={itemHeight}
-        dir={getLanguageDirection(i18n.language)}
+        dir={languages[locale].direction}
         rowProps={{}}
         overscanCount={4}
         rowComponent={({ index, style }: RowComponentProps) => {
@@ -88,25 +95,22 @@ export const DonationList = (props: Props) => {
                         alignItems: "center",
                         paddingTop: 8,
                         height: `${itemHeight}px`,
-                        color: !d.web ? theme.palette.text.primary : undefined,
+                        color: !d.web ? theme.vars?.palette.text.primary : undefined,
                       }}
                       target="__blank"
                     >
-                      <img
-                        style={{
-                          width: "50px",
-                          height: "50px",
-                          borderRadius: "50%",
-                        }}
+                      <Image
                         src={
-                          d.img
-                            ? d.img
-                            : `https://s.gravatar.com/avatar/${d.date.replace(
-                                /(\s)|(:)|(\/)/g,
-                                ""
-                              )}?noemail&s=50&d=wavatar`
+                          d.img ??
+                          `https://s.gravatar.com/avatar/${d.date.replace(
+                            /(\s)|(:)|(\/)/g,
+                            ""
+                          )}?noemail&s=50&d=wavatar`
                         }
-                        // loading="lazy"
+                        alt={d.name}
+                        width={50}
+                        height={50}
+                        style={{ borderRadius: "50%" }}
                       />
                       <div
                         style={{
@@ -119,11 +123,11 @@ export const DonationList = (props: Props) => {
                       <div
                         style={{
                           fontSize: "0.6rem",
-                          color: theme.palette.text.primary,
+                          color: theme.vars?.palette.text.primary,
                           opacity: 0.5,
                         }}
                       >
-                        {i18n.language === "fa"
+                        {locale === "fa"
                           ? convertNumberToPersian(formatNumber(d.amount, "٬"))
                           : formatNumber(d.amount, ",")}
                       </div>

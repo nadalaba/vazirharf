@@ -58,7 +58,8 @@
     "order_by": "Order by",
     "other_free_fonts": "Other free fonts",
     "payment_title": "❤️ If you want to donate for the work done:",
-    "fetching_donations": "Fetching donations list..."
+    "fetching_donations": "Fetching donations list...",
+    "copied": "Copied {coin} address to clipboard!"
   },
   "docs": {
     "docs_pages": "Vazirharf Font Docs"

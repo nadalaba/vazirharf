@@ -1,16 +1,16 @@
-import { useTheme } from "@mui/material/styles";
-import Head from "next/head";
-import { SITE_NAME } from "../lib/constants";
-import { useTranslation } from "react-i18next";
+//todo replace use theme with a header solution to put theme-color inside generateMetaData and then delete this file
+
+//import { useTheme } from "@mui/material/styles";
+//import Head from "next/head";
+
+//import { getT } from "@/i18n";
 
 export const Meta = () => {
-  const { t } = useTranslation(undefined, { keyPrefix: "meta" });
-  const theme = useTheme();
+  //const theme = useTheme();
 
-  return (
-    <Head>
-      <meta name="theme-color" content={theme.palette.background.default} />
-      <meta name="description" content={t("site_description")} />
-    </Head>
-  );
+  //return (
+  //  <Head>
+  //    <meta name="theme-color" content={theme.vars?.palette.background.default} />
+  //  </Head>
+  //);
 };

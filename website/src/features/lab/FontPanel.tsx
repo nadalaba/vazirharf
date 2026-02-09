@@ -1,17 +1,19 @@
-import { useRef, useState } from "react";
+"use client"; //todo split into server and client
+
+import { useRef, useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useTranslation } from "react-i18next";
-import Head from "next/head";
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import AddIcon from "@mui/icons-material/Add";
+import { useTranslations } from "next-intl";
 
 import { fonts as initialFonts, Font } from "./fonts";
 import { setFont, setIsVariable } from "./labSlice";
 import { RootState } from "./reducers";
 import { LabState } from "./labSlice";
-import { SelectButton } from "../../components/SelectButton";
-import { addStyle, replaceAll } from "../../lib/utils";
+
+import { SelectButton } from "@/components/SelectButton";
+import { addStyle, addStyleSheet, replaceAll } from "@/lib/utils";
 
 let idNum = 0;
 export const generateId = () => `${++idNum}`;
@@ -26,18 +28,24 @@ export const fileTypes: {
 } as const;
 
 export function FontPanel() {
-  const { t } = useTranslation(undefined, { keyPrefix: "lab" });
+  const t = useTranslations("lab");
   const dispatch = useDispatch();
   const [fonts, setFonts] = useState<Array<Font>>(initialFonts);
   const labState: LabState = useSelector(
     (state: RootState) => state.labReducer,
-    (prev, next) => prev.font === next.font,
+    (prev, next) => prev.font === next.font
   );
   const { font: selectedFont } = labState;
+  useEffect(() => {
+    if (!selectedFont.cssURL) return;
+    const removeStylesheetCallback = addStyleSheet(selectedFont.cssURL);
+    return removeStylesheetCallback;
+  }, [selectedFont]);
+
   const inputFontFile = useRef<HTMLInputElement>(null);
 
   const handleInputFontFileChange = (
-    e: React.ChangeEvent<HTMLInputElement>,
+    e: React.ChangeEvent<HTMLInputElement>
   ) => {
     let file: globalThis.File | null = null;
     if (e.target !== null && e.target.files !== null && e.target.files.length) {
@@ -72,19 +80,12 @@ export function FontPanel() {
       isVariable: false,
       isLocal: true,
     };
-    setFonts([font, ...fonts]);
+    setFonts([...fonts, font]);
     dispatch(setFont(font));
   };
 
   return (
     <>
-      <Head>
-        <link
-          rel="stylesheet"
-          href={selectedFont.cssURL}
-          key={selectedFont.cssURL}
-        />
-      </Head>
       <Box
         sx={{
           display: "flex",
@@ -96,19 +97,6 @@ export function FontPanel() {
           px: 2,
         }}
       >
-        <IconButton
-          color="primary"
-          sx={{ mr: 1 }}
-          onClick={() => {
-            if (inputFontFile.current !== null) {
-              inputFontFile.current.click();
-            }
-          }}
-          size="large"
-          title="Add a font"
-        >
-          <AddIcon fontSize="small" />
-        </IconButton>
         {fonts.map((font) => (
           <SelectButton
             key={font.family}
@@ -128,6 +116,19 @@ export function FontPanel() {
             {font.isLocal ? font.family : t(font.family)}
           </SelectButton>
         ))}
+        <IconButton
+          color="primary"
+          sx={{ mr: 1 }}
+          onClick={() => {
+            if (inputFontFile.current !== null) {
+              inputFontFile.current.click();
+            }
+          }}
+          size="large"
+          title="Add a font"
+        >
+          <AddIcon fontSize="small" />
+        </IconButton>
       </Box>
       <input
         type="file"
@@ -137,7 +138,7 @@ export function FontPanel() {
         onChange={handleInputFontFileChange}
         accept={Object.keys(fileTypes).reduce(
           (result, type) => result + `.${type},`,
-          "",
+          ""
         )}
       />
     </>
