@@ -1,4 +1,4 @@
-import { VAZIRHARF_CDN_URL } from "../../lib/constants";
+import { VAZIRHARF_CDN_URL } from "@/lib/constants";
 
 export type Font = {
   cssURL: string;

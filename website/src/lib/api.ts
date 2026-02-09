@@ -1,18 +1,18 @@
 import fs from "fs";
 import { join } from "path";
 import matter from "gray-matter";
-import { getLanguages } from "../i18n";
+import { languagesList } from "@/i18n/settings";
 
 const docsDirectory = join(process.cwd(), "src/_docs");
 
-export function getDocSlugs() {
+function getDocSlugs() {
   return fs.readdirSync(docsDirectory);
 }
 
-export function getDocBySlug(slug: string, fields: string[] = [], lang?: string) {
+export function getDocBySlug(slug: string, fields: string[], lang?: string) {
   const slugWithoutExtension = slug.replace(/\.md$/, "");
   const slugLangMatch = slugWithoutExtension.match(
-    new RegExp(`-(${getLanguages().join("|")})$`)
+    new RegExp(`-(${languagesList.join("|")})$`)
   );
   let slugBaseName = slugWithoutExtension;
   if (slugLangMatch) slugBaseName = slugBaseName.replace(slugLangMatch[0], "");
@@ -20,11 +20,12 @@ export function getDocBySlug(slug: string, fields: string[] = [], lang?: string)
   let fullPath = join(docsDirectory, `${slugWithoutExtension}.md`);
   if (lang && slugLang === null) {
     fullPath = join(docsDirectory, `${slugBaseName}-${lang}.md`);
-    if(!fs.existsSync(fullPath)) fullPath = join(docsDirectory, `${slugBaseName}.md`);
+    if (!fs.existsSync(fullPath))
+      fullPath = join(docsDirectory, `${slugBaseName}.md`);
   }
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const { data, content } = matter(fileContents);
-  
+
   type Items = {
     [key: string]: string;
   } & { lang?: string | null };
@@ -54,7 +55,7 @@ export function getDocBySlug(slug: string, fields: string[] = [], lang?: string)
 export function getDocs(fields: string[] = [], lang?: string) {
   let slugs = getDocSlugs();
   if (lang) {
-    const excludeLangs = getLanguages().filter((lng) => lng !== lang);
+    const excludeLangs = languagesList.filter((lng) => lng !== lang);
     slugs = slugs.filter((slug) => {
       const slugWithoutExtension = slug.replace(/\.md$/, "");
       return !excludeLangs.some((exclLang) =>

@@ -1,8 +1,10 @@
-import useScrollTrigger from "@mui/material/useScrollTrigger";
+"use client"
+
+import Box from "@mui/material/Box";
 import Zoom from "@mui/material/Zoom";
 import Fab from "@mui/material/Fab";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import Box from "@mui/material/Box";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 
 export function ScrollTop() {
   const trigger = useScrollTrigger({

@@ -1,20 +1,30 @@
+"use client";
+
 import React from "react";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import PopupState, { bindMenu, bindTrigger } from "material-ui-popup-state";
 import Button from "@mui/material/Button";
-import LanguageIcon from "@mui/icons-material/Translate";
-import i18n, { getLanguages, getLocalCaption } from "../i18n";
 import { useTheme } from "@mui/material/styles";
-import { useRouter } from "next/router";
+import LanguageIcon from "@mui/icons-material/Translate";
+import PopupState, { bindMenu, bindTrigger } from "material-ui-popup-state";
+//import { usePathname, useSearchParams } from 'next/navigation'
+import { usePathname } from "next/navigation";
+import { useTranslations, useLocale } from "next-intl";
+
 import Link from "../Link";
-import { useTranslation } from "react-i18next";
+import { languages, languagesList } from "@/i18n/settings";
 
 export function LanguageMenu() {
-  const { t } = useTranslation(undefined, {keyPrefix: 'header'});
+  const t = useTranslations("header");
+  const locale = useLocale();
   const theme = useTheme();
-  const router = useRouter();
-  const { pathname, query, asPath } = router;
+  const pathname = usePathname();
+  //todo wrap components that use useSearchParams with suspense
+  //const searchParams = useSearchParams();
+  //const query = searchParams.toString();
+  // Recreate the full URL path (pathname + search params)
+  //const fullPath = query ? `${pathname}?${query}` : pathname;
+  const fullPath = pathname;
 
   return (
     <PopupState variant="popover">
@@ -24,10 +34,10 @@ export function LanguageMenu() {
             {...bindTrigger(popupState)}
             variant="text"
             startIcon={<LanguageIcon fontSize="small" />}
-            sx={{ color: theme.palette.text.primary, ml: 1 }}
+            sx={{ color: theme.vars?.palette.text.primary, ml: 1 }}
             title={t("select_language")}
           >
-            {getLocalCaption(i18n.language)}
+            {languages[locale].localCaption}
           </Button>
           <Menu
             elevation={0}
@@ -41,22 +51,23 @@ export function LanguageMenu() {
               horizontal: "center",
             }}
           >
-            {getLanguages().map((lang: string) => (
+            {languagesList.map((lang: string) => (
               <Link
                 key={lang}
                 sx={{
                   textDecoration: "none",
-                  color: theme.palette.text.primary,
+                  color: theme.vars?.palette.text.primary,
                 }}
-                href={{ pathname, query }}
-                as={asPath}
+                //href={{ pathname, query }}
+                href={{ pathname }}
+                as={fullPath}
                 lang={lang}
                 onClick={() => {
                   popupState.close();
                 }}
               >
-                <MenuItem selected={i18n.language === lang}>
-                  {getLocalCaption(lang)}
+                <MenuItem selected={locale === lang}>
+                  {languages[lang].localCaption}
                 </MenuItem>
               </Link>
             ))}

@@ -1,14 +1,17 @@
+"use client"; //todo split
+
 import { FC, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Box from "@mui/material/Box";
-import { useTheme, alpha as alphaFunc } from "@mui/material/styles";
+import { useTheme } from "@mui/material/styles";
+import { useLocale } from "next-intl";
 
 import { RootState } from "./reducers";
 import { LabState, setText } from "./labSlice";
 import { texts } from "./texts";
-import i18n from "../../i18n";
 
 export const TextArea: FC = () => {
+  const locale = useLocale();
   const theme = useTheme();
   const dispatch = useDispatch();
   const labState: LabState = useSelector(
@@ -43,14 +46,14 @@ export const TextArea: FC = () => {
     if (text === "") {
       dispatch(
         setText(
-          (i18n.language === "fa"
+          (locale === "fa"
             ? texts.find((textObj) => textObj.name === "persian")?.text
             : texts.find((textObj) => textObj.name === "arabic")?.text) ??
             texts[2].text
         )
       );
     }
-  }, []);
+  }, [dispatch, text, locale]);
 
   return (
     <Box
@@ -73,7 +76,7 @@ export const TextArea: FC = () => {
           },
           fontSize: `${size}px`,
           fontWeight: isVariable ? "400" : String(weight),
-          color: alphaFunc(theme.palette.text.primary, alpha / 100),
+          color: `rgba(${theme.vars?.palette.text.primaryChannel} / ${alpha / 100})`,
           minWidth: { xs: "100%", sm: "30rem" },
           p: 2,
           fontVariationSettings: `"wght" ${weight}`,

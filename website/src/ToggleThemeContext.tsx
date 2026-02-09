@@ -1,7 +1,9 @@
+"use client"
+
 import { createContext, useContext } from "react";
 
-export const ToggleThemeContext = createContext<Function | undefined>(
-  undefined,
+export const ToggleThemeContext = createContext<(() => void) | undefined>(
+  undefined
 );
 
 export const useToggleTheme = () => {

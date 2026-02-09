@@ -1,9 +1,11 @@
+"use client"; //todo split
+
 import React, { FC, useState } from "react";
 import Box from "@mui/material/Box";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import { useTheme } from "@mui/material/styles";
-import { useTranslation } from "react-i18next";
+import { useTranslations } from "next-intl";
 
 import { FontPanel } from "./FontPanel";
 import { SettingsPanel } from "./SettingsPanel";
@@ -19,12 +21,12 @@ const PANELS: Array<[string, React.FC]> = [
 
 export const Panels: FC = () => {
   const theme = useTheme();
-  const { t } = useTranslation(undefined, {keyPrefix: 'lab'});
+  const t = useTranslations("lab");
   const [tab, setTab] = useState<string | null>("settings");
 
   const handleChange = (
     event: React.MouseEvent<HTMLElement>,
-    newTab: string | null,
+    newTab: string | null
   ) => {
     setTab(newTab);
   };
@@ -40,10 +42,10 @@ export const Panels: FC = () => {
         // position: "sticky",
         // top: "56px",
         // zIndex: 1000,
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.vars?.palette.background.default,
         pt: 1,
         borderBottom: 1,
-        borderColor: theme.palette.divider,
+        borderColor: theme.vars?.palette.divider,
         // overflowX: "auto",
       }}
     >
@@ -55,7 +57,7 @@ export const Panels: FC = () => {
           mb: 2,
           mx: 2,
           border: 1,
-          borderColor: theme.palette.divider,
+          borderColor: theme.vars?.palette.divider,
           overflow: "hidden",
           borderRadius: "25px",
         }}

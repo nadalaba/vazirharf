@@ -1,3 +1,5 @@
+"use client"
+
 import { FC } from "react";
 import { Provider as ReduxProvider } from "react-redux";
 import Box from "@mui/material/Box";

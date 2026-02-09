@@ -1,11 +1,13 @@
+"use client";
+
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useTheme } from "@mui/material/styles";
-import { useTranslation } from "react-i18next";
 import Tab from "@mui/material/Tab";
 import Tabs from "@mui/material/Tabs";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { useTranslations } from "next-intl";
 
 import {
   createCombinationsText,
@@ -19,19 +21,17 @@ import { LabState } from "./labSlice";
 
 export function GlyphPanel() {
   const theme = useTheme();
-  const { t } = useTranslation(undefined, {keyPrefix: 'lab'});
+  const t = useTranslations("lab");
   const dispatch = useDispatch();
   const labState: LabState = useSelector(
     (state: RootState) => state.labReducer,
-    (prev, next) => prev.selectedCollection === next.selectedCollection,
+    (prev, next) => prev.selectedCollection === next.selectedCollection
   );
   const { selectedCollection } = labState;
 
   const handleGlyphClick = (g: string) => {
     dispatch(
-      setText(
-        createCombinationsText(getGlyphCollection(selectedCollection), g),
-      ),
+      setText(createCombinationsText(getGlyphCollection(selectedCollection), g))
     );
     dispatch(setContentEditable(true));
   };
@@ -90,10 +90,10 @@ export function GlyphPanel() {
           overflowY: "auto",
           maxHeight: "110px",
           textAlign: "center",
-          backgroundColor:
-            theme.palette.mode === "light"
-              ? "rgba(0, 0, 0, 0.04)"
-              : "rgba(255, 255, 255, 0.08)",
+          backgroundColor: "rgba(0, 0, 0, 0.04)",
+          ...theme.applyStyles("dark", {
+            backgroundColor: "rgba(255, 255, 255, 0.08)",
+          }),
           pt: 0.5,
           width: "100%",
           justifyContent: "center",
@@ -104,12 +104,12 @@ export function GlyphPanel() {
           {getGlyphCollection(selectedCollection)
             .letters.concat(
               getGlyphCollection(selectedCollection).numbers.concat(
-                getGlyphCollection(selectedCollection).signs,
-              ),
+                getGlyphCollection(selectedCollection).signs
+              )
             )
-            .map((g: string) => (
+            .map((g: string, index) => (
               <Box
-                key={Math.random()}
+                key={index}
                 component="button"
                 onClick={() => handleGlyphClick(g)}
                 sx={{
@@ -117,10 +117,10 @@ export function GlyphPanel() {
                   backgroundColor: "transparent",
                   border: "none",
                   fontSize: "16px",
-                  color: theme.palette.text.primary,
+                  color: theme.vars?.palette.text.primary,
                   cursor: "pointer",
                   "&:hover": {
-                    backgroundColor: theme.palette.action.selected,
+                    backgroundColor: theme.vars?.palette.action.selected,
                   },
                 }}
               >

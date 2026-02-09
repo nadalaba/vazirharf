@@ -1,13 +1,15 @@
+"use client";
+
 import { useDispatch } from "react-redux";
-import { useTranslation } from "react-i18next";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
+import { useTranslations } from "next-intl";
 
 import { texts } from "./texts";
 import { setText, setContentEditable } from "./labSlice";
 
 export function TextPanel() {
-  const { t } = useTranslation(undefined, {keyPrefix: 'lab'});
+  const t = useTranslations("lab");
   const dispatch = useDispatch();
 
   return (

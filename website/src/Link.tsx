@@ -1,10 +1,15 @@
+"use client";
+
 import * as React from "react";
 import clsx from "clsx";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 import NextLink, { LinkProps as NextLinkProps } from "next/link";
 import MuiLink, { LinkProps as MuiLinkProps } from "@mui/material/Link";
 import { styled } from "@mui/material/styles";
-import i18n, { getLanguages } from "./i18n";
+import {useLocale} from 'next-intl';
+
+//import {Link as intlLink} from '@/i18n/navigation';
+import { languagesList } from "@/i18n/settings";
 
 // Add support for the sx prop for consistency with the other branches.
 const Anchor = styled("a")({});
@@ -23,7 +28,6 @@ export const NextLinkComposed = styled(
       const {
         to,
         linkAs,
-        href,
         replace,
         scroll,
         shallow,
@@ -69,14 +73,13 @@ const StyledLink = React.forwardRef<HTMLAnchorElement, StyledLinkProps>(
       className: classNameProps,
       href,
       noLinkStyle,
-      role, // Link don't have roles.
+      //role, // Link don't have roles.
       ...other
     } = props;
 
-    const router = useRouter();
     const pathname = typeof href === "string" ? href : href.pathname;
     const className = clsx(classNameProps, {
-      [activeClassName]: router.pathname === pathname && activeClassName,
+      [activeClassName]: usePathname() === pathname && activeClassName,
     });
 
     const isExternal =
@@ -126,7 +129,7 @@ function pathnameWithoutLang(pathname: string | null | undefined) {
   }
   const parts = pathname.split("/");
   // if path doesn't have lang
-  if (!getLanguages().includes(parts[1])) {
+  if (!languagesList.includes(parts[1])) {
     return parts.join("/");
   }
   // remove lang
@@ -140,12 +143,11 @@ export type LinkProps = {
 // A styled version of the Next.js Link component:
 // https://nextjs.org/docs/api-reference/next/link
 const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(
-  props,
-  ref
+  props//, ref
 ) {
   const { href, lang, as, ...other } = props;
+  const locale = useLocale();
 
-  // const router = useRouter();
   let pathname = typeof href === "string" ? href : href.pathname;
   if (as) pathname = as.toString();
 
@@ -156,7 +158,7 @@ const Link = React.forwardRef<HTMLAnchorElement, LinkProps>(function Link(
   const localeHref: string = !isExternal
     ? lang
       ? `/${lang}${pathnameWithoutLang(pathname)}`
-      : `/${i18n.language}${pathname}`
+      : `/${locale}${pathname}`
     : href;
 
   // console.log(localeHref);
