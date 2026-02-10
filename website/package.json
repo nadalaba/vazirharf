@@ -20,7 +20,7 @@
     "clsx": "2.1.1",
     "gray-matter": "4.0.3",
     "material-ui-popup-state": "5.3.6",
-    "next": "15.5.4",
+    "next": "16.1.6",
     "next-intl": "4.8.2",
     "react": "19.1.1",
     "react-dom": "19.1.1",
@@ -38,7 +38,7 @@
     "@types/node": "24.5.2",
     "@types/react": "19.1.13",
     "eslint": "9.36.0",
-    "eslint-config-next": "15.5.4",
+    "eslint-config-next": "16.1.6",
     "typescript": "5.9.2"
   }
 }
