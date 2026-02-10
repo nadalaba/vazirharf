@@ -9,13 +9,14 @@ import { Header } from "./Header";
 type LayoutProps = {
   children?: ReactNode;
   disableFooter?: boolean;
+  stableScrollBar?: boolean;
 };
 
-export const Layout = ({ children, disableFooter }: LayoutProps) => {
+export const Layout = ({ children, disableFooter, stableScrollBar }: LayoutProps) => {
   return (
     <Box
       id="back-to-top-anchor"
-      sx={{ display: "flex", flexDirection: "column", height: "100vh" }}
+      sx={{ display: "flex", flexDirection: "column", height: "100vh", ...(stableScrollBar && { overflowY: "auto", scrollbarGutter: "stable" }) }}
     >
       <Header />
       {children}

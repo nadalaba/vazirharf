@@ -16,7 +16,7 @@ export default async function Index(props: PageProps<"/[lang]">) {
   // Enable static rendering
   setRequestLocale(lang);
   return (
-    <Layout>
+    <Layout stableScrollBar>
       <IndexLayout />
     </Layout>
   );
