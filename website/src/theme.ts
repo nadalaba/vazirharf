@@ -74,9 +74,9 @@ export function createCustomMuiTheme(
 ) {
   return createTheme(theme, {
     direction, // Both here and <body dir="rtl">
-    // transitions: {
-    //   create: () => "none", // disable all transitions
-    // },
+    transitions: {
+      create: () => "none", // disable all transitions
+    },
     typography: {
       fontFamily: FONT_FAMILY,
     },
