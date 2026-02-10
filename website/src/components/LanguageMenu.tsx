@@ -63,6 +63,9 @@ export function LanguageMenu() {
                 as={fullPath}
                 lang={lang}
                 onClick={() => {
+                  setTimeout(() => {
+                    document.cookie = `NEXT_LOCALE=${lang}; path=/; max-age=31536000`;
+                  }, 0);
                   popupState.close();
                 }}
               >
