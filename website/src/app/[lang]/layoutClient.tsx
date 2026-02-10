@@ -10,8 +10,6 @@ import { prefixer } from "stylis";
 import { usePathname } from "next/navigation";
 
 import { createCustomMuiTheme } from "@/theme";
-//import { ToggleThemeContext } from "@/ToggleThemeContext";
-
 import { languages, languagesList, defaultLang } from "@/i18n/settings";
 
 const cacheLtr = {
