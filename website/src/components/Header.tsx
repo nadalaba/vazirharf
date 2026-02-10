@@ -11,14 +11,12 @@ import Toolbar from "@mui/material/Toolbar";
 import TestPageIcon from "@mui/icons-material/ScienceOutlined";
 import { useTranslations } from "next-intl";
 
-import Link from "../Link";
 import { LanguageMenu } from "./LanguageMenu";
-//import { useToggleTheme } from "../ToggleThemeContext";
+import Link from "@/Link";
 
 export const Header = () => {
   const t = useTranslations("header");
   const theme = useTheme();
-  //const toggleTheme = useToggleTheme();
   const { mode, systemMode, setMode } = useColorScheme();
   const colorMode = mode === "system" ? systemMode : mode;
 
