@@ -18,7 +18,6 @@
     "@mui/material": "7.3.2",
     "@reduxjs/toolkit": "2.9.0",
     "clsx": "2.1.1",
-    "date-fns": "4.1.0",
     "gray-matter": "4.0.3",
     "material-ui-popup-state": "5.3.6",
     "next": "15.5.4",
