@@ -23,7 +23,7 @@
     "i18next": "25.5.2",
     "i18next-http-backend": "3.0.2",
     "material-ui-popup-state": "5.3.6",
-    "next": "15.5.4",
+    "next": "15.5.10",
     "react": "19.1.1",
     "react-dom": "19.1.1",
     "react-i18next": "15.7.3",
