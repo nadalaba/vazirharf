@@ -8,7 +8,7 @@ export const DOWNLOAD_BASE_URL =
 export const TAG_NAME =
   process.env.NEXT_PUBLIC_TAG_NAME ||
   process.env.NEXT_PUBLIC_LAST_TAG_NAME ||
-  "v0.000";
+  "v34.000";
 
 export const DOWNLOAD_URL = `${DOWNLOAD_BASE_URL}/${TAG_NAME}/vazirharf-${TAG_NAME}.zip`;
 
