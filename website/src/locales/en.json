@@ -59,7 +59,8 @@
     "other_free_fonts": "Other free fonts",
     "payment_title": "❤️ If you want to donate for the work done:",
     "fetching_donations": "Fetching donations list...",
-    "copied": "Copied {coin} address to clipboard!"
+    "copied": "Copied {coin} address to clipboard!",
+    "send_information": "If you've sent crypto, please <mail>let me know your name</mail> for credit, or if you prefer, append your information to <file>the list</file> and open a new pull request."
   },
   "docs": {
     "docs_pages": "Vazirharf Font Docs"

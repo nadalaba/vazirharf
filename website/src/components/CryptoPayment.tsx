@@ -7,6 +7,7 @@ import Button from "@mui/material/Button";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
+import Link from "@/Link";
 import Toast from "./Toast";
 
 type Coin = "BTC" | "ETH";
@@ -114,6 +115,18 @@ export default function CryptoPayment() {
               onClick={handleClickAddress(coin.id, coin.address)}
             >
               {coin.address}
+            </Box>
+            <Box sx={{ mt: 2 }}>
+              {t.rich("send_information", {
+                mail: (text) => (
+                  <Link href="mailto:alaba.nadim@gmail.com">{text}</Link>
+                ),
+                file: (text) => (
+                  <Link href="https://github.com/nadalaba/vazirharf/blob/master/website/public/donations.json">
+                    {text}
+                  </Link>
+                ),
+              })}
             </Box>
           </Box>
           <Toast
