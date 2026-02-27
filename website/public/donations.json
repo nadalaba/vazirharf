@@ -1,1 +1,37 @@
-[]
+[
+  {
+    "date": "2025/12/20",
+    "name": "allola",
+    "img": "https://s.gravatar.com/avatar/20251220?noemail&s=50&d=wavatar",
+    "amount": 5
+  },
+  {
+    "date": "2026/01/14",
+    "name": "cobaltweaver",
+    "amount": 3
+  },
+  {
+    "date": "2026/02/07",
+    "name": "marigoldloop",
+    "img": "https://s.gravatar.com/avatar/20260207?noemail&s=50&d=wavatar",
+    "web": "https://github.com/msm1365",
+    "amount": 10
+  },
+  {
+    "date": "2026/02/16",
+    "name": "tariq‑khamsin",
+    "amount": 7
+  },
+  {
+    "date": "2026/02/21",
+    "name": "maëlleSolenne",
+    "amount": 2
+  },
+  {
+    "date": "2026/02/22",
+    "name": "karakuş",
+    "img": "https://s.gravatar.com/avatar/20260222?noemail&s=50&d=wavatar",
+    "web": "https://github.com/dala123",
+    "amount": 5
+  }
+]
