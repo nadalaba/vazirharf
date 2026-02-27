@@ -7,7 +7,9 @@ const nextConfig: NextConfig = {
   basePath: process.env.NEXT_PUBLIC_BASE_PATH === "/" ? "" : "/vazirharf",
 
   output: "export",
-  distDir: "out/vazirharf"
+  distDir: "out/vazirharf",
+
+  images: { unoptimized: true }
 }
 
 const withNextIntl = createNextIntlPlugin();
