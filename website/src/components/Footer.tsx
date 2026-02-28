@@ -1,3 +1,5 @@
+"use client"
+
 import Box from "@mui/material/Box";
 import { Theme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
@@ -10,14 +12,14 @@ export function Footer() {
         px: 1,
         py: 1,
         mt: "auto",
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.vars?.palette.background.paper,
       })}
     >
-      <Typography variant="body2" color="textSecondary" align="center">
-        <Link href={`https://github.com/rastikerdar/vazirmatn`}>
+      <Typography variant="body2" sx={{ color: "textSecondary" }} align="center">
+        <Link href={`https://github.com/nadalaba/vazirharf`}>
           View on GitHub
         </Link>{" | "}
-        <Link href={`https://github.com/rastikerdar/vazirmatn/tree/master/website`}>
+        <Link href={`https://github.com/nadalaba/vazirharf/tree/master/website`}>
           Website Source
         </Link>
       </Typography>

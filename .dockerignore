@@ -1,0 +1,24 @@
+# git files
+.git*
+
+# out files and directories
+fonts
+misc
+Round-Dots
+Vazirharf-font-face.css
+vazirharf-v*.zip
+
+# temp files and directories needed for build
+latin
+out
+
+# package files
+DESCRIPTION*
+package.json
+
+# website files
+website
+
+# docker files
+Dockerfile
+.dockerignore

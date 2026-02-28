@@ -1,6 +1,7 @@
-import { useTheme } from "@mui/material/styles";
+"use client";
+
+import { useTheme, useColorScheme } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
-import { useTranslation } from "react-i18next";
 import NightIcon from "@mui/icons-material/DarkModeOutlined";
 import DayIcon from "@mui/icons-material/LightModeOutlined";
 import HomeIcon from "@mui/icons-material/HomeOutlined";
@@ -8,25 +9,27 @@ import DocIcon from "@mui/icons-material/MenuBookOutlined";
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import TestPageIcon from "@mui/icons-material/ScienceOutlined";
+import { useTranslations } from "next-intl";
 
-import Link from "../Link";
 import { LanguageMenu } from "./LanguageMenu";
-import { useToggleTheme } from "../ToggleThemeContext";
+import Link from "@/Link";
 
 export const Header = () => {
-  const { t } = useTranslation(undefined, {keyPrefix: 'header'});
+  const t = useTranslations("header");
   const theme = useTheme();
-  const toggleTheme = useToggleTheme();
+  const { mode, systemMode, setMode } = useColorScheme();
+  const colorMode = mode === "system" ? systemMode : mode;
 
   return (
     <AppBar
       sx={{
-        backgroundColor: theme.palette.background.default,
+        backgroundColor: theme.vars?.palette.background.default,
         backgroundImage: "none",
         boxShadow: "none",
-        borderBottomColor: theme.palette.divider,
+        borderBottomColor: theme.vars?.palette.divider,
         top: "0 !important",
       }}
+      enableColorOnDark
       position="sticky"
       elevation={0}
     >
@@ -39,7 +42,7 @@ export const Header = () => {
         <Link href={"/"}>
           <IconButton
             size="large"
-            sx={{ color: theme.palette.text.primary }}
+            sx={{ color: theme.vars?.palette.text.primary }}
             title={t("home")}
           >
             <HomeIcon fontSize="small" />
@@ -48,7 +51,7 @@ export const Header = () => {
         <Link href="/docs">
           <IconButton
             size="large"
-            sx={{ color: theme.palette.text.primary }}
+            sx={{ color: theme.vars?.palette.text.primary }}
             title={t("docs")}
           >
             <DocIcon fontSize="small" />
@@ -57,22 +60,19 @@ export const Header = () => {
         <Link href="/lab">
           <IconButton
             size="large"
-            sx={{ color: theme.palette.text.primary }}
+            sx={{ color: theme.vars?.palette.text.primary }}
             title={t("lab")}
           >
             <TestPageIcon fontSize="small" />
           </IconButton>
         </Link>
         <IconButton
-          onClick={() => toggleTheme()}
+          onClick={() => setMode(colorMode !== "dark" ? "dark" : "light")}
           size="large"
-          sx={{ color: theme.palette.text.primary }}
-          title={
-            theme.palette.mode === "light" ? t("night_mode") : t("day_mode")
-          }
+          sx={{ color: theme.vars?.palette.text.primary }}
+          title={colorMode !== "dark" ? t("night_mode") : t("day_mode")}
         >
-          {theme.palette.mode === "light" && <NightIcon fontSize="small" />}
-          {theme.palette.mode === "dark" && <DayIcon fontSize="small" />}
+          {colorMode !== "dark" ? (<NightIcon fontSize="small" />) : (<DayIcon fontSize="small" />)}
         </IconButton>
         <LanguageMenu />
       </Toolbar>

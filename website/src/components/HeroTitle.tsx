@@ -1,13 +1,15 @@
+"use client"
+
 import { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
 import Typography from "@mui/material/Typography";
+import { useTranslations } from "next-intl";
 
 export const HeroTitle = () => {
-  const { t, i18n } = useTranslation(undefined, { keyPrefix: "index" });
-  const [font, setFont] = useState("vazirmatn");
+  const t = useTranslations("index");
+  const [font, setFont] = useState("vazirharf");
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setFont(font === "vazirmatn" ? "vazirmatn rd" : "vazirmatn");
+      setFont(font === "vazirharf" ? "vazirharf rd" : "vazirharf");
     }, 5000);
 
     return () => {
@@ -22,14 +24,7 @@ export const HeroTitle = () => {
       gutterBottom
       sx={{ fontWeight: "900", mb: 1, fontFamily: font }}
     >
-      {t(
-        "hero_title",
-        i18n.language == "en"
-          ? {
-              lng: "fa",
-            }
-          : undefined,
-      )}
+      {t("hero_title")}
     </Typography>
   );
 };
