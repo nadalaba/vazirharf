@@ -1,61 +1,82 @@
-# Vazirmatn Font فونت وزیرمتن
+# Vazirharf Font فونت وزیرحرف
 
-Vazirmatn is a Persian/Arabic font project that started in 2015 under the name of Vazir with the idea of a new simple and legible typeface suitable for web pages and applications. Design and development have taken a long way but I hope the results are worth it. Thanks to DejaVu Sans font (v2.35) published in public domain there was a free software base to start the Vazir project. Although Vazir was completely different in typeface, still the original software was common. The design is done in Fontforge. For Latin glyphs, Vazirmatn is combined with Roboto font by a build script, however there is also a version without Latin glyphs (Non-Latin). ([More info](https://rastikerdar.github.io/vazirmatn/fa/docs))
+Vazirharf is a minimal fork of the original [Vazirmatn](https://github.com/rastikerdar/vazirmatn) font, created by the late Saber Rastikerdar.
+It is designed to split Lam-Alef ligatures into two distinct glyphs, enhancing compatibility with typing platforms like [monkeytype](https://monkeytype.com), where highlighting individual letters (**harf**) within a ligature is essential, without compromising the visual integrity of the original design.
 
-- [Website](https://rastikerdar.github.io/vazirmatn)
-- [Docs](https://rastikerdar.github.io/vazirmatn/fa/docs)
-- [Test the font](https://rastikerdar.github.io/vazirmatn/fa/lab)
+- [Website](https://nadalaba.github.io/vazirharf)
+- [Docs](https://nadalaba.github.io/vazirharf/en/docs)
+- [Test the font](https://nadalaba.github.io/vazirharf/en/lab)
+
+## What’s New in Version 34.001
+
+- **Lam-Alef Redesign**: All Lam-Alef combinations (e.g. لا، لآ، لأ، لإ، لٱ، ڵا...) now use two separate glyphs instead of one.
+- **Contextual Substitution**: These combinations are handled through contextual alternates rather than static ligature glyphs.
+- **OpenType Features**: Lam-Alef lookups previously defined under `'liga'` and `'rlig'` have been removed. The new behavior is implemented via `'rclt'` (Required Contextual Alternates).
+
+Released: 22 September 2025
+
+## Why was the name changed from Vazirmatn to Vazirharf?
+
+The name change to **Vazirharf** was made to avoid confusion with the original font, which was widely distributed via package managers but is no longer being updated. The new name reflects both continuity and evolution:
+- **"Vazir"**: Preserves the legacy of the original font.
+- **"Harf"**: Means "letter" or "character", indicating a shift from single-glyph combinations to letter-based compositions.
+
+## Who Should Use Vazirharf?
+
+Use **Vazirharf**:
+- When you need to disable ligatures (because you want feedback for each character you type),but you still want to preserve the original ligature shape of Lam-Alef `لا`.
+This is especially useful on typing platforms that do not rely on a traditional input box, such as [monkeytype](https://monkeytype.com). You can clearly see the difference [here](https://github.com/monkeytypegame/monkeytype/pull/7552).
+- If you require ongoing updates and support.
 
 ## Install
 
 ### Download
 
-Grab the [latest release](https://github.com/rastikerdar/vazirmatn/releases/latest) zip package.
+Grab the [latest release](https://github.com/nadalaba/vazirharf/releases/latest) zip package.
 
 TTF files are in folder `fonts/ttf`. There is also a rounded dots version in folder `Round-Dots/`.
 
-### [npm](https://www.npmjs.com/package/vazirmatn)
+### [npm](https://www.npmjs.com/package/vazirharf)
 
-```
-npm install vazirmatn
+```shell
+npm install vazirharf
 ```
 or
+```shell
+pnpm add vazirharf
 ```
-yarn add vazirmatn
+
+### [Github Package Registry](https://github.com/nadalaba/vazirharf/pkgs/npm/vazirharf)
+
+Add the following line to your preferred `.npmrc` specifying GitHub Packages URL and the namespace where the package is hosted.
+
+```shell
+@nadalaba:registry=https://npm.pkg.github.com
+```
+
+Then you can use npm-cli to install packages hosted at `@nadalaba` from GPR
+
+```shell
+npm install @nadalaba/vazirharf
+```
+or
+```shell
+pnpm add @nadalaba/vazirharf
 ```
 
 ### CDN
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Vazirharf-font-face.css" rel="stylesheet" type="text/css" />
 ```
 
 `*-font-face.css` for other versions are in `misc` and `Round-Dots` folders.
 
 ```css
 body {
-    font-family: Vazirmatn, sans-serif;
+    font-family: Vazirharf, sans-serif;
 }
 ```
-
-### Arch Linux ([AUR](https://aur.archlinux.org/packages/vazirmatn-fonts))
-```
-yay -S vazirmatn-fonts
-```
-
-### Fedora Linux
-You can install the main variant of Vazirmatn font with this command:
-```
-dnf install vazirmatn-vf-fonts
-```
-
-If you want to install all variants of Vazirmatn (RD/NL/UI/...), install `vazirmatn-fonts-all`:
-```
-dnf install vazirmatn-fonts-all
-```
-
-If you use Fedora in Persian, Vazirmatn will become the default font for displaying Persian text
-in almost all applications.
 
 ## Build
 
@@ -63,16 +84,20 @@ All weights other than Thin, Regular and Black are generated by interpolation me
 
 ## Thank you
 
+- [Vazirmatn](https://github.com/rastikerdar/vazirmatn)
 - [fontforge](https://fontforge.org/)
 - [fontmake](https://github.com/googlefonts/fontmake)
 - [fonttools](https://github.com/fonttools/fonttools)
 - [DejaVu Fonts v2.35](https://dejavu-fonts.github.io) (used for the first version)
 
 ## License
+
 This Font Software is licensed under the SIL Open Font License, Version 1.1. See [OFL.txt](OFL.txt).
 
 ## Authors
+
 See [AUTHORS.txt](AUTHORS.txt).
 
-## Donation
-[Website](https://rastikerdar.github.io/vazirmatn)
+## Support
+
+Visit the [project website](https://nadalaba.github.io/vazirharf).

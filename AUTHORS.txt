@@ -6,4 +6,5 @@
 # Name or Organization <email address>
 # The email address is not required for organizations.
 
-Saber Rastikerdar <saber.rastikerdar@gmail.com>
+Saber Rastikerdar <saber.rastikerdar@gmail.com>.
+Nad Alaba <alaba.nadim@gmail.com>.
