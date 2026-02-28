@@ -1,4 +1,12 @@
-# Vazirmatn Changelog
+# Vazirharf Changelog
+
+## 34.000
+
+- Rename from Vazirmatn to Vazirharf.
+- Make all variations of Lam-Alef (لٱ لآ لأ لإ لا ڵا) use two-glyph contextual alternates instead of one-glyph ligatures.
+- Remove all 'liga' and 'rlig' Lam-Alef lookups, and use 'rclt' feature for the contextual lookup above.
+
+22 September 2025
 
 ## 33.003
 
