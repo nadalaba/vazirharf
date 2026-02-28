@@ -31,13 +31,6 @@ jobs:
         with:
           node-version: 22
           registry-url: https://npm.pkg.github.com/
-      #- name: configure .npmrc
-      #  run: |
-      #    echo @${{ github.repository_owner }}:registry=https://npm.pkg.github.com/ > .npmrc
-      #    echo //npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }} >> .npmrc
-      #- run: ls -al
-      #- run: cat .npmrc || true
-      #- run: npm config ls -l
       - name: make package scoped
         run: npx -y change-package-name @${{ github.repository }}
       - run: npm publish
