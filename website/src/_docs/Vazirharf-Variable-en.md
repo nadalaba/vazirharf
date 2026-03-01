@@ -58,8 +58,8 @@ You can also use a CDN instead of local paths, like this:
 ```css
 @font-face {
   font-family: 'Vazirharf RD';
-  src: url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
-       url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
+  src: url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
+       url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -68,9 +68,9 @@ You can also use a CDN instead of local paths, like this:
 
 Additionally, in the root directory, a file named `Vazirharf-Variable-font-face.css` is provided for web usage. You can include it directly or via CDN:
 ```html
-<link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Vazirharf-Variable-font-face.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Vazirharf-Variable-font-face.css" rel="stylesheet" type="text/css" />
 ```
-Note: Always use the latest version instead of the fixed version number v34.001.
+Note: Always use the latest version instead of the fixed version number v34.002.
 
 Usage in CSS looks like this:
 ```css
