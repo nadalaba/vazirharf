@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1772371101
+ModificationTime: 1772372417
 PfmFamily: 33
 TTFWeight: 100
 TTFWidth: 5
@@ -7515,11 +7515,11 @@ AnchorPoint: "Anchor110" 690 765 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-90 224 m 1
+346.915039062 318.365234375 m 1
+ 90 224 l 1
  100.825195312 285.787109375 l 1
  358 370 l 1
  346.915039062 318.365234375 l 1
- 90 224 l 1
 EndSplineSet
 Refer: 44 1609 N 1 0 0 1 170 0 2
 Substitution2: "'fina' Terminal Forms in Arabic lookup 1 subtable" uni06CD.fina
