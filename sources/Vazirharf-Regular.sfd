@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1758659513
+ModificationTime: 1772373602
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -7501,16 +7501,16 @@ Flags: HW
 LayerCount: 2
 Fore
 SplineSet
-256 128 m 1
- 399 -15 l 1
- 256 -160 l 1
- 114 -15 l 1
- 256 128 l 1
 256 417 m 1
  399 274 l 1
  256 129 l 1
  114 274 l 1
  256 417 l 1
+256 128 m 5
+ 399 -15 l 1
+ 256 -160 l 1
+ 114 -15 l 1
+ 256 128 l 5
 EndSplineSet
 EndChar
 
