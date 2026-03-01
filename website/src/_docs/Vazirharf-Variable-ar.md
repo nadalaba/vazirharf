@@ -58,8 +58,8 @@ author:
 ```css
 @font-face {
   font-family: 'Vazirharf RD';
-  src: url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
-       url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
+  src: url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
+       url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -68,9 +68,9 @@ author:
 
 بالإضافة إلى ذلك، يوجد في المجلد الأساسي ملف باسم `Vazirharf-Variable-font-face.css` مخصص للاستخدام على الويب، ويمكن تضمينه مباشرة أو عبر CDN:
 ```html
-<link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Vazirharf-Variable-font-face.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Vazirharf-Variable-font-face.css" rel="stylesheet" type="text/css" />
 ```
-ملاحظة: يُفضل دائمًا استخدام أحدث إصدار بدلاً من رقم الإصدار الثابت v34.001.
+ملاحظة: يُفضل دائمًا استخدام أحدث إصدار بدلاً من رقم الإصدار الثابت v34.002.
 
 الاستخدام في CSS يكون كالتالي:
 ```css
