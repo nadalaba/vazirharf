@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1772373602
+ModificationTime: 1772388179
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -81,10 +81,10 @@ Lookup: 257 9 0 "Single Positioning lookup 5" { "Single Positioning lookup 5 sub
 Lookup: 257 9 0 "Single Positioning lookup 6" { "Single Positioning lookup 6 subtable"  } []
 Lookup: 257 9 0 "Single Positioning lookup 7" { "Single Positioning lookup 7 subtable"  } []
 Lookup: 264 9 0 "'kern' Horizontal Kerning lookup 5" { "'kern' Horizontal Kerning lookup 5 subtable 0"  "'kern' Horizontal Kerning lookup 5 subtable 1"  "'kern' Horizontal Kerning lookup 5 subtable 2"  "'kern' Horizontal Kerning lookup 5 subtable 3"  "'kern' Horizontal Kerning lookup 5 subtable 4"  "'kern' Horizontal Kerning lookup 5 subtable 5"  "'kern' Horizontal Kerning lookup 5 subtable 6"  "'kern' Horizontal Kerning lookup 5 subtable 7"  } ['kern' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
-Lookup: 260 1 0 "'mark' Mark Positioning lookup 6" { "'mark' Mark Positioning lookup 6 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
-Lookup: 261 1 0 "'mark' Mark Positioning lookup 8" { "'mark' Mark Positioning lookup 8 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
-Lookup: 260 1 0 "'mark' Mark Positioning lookup 9" { "'mark' Mark Positioning lookup 9 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
-Lookup: 261 1 0 "'mark' Mark Positioning lookup 10" { "'mark' Mark Positioning lookup 10 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
+Lookup: 260 1 0 "'mark' Mark Positioning in Arabic lookup 6" { "'mark' Mark Positioning in Arabic lookup 6 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
+Lookup: 261 1 0 "'mark' Mark Positioning in Arabic lookup 8" { "'mark' Mark Positioning in Arabic lookup 8 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
+Lookup: 260 1 0 "'mark' Mark Positioning in Arabic lookup 9" { "'mark' Mark Positioning in Arabic lookup 9 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
+Lookup: 261 1 0 "'mark' Mark Positioning in Arabic lookup 10" { "'mark' Mark Positioning in Arabic lookup 10 subtable"  } ['mark' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic lookup 11" { "'mkmk' Mark to Mark in Arabic lookup 11 subtable"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 Lookup: 262 1 0 "'mkmk' Mark to Mark in Arabic lookup 12" { "'mkmk' Mark to Mark in Arabic lookup 12 subtable"  } ['mkmk' ('DFLT' <'dflt' > 'arab' <'FAR ' 'KUR ' 'URD ' 'dflt' > ) ]
 MarkAttachClasses: 1
@@ -281,7 +281,7 @@ WinInfo: 76 38 14
 BeginPrivate: 0
 EndPrivate
 TeXData: 1 0 0 307200 153600 102400 553984 -1048576 102400 783286 444596 497025 792723 393216 433062 380633 303038 157286 324010 404750 52429 2506097 1059062 262144
-AnchorClass2: "Anchor100" "'mkmk' Mark to Mark in Arabic lookup 12 subtable" "Anchor101" "'mkmk' Mark to Mark in Arabic lookup 11 subtable" "Anchor-2"""  "Anchor-3"""  "Anchor-4"""  "Anchor-5"""  "Anchor106" "'mark' Mark Positioning lookup 10 subtable" "Anchor107" "'mark' Mark Positioning lookup 6 subtable" "Anchor-8"""  "Anchor109" "'mark' Mark Positioning lookup 8 subtable" "Anchor110" "'mark' Mark Positioning lookup 9 subtable" "Anchor-11"""  "Anchor-12"""  "Anchor-13"""  "Anchor-14"""  "Anchor-15"""  "Anchor-16"""  "Anchor-17"""  "Anchor-18"""  "Anchor-19""" 
+AnchorClass2: "Anchor100" "'mkmk' Mark to Mark in Arabic lookup 12 subtable" "Anchor101" "'mkmk' Mark to Mark in Arabic lookup 11 subtable" "Anchor-2"""  "Anchor-3"""  "Anchor-4"""  "Anchor-5"""  "Anchor106" "'mark' Mark Positioning in Arabic lookup 10 subtable" "Anchor107" "'mark' Mark Positioning in Arabic lookup 6 subtable" "Anchor-8"""  "Anchor109" "'mark' Mark Positioning in Arabic lookup 8 subtable" "Anchor110" "'mark' Mark Positioning in Arabic lookup 9 subtable" "Anchor-11"""  "Anchor-12"""  "Anchor-13"""  "Anchor-14"""  "Anchor-15"""  "Anchor-16"""  "Anchor-17"""  "Anchor-18"""  "Anchor-19""" 
 BeginChars: 583 583
 
 StartChar: space

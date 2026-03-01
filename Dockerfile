@@ -1,4 +1,4 @@
-FROM debian:12-slim AS build
+FROM debian:13-slim AS build
 
 WORKDIR /vazirharf
 
