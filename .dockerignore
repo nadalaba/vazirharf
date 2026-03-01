@@ -7,9 +7,6 @@ misc
 Round-Dots
 Vazirharf-font-face.css
 vazirharf-v*.zip
-
-# temp files and directories needed for build
-latin
 out
 
 # package files
