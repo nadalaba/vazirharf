@@ -47,10 +47,6 @@ export default async function RootLayout(props: LayoutProps<"/[lang]">) {
 
   return (
     <html lang={lang} dir={languages[lang].direction} suppressHydrationWarning>
-      <head>
-        <link rel="stylesheet" href={`${VAZIRHARF_CSS_URL}`} />
-        <link rel="stylesheet" href={`${VAZIRHARF_RD_CSS_URL}`} />
-      </head>
       <body>
         <InitColorSchemeScript attribute="class" />
         <ClientRootLayout>
