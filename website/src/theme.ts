@@ -67,12 +67,11 @@ const theme = createTheme({
       },
     },
   },
-})
+});
 
-export function createCustomMuiTheme(
-  direction?: "rtl" | "ltr"
-) {
-  return createTheme(theme, {
+export function createCustomMuiTheme(direction?: "rtl" | "ltr") {
+  return createTheme({
+    ...theme,
     direction, // Both here and <body dir="rtl">
     transitions: {
       create: () => "none", // disable all transitions
