@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1772388179
+ModificationTime: 1772520311
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -11212,8 +11212,8 @@ AnchorPoint: "Anchor110" 425 1471 basechar 0
 AnchorPoint: "Anchor107" 437 -661 basechar 0
 LayerCount: 2
 Fore
-Refer: 249 65262 N 1 0 0 1 0 0 3
 Refer: 75 1648 S 1 0 0 1 320 -180 2
+Refer: 249 65262 N 1 0 0 1 0 0 3
 EndChar
 
 StartChar: uni06C8
