@@ -5,7 +5,7 @@ import { useRef, useEffect, useState } from "react";
 import { List, type RowComponentProps } from "react-window";
 import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
-import {useLocale} from 'next-intl';
+import { useLocale } from "next-intl";
 
 import { languages } from "@/i18n/settings";
 
@@ -20,7 +20,7 @@ export const DonationList = (props: Props) => {
   const theme = useTheme();
   const locale = useLocale();
   const { donations } = props;
-  
+
   const [viewWidth, setViewWidth] = useState(0);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -36,7 +36,8 @@ export const DonationList = (props: Props) => {
   const itemHeight = 100;
   const itemsPerRow = Math.floor(viewWidth / itemWidth) || 1;
   const rowCount = Math.ceil(donations.length / itemsPerRow);
-  const listHeight = Math.min(rowCount, 2) * itemHeight + 10;
+  //const listHeight = Math.min(rowCount, 2) * itemHeight + 10;
+  const listHeight = 2 * itemHeight + 10;
 
   return (
     <Box
@@ -64,7 +65,7 @@ export const DonationList = (props: Props) => {
           rowComponent={({ index, style }: RowComponentProps) => {
             const items = donations.slice(
               index * itemsPerRow,
-              index * itemsPerRow + itemsPerRow
+              index * itemsPerRow + itemsPerRow,
             );
             return (
               <Box style={style}>
@@ -97,7 +98,9 @@ export const DonationList = (props: Props) => {
                           alignItems: "center",
                           paddingTop: 8,
                           height: `${itemHeight}px`,
-                          color: !d.web ? theme.vars?.palette.text.primary : undefined,
+                          color: !d.web
+                            ? theme.vars?.palette.text.primary
+                            : undefined,
                         }}
                         target="__blank"
                         rel="noreferrer"
@@ -107,7 +110,7 @@ export const DonationList = (props: Props) => {
                             d.img ??
                             `https://s.gravatar.com/avatar/${d.date.replace(
                               /(\s)|(:)|(\/)/g,
-                              ""
+                              "",
                             )}?noemail&s=50&d=wavatar`
                           }
                           alt={d.name}
@@ -118,7 +121,7 @@ export const DonationList = (props: Props) => {
                         <div
                           style={{
                             paddingTop: "4px",
-                            overflow: "hidden"
+                            overflow: "hidden",
                           }}
                         >
                           {d.name}
@@ -131,7 +134,9 @@ export const DonationList = (props: Props) => {
                           }}
                         >
                           {locale === "fa"
-                            ? convertNumberToPersian(formatNumber(d.amount, "٬"))
+                            ? convertNumberToPersian(
+                                formatNumber(d.amount, "٬"),
+                              )
                             : formatNumber(d.amount, ",")}
                         </div>
                       </a>
