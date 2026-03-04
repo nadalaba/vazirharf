@@ -1,6 +1,6 @@
 import { setRequestLocale } from "next-intl/server";
 import { Layout } from "@/components/Layout";
-import { SITE_NAME, SITE_BASE_PATH, BASE_PATH } from "@/lib/constants";
+import { SITE_NAME, SITE_BASE_PATH } from "@/lib/constants";
 import { defaultLang } from "@/i18n/settings";
 import { IndexLayout } from "./client";
 
@@ -19,9 +19,9 @@ export default async function Index(props: PageProps<"/[lang]">) {
   const donations = await response.json();
   return (
     <Layout stableScrollBar>
-      <IndexLayout donations={donations}/>
+      <IndexLayout donations={donations} />
     </Layout>
   );
-};
+}
 
 export { generateStaticParams } from "@/lib/getStatic";

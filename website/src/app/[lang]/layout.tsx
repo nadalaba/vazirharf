@@ -3,11 +3,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 
 import { languages, languagesList } from "@/i18n/settings";
-import {
-  BASE_PATH,
-  VAZIRHARF_CSS_URL,
-  VAZIRHARF_RD_CSS_URL,
-} from "@/lib/constants";
+import { BASE_PATH } from "@/lib/constants";
 
 import { NotFound } from "@/components/NotFound";
 import ClientRootLayout from "./layoutClient";

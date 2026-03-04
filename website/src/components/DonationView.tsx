@@ -6,7 +6,6 @@ import { useTranslations } from "next-intl";
 
 import { formatNumber } from "@/lib/utils";
 import { useWindowSize } from "@/lib/windowSize";
-import { BASE_PATH } from "@/lib/constants";
 import { Donation } from "@/types";
 
 import { DonationList } from "./DonationList";
