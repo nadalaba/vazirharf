@@ -6,7 +6,7 @@ export async function generateMetadata({ params }: PageProps<"/[lang]/lab">) {
   const { lang } = await params;
   const t = await getTranslations({ locale: lang, namespace: "lab" });
   return {
-    title: t("vazirharf_font_labratory"),
+    title: t("vazirharf_font_laboratory"),
   };
 }
 

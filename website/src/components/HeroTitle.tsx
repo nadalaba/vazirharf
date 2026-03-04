@@ -1,15 +1,20 @@
-"use client"
+"use client";
 
 import { useEffect, useState } from "react";
 import Typography from "@mui/material/Typography";
+import { vazirharf, vazirharfRD } from "@/theme";
 import { useTranslations } from "next-intl";
 
 export const HeroTitle = () => {
   const t = useTranslations("index");
-  const [font, setFont] = useState("vazirharf");
+  const [font, setFont] = useState(vazirharf.style.fontFamily);
   useEffect(() => {
     const timeout = setTimeout(() => {
-      setFont(font === "vazirharf" ? "vazirharf rd" : "vazirharf");
+      setFont(
+        font === vazirharf.style.fontFamily
+          ? vazirharfRD.style.fontFamily
+          : vazirharf.style.fontFamily,
+      );
     }, 5000);
 
     return () => {

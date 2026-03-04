@@ -1,7 +1,10 @@
-"use client";
-
 import { createTheme, PaletteColor } from "@mui/material/styles";
-//import useMediaQuery from "@mui/material/useMediaQuery";
+import localFont from "next/font/local";
+
+export const vazirharf = localFont({ src: "../fonts/Vazirharf[wght].woff2" });
+export const vazirharfRD = localFont({
+  src: "../fonts/Vazirharf-RD[wght].woff2",
+});
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -28,8 +31,7 @@ declare module "@mui/material/Button" {
   }
 }
 
-const FONT_FAMILY =
-  '"Vazirharf", "Roboto", "Tahoma", "Helvetica", "Arial", sans-serif';
+const FONT_FAMILY = `${vazirharf.style.fontFamily}, 'Roboto', 'Tahoma', 'Helvetica', 'Arial', 'sans-serif'`;
 
 const { palette } = createTheme();
 
@@ -67,12 +69,11 @@ const theme = createTheme({
       },
     },
   },
-})
+});
 
-export function createCustomMuiTheme(
-  direction?: "rtl" | "ltr"
-) {
-  return createTheme(theme, {
+export function createCustomMuiTheme(direction?: "rtl" | "ltr") {
+  return createTheme({
+    ...theme,
     direction, // Both here and <body dir="rtl">
     transitions: {
       create: () => "none", // disable all transitions

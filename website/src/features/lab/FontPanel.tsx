@@ -66,8 +66,8 @@ export function FontPanel() {
 
     addStyle(`
     @font-face {
-      font-family: '${family}';
-      src: url('${url}') format("${fileType}");
+      font-family: "${family}";
+      src: url("${url}") format("${fileType}");
       font-weight: 400;
       font-style: normal;
     }
@@ -75,7 +75,7 @@ export function FontPanel() {
 
     const font: Font = {
       family: family,
-      cssFamily: family,
+      cssFamily: `"${family}"`,
       cssURL: "",
       isVariable: false,
       isLocal: true,
