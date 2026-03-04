@@ -26,8 +26,8 @@ Open url [http://localhost:3000/vazirharf](http://localhost:3000/vazirharf)
 Use this value from shell or a create a local file named `.env.local` in the root of website folder.
 
 ```shell
-NEXT_PUBLIC_LAST_TAG_NAME= # e.g. 34.001
-NEXT_PUBLIC_CDN_URL= # base folder including vazirharf css files (Vazirharf-font-face.css, ...). e.g. "https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001"
+NEXT_PUBLIC_LAST_TAG_NAME= # e.g. 34.002
+NEXT_PUBLIC_CDN_URL= # base folder including vazirharf css files (Vazirharf-font-face.css, ...). e.g. "https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002"
 NEXT_PUBLIC_BASE_PATH="/vazirharf" # will be http://localhost:3000/vazirharf on dev
 ```
 

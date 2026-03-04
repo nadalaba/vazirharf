@@ -1,5 +1,13 @@
 # Vazirharf Changelog
 
+## 34.002
+
+- Fix interpolation problems in variable font (rastikerdar/vazirmatn#317).
+- Fix build issues when using ufo2ft >= 3.0.0 (duplicate lookup).
+- Fix build issues for variable fonts (component‑order differences across weights).
+
+05 March 2026
+
 ## 34.001
 
 - Rename from Vazirmatn to Vazirharf.

@@ -1,6 +1,6 @@
 {
   "name": "vazirharf",
-  "version": "34.0.1",
+  "version": "34.0.2",
   "author": "Nad Alaba <alaba.nadim@gmail.com>",
   "license": "OFL",
   "description": "Vazirharf is a Persian/Arabic font fork of Vazirmatn that replaces Lam-Alef ligatures with contextual alternates.",
@@ -30,6 +30,6 @@
   "bugs": {
     "url": "https://github.com/nadalaba/vazirharf/issues"
   },
-  "homepage": "https://github.com/nadalaba/vazirharf#readme",
+  "homepage": "https://nadalaba.github.io/vazirharf",
   "dependencies": {}
 }

@@ -67,7 +67,7 @@ pnpm add @nadalaba/vazirharf
 ### CDN
 
 ```html
-<link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.001/Vazirharf-font-face.css" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Vazirharf-font-face.css" rel="stylesheet" type="text/css" />
 ```
 
 `*-font-face.css` for other versions are in `misc` and `Round-Dots` folders.
