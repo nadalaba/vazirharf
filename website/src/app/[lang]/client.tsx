@@ -18,6 +18,8 @@ import { languages, languagesList } from "@/i18n/settings";
 import { HeroTitle } from "@/components/HeroTitle";
 import { DonationView } from "@/components/DonationView";
 
+import { Donation } from "@/types";
+
 export function DownloadButton({
   icon,
   buttonTitle,
@@ -91,7 +93,7 @@ export function LinkButtons({ infoArray }: { infoArray: LinkButtonInfo[] }) {
   );
 }
 
-export function IndexLayout() {
+export function IndexLayout({ donations }: { donations: Donation[] }) {
   const t = useTranslations("index");
   return (
     <Box
@@ -181,7 +183,7 @@ export function IndexLayout() {
             width: "100%",
           }}
         >
-          <DonationView />
+          <DonationView donations={donations}/>
         </Box>
       </Box>
       <Box

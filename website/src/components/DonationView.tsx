@@ -1,6 +1,6 @@
 "use client"; //todo split this into server and client
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import { useTranslations } from "next-intl";
 
@@ -13,9 +13,8 @@ import { DonationList } from "./DonationList";
 import { SelectButton } from "./SelectButton";
 import CryptoPayment from "./CryptoPayment";
 
-export function DonationView() {
+export function DonationView({ donations }: { donations: Donation[] }) {
   const t = useTranslations("donation");
-  const [donations, setDonations] = useState<Donation[]>([]);
   const [sortBy, setSortBy] = useState<"amount" | "date">("amount");
   useWindowSize();
   const totalAmount = donations.reduce((pv, cv) => pv + cv.amount, 0);
@@ -24,14 +23,6 @@ export function DonationView() {
     sortBy === "amount"
       ? donations.sort((a, b) => (a.amount < b.amount ? 1 : -1))
       : donations.sort((a, b) => (a.date > b.date ? 1 : -1));
-
-  useEffect(() => {
-    const fetchDonations = async () => {
-      const response = await fetch(`${BASE_PATH}/donations.json`);
-      setDonations(await response.json());
-    };
-    fetchDonations();
-  }, []);
 
   return (
     <Box
