@@ -6,15 +6,13 @@
 # Works only on Linux.
 #
 # Requirements:
-#     fontforge ~ v20201107
+#     fontforge ~ v20251009
 #     fontmake  https://github.com/googlefonts/fontmake ~ v2.4.1
 #     python3
-#     python3-fontforge ~ v20201107
 #     fonttools https://github.com/fonttools/fonttools ~ v4.29.1
 #     git (Access to fetch Roboto Variable repo https://github.com/googlefonts/Roboto-Classic) ~ v3.004
 #     gftools
 #     ttfautohint  https://www.freetype.org/ttfautohint/ ~ v1.8.3
-#     ./build.py
 #
 # Run:
 #     ./makefont.sh [options]
@@ -84,7 +82,7 @@ function error() {
 # ========================================
 
 STARTTIME=$SECONDS
-SCRIPT_DIR=$(dirname "$0")
+SCRIPT_DIR=$(readlink -f "$(dirname "$0")")
 
 REPO_DIR="."
 TEMP_DIR="/tmp/vazirharf-font-output-temp"
@@ -138,6 +136,9 @@ for i in "$@"; do
         ;;
     esac
 done
+
+REPO_DIR=$(readlink -f "$REPO_DIR")
+TEMP_DIR=$(readlink -f "$TEMP_DIR")
 
 FONT_FAMILY_NAME="Vazirharf"
 FONT_FILE_NAME="Vazirharf"
@@ -196,9 +197,9 @@ fi
 
 log "Preparing sfd files"
 if [ -n "$RD_FONT" ]; then
-    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Thin.sfd" "${BUILD_DIR}/Vazirharf-RD-Thin.sfd" || error
-    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Regular.sfd" "${BUILD_DIR}/Vazirharf-RD-Regular.sfd" || error
-    python3 "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Black.sfd" "${BUILD_DIR}/Vazirharf-RD-Black.sfd" || error
+    fontforge -script "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Thin.sfd" "${BUILD_DIR}/Vazirharf-RD-Thin.sfd" || error
+    fontforge -script "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Regular.sfd" "${BUILD_DIR}/Vazirharf-RD-Regular.sfd" || error
+    fontforge -script "${SCRIPT_DIR}/convert-to-rd-font.py" "${SOURCES_DIR}/Vazirharf-Black.sfd" "${BUILD_DIR}/Vazirharf-RD-Black.sfd" || error
 else
     cp "${SOURCES_DIR}/Vazirharf-Thin.sfd" "${BUILD_DIR}/" || error
     cp "${SOURCES_DIR}/Vazirharf-Regular.sfd" "${BUILD_DIR}/" || error
@@ -206,17 +207,17 @@ else
 fi
 
 log "Unlinking transformed references"
-python3 "${SCRIPT_DIR}/unlink-references.py" "${BUILD_DIR}/$FONT_FILE_NAME-Thin.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Thin.sfd" || error
-python3 "${SCRIPT_DIR}/unlink-references.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" || error
-python3 "${SCRIPT_DIR}/unlink-references.py" "${BUILD_DIR}/$FONT_FILE_NAME-Black.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Black.sfd" || error
+fontforge -script "${SCRIPT_DIR}/unlink-references.py" "${BUILD_DIR}/$FONT_FILE_NAME-Thin.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Thin.sfd" || error
+fontforge -script "${SCRIPT_DIR}/unlink-references.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" || error
+fontforge -script "${SCRIPT_DIR}/unlink-references.py" "${BUILD_DIR}/$FONT_FILE_NAME-Black.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Black.sfd" || error
 
 # ========================================
 # Check anchors
 # ========================================
 
 log "Checking anchors"
-python3 "${SCRIPT_DIR}/check-anchors.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Thin.sfd" || error
-python3 "${SCRIPT_DIR}/check-anchors.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Black.sfd" || error
+fontforge -script "${SCRIPT_DIR}/check-anchors.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Thin.sfd" || error
+fontforge -script "${SCRIPT_DIR}/check-anchors.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-Black.sfd" || error
 
 # ========================================
 # Make instances
@@ -231,14 +232,14 @@ function create_instance() {
     [ -n "${LATIN_DIR}" ] && { fontmake -u "${LATIN_DIR}/Roboto/sources/Roboto-$weight.ufo" -o ttf --output-path "${BUILD_DIR}/Roboto-$weight.ttf" || error; }
 
     [ -n "${LATIN_DIR}" ] && log "Generating ${BUILD_DIR}/Roboto-$weight-Feature.fea"
-    [ -n "${LATIN_DIR}" ] && { python3 "${SCRIPT_DIR}/generate-feature-file.py" "${BUILD_DIR}/Roboto-$weight.ttf" "${BUILD_DIR}/Roboto-$weight-Feature.fea" || error; }
+    [ -n "${LATIN_DIR}" ] && { fontforge -script "${SCRIPT_DIR}/generate-feature-file.py" "${BUILD_DIR}/Roboto-$weight.ttf" "${BUILD_DIR}/Roboto-$weight-Feature.fea" || error; }
     [ -n "${LATIN_DIR}" ] && { rm "${BUILD_DIR}/Roboto-$weight.ttf" || error; }
 
     log "Generating ${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo"
     fontforge -lang=ff -script "${SCRIPT_DIR}/generate.pe" "${BUILD_DIR}/$FONT_FILE_NAME-$weight.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo" || error
 
     log "Generating subset plist ${BUILD_DIR}/$FONT_FILE_NAME-$weight.ufo/lib.plist"
-    python3 "${SCRIPT_DIR}/export-glyph-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-$weight.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-$weight-_subset_names.txt" || error
+    fontforge -script "${SCRIPT_DIR}/export-glyph-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-$weight.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-$weight-_subset_names.txt" || error
     [ -n "${LATIN_DIR}" ] && { cat "${SCRIPT_DIR}/roboto_subset_names.txt" >>"${BUILD_DIR}/$weight-subset_names.txt" || error; }
     cat "${BUILD_DIR}/$FONT_FILE_NAME-$weight-_subset_names.txt" >>"${BUILD_DIR}/$weight-subset_names.txt" || error
     echo "afii61664" >>"${BUILD_DIR}/$weight-subset_names.txt" || error
@@ -273,7 +274,7 @@ create_instance 'Regular'
 create_instance 'Black'
 
 log "Generating ${BUILD_DIR}/subset_unicodes.txt"
-python3 "${SCRIPT_DIR}/export-glyph-unicodes.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/vazirharf_subset_unicodes.txt" || error
+fontforge -script "${SCRIPT_DIR}/export-glyph-unicodes.py" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/vazirharf_subset_unicodes.txt" || error
 [ -n "${LATIN_DIR}" ] && { cat "${SCRIPT_DIR}/roboto_subset_unicodes.txt" >>"${BUILD_DIR}/subset_unicodes.txt" || error; }
 cat "${BUILD_DIR}/vazirharf_subset_unicodes.txt" >>"${BUILD_DIR}/subset_unicodes.txt" || error
 
@@ -288,7 +289,7 @@ function fixAnchors() {
     local main_weight=$1
     local ratio=$2
     local second_weight=$3
-    python3 "${SCRIPT_DIR}/fix-features-fea-anchors.py" "$anchors" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-$main_weight.sfd" "$ratio" "${BUILD_DIR}/instances/$FONT_FILE_NAME-$second_weight.ufo/features.fea" "${BUILD_DIR}/instances/$FONT_FILE_NAME-$second_weight.ufo/features.fea" || error
+    fontforge -script "${SCRIPT_DIR}/fix-features-fea-anchors.py" "$anchors" "${BUILD_DIR}/$FONT_FILE_NAME-Regular.sfd" "${BUILD_DIR}/$FONT_FILE_NAME-$main_weight.sfd" "$ratio" "${BUILD_DIR}/instances/$FONT_FILE_NAME-$second_weight.ufo/features.fea" "${BUILD_DIR}/instances/$FONT_FILE_NAME-$second_weight.ufo/features.fea" || error
 }
 fixAnchors 'Thin' 1 'Thin'
 fixAnchors 'Thin' 0.550000 'ExtraLight'
@@ -323,7 +324,7 @@ fixTypeMetricsSelectionBit 'Black'
 # log "Fixing latin tnum widths in ${BUILD_DIR}/instance_ttf/*"
 # function fixTnumWidth() {
 #     local weight=$1
-#     python3 "${SCRIPT_DIR}/fix-tnum-width.py" "${BUILD_DIR}/instance_ttf/$FONT_FILE_NAME-$weight.ttf" "${BUILD_DIR}/instance_ttf/$FONT_FILE_NAME-$weight.ttf" || error
+#     fontforge -script "${SCRIPT_DIR}/fix-tnum-width.py" "${BUILD_DIR}/instance_ttf/$FONT_FILE_NAME-$weight.ttf" "${BUILD_DIR}/instance_ttf/$FONT_FILE_NAME-$weight.ttf" || error
 # }
 # fixTnumWidth 'Thin'
 # fixTnumWidth 'ExtraLight'
@@ -398,13 +399,13 @@ if [ -z "$NO_MISC" ]; then
         # Farsi-Digits-Non-Latin FD-NL
         source_file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight.ttf"
         python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" "$FONT_FAMILY_NAME FD NL" "$weight" || error
-        python3 "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" || error
+        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" || error
         pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
         # UI-Farsi-Digits-Non-Latin UI-FD-NL
         source_file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight.ttf"
         python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" "$FONT_FAMILY_NAME UI FD NL" "$weight" || error
-        python3 "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf"  || error
+        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf"  || error
         python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" $UIARGS || error
         pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
@@ -417,13 +418,13 @@ if [ -z "$NO_MISC" ]; then
         # Farsi-Digits
         source_file="${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf"
         python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" "$FONT_FAMILY_NAME FD" "$weight" || error
-        python3 "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" || error
+        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" || error
         pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
         # UI-Farsi-Digits UI-FD
         source_file="${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf"
         python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" "$FONT_FAMILY_NAME UI FD" "$weight" || error
-        python3 "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" || error
+        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" || error
         pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
     }
 

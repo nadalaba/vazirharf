@@ -28,7 +28,6 @@ By default this tool clones the repository of Roboto-Classic Variable font into 
 
 - fontforge https://fontforge.org/
 - python3
-- python3-fontforge
 - fontmake https://github.com/googlefonts/fontmake
 - fonttools (pyftsubset) https://github.com/fonttools/fonttools
 - gftools
@@ -42,14 +41,25 @@ By default this tool clones the repository of Roboto-Classic Variable font into 
 Make sure you have installed all the requirements. For Debian distro you can use this command:
 
 ```sh
-sudo apt install fontforge python3-fontforge fontmake fonttools gftools zip sed git make
+sudo apt install fontmake fonttools gftools zip sed git make
 ```
 
-Next:
+Install fontforge AppImage from [latest github release](https://github.com/fontforge/fontforge/releases/download/20251009/FontForge-2025-10-09-Linux-x86_64.AppImage) because debian 13 package still doesn't have [this fix](https://github.com/fontforge/fontforge/commit/45d74411b2ec9b6060bfa58534c636cc30208f7b):
+
+```sh
+sudo apt install wget
+wget https://github.com/fontforge/fontforge/releases/download/20251009/FontForge-2025-10-09-Linux-x86_64.AppImage
+mkdir -p ~/.local/bin/appimages
+mv FontForge-2025-10-09-Linux-x86_64.AppImage ~/.local/bin/appimages
+chmod +x ~/.local/bin/appimages/FontForge-2025-10-09-Linux-x86_64.AppImage
+ln -s ~/.local/bin/appimages/FontForge-2025-10-09-Linux-x86_64.AppImage ~/.local/bin/fontforge
+```
+
+Grab font sources and build with make:
 
 ```sh
 git clone https://github.com/nadalaba/vazirharf.git
-cd vazirharf/
+cd vazirharf
 make all
 ```
 
