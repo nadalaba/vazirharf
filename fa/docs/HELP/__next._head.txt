@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[95276,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"ViewportBoundary"]
+3:I[95276,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"MetadataBoundary"]
+4:"$Sreact.suspense"
+5:I[8780,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"IconMark"]
+0:{"buildId":"k-SbevznKvoVaSeLckIpj","rsc":["$","$1","h",{"children":[null,["$","$L2",null,{"children":[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]}],["$","div",null,{"hidden":true,"children":["$","$L3",null,{"children":["$","$4",null,{"name":"Next.Metadata","children":[["$","title","0",{"children":"راهنمای فونت وزیرحرف - پرسش و پاسخ | وزیرحرف Vazirharf"}],["$","meta","1",{"name":"description","content":"صفحه رسمی فونت وزیرحرف."}],["$","link","2",{"rel":"canonical","href":"https://nadalaba.github.io/vazirharf/en/docs/HELP"}],["$","meta","3",{"name":"google-site-verification","content":"8V-RQNs3c782s0E32CYMaxnBb_ID6zgS_xR5E_PJJj8"}],["$","link","4",{"rel":"shortcut icon","href":"/vazirharf/images/favicon.ico"}],["$","$L5","5",{}]]}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],"loading":null,"isPartial":false}

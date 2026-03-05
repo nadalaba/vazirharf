@@ -1,0 +1,6 @@
+[
+  {
+    "regexp": "^\\/vazirharf(?:\\/(_next\\/data\\/[^/]{1,}))?(?:\\/((?!api|trpc|assets|_next|_vercel|.*\\..*).*))(\\.json)?[\\/#\\?]?$",
+    "originalSource": "/((?!api|trpc|assets|_next|_vercel|.*\\..*).*)"
+  }
+]

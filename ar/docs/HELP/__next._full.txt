@@ -1,0 +1,210 @@
+1:"$Sreact.fragment"
+4:I[25270,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"default"]
+5:I[85455,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"default"]
+7:I[95276,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+a:I[95276,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"ViewportBoundary"]
+c:I[95276,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"MetadataBoundary"]
+e:I[7871,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"default"]
+:HL["/vazirharf/_next/static/chunks/3f505272d78c9b3f.css","style"]
+:HL["/vazirharf/_next/static/media/Vazirharf%5Bwght%5D-s.p.389cb556.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/vazirharf/_next/static/media/Vazirharf_RD%5Bwght%5D-s.p.68266c47.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+0:{"P":null,"b":"k-SbevznKvoVaSeLckIpj","c":["","ar","docs","HELP"],"q":"","i":false,"f":[[["",{"children":[["lang","ar","d"],{"children":["docs",{"children":[["slug","HELP","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],[["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/vazirharf/_next/static/chunks/3f505272d78c9b3f.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}],["$","script","script-0",{"src":"/vazirharf/_next/static/chunks/3314cd0acf593145.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/vazirharf/_next/static/chunks/e8eee12cd5d14b3b.js","async":true,"nonce":"$undefined"}]],"$L2"]}],{"children":[["$","$1","c",{"children":[[["$","script","script-0",{"src":"/vazirharf/_next/static/chunks/9931e571416518b0.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/vazirharf/_next/static/chunks/2884dd7b5e45333f.js","async":true,"nonce":"$undefined"}]],"$L3"]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["$","$1","c",{"children":["$L6",[["$","script","script-0",{"src":"/vazirharf/_next/static/chunks/0395ee5ffec4d641.js","async":true,"nonce":"$undefined"}],["$","script","script-1",{"src":"/vazirharf/_next/static/chunks/1957149c0b3835a9.js","async":true,"nonce":"$undefined"}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],{},null,false,false]},null,false,false]},null,false,false]},null,false,false]},null,false,false],["$","$1","h",{"children":[null,["$","$La",null,{"children":"$Lb"}],["$","div",null,{"hidden":true,"children":["$","$Lc",null,{"children":["$","$8",null,{"name":"Next.Metadata","children":"$Ld"}]}]}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],false]],"m":"$undefined","G":["$e",[]],"S":true}
+f:I[98780,["/vazirharf/_next/static/chunks/3314cd0acf593145.js","/vazirharf/_next/static/chunks/e8eee12cd5d14b3b.js"],"default"]
+2:["$","$Lf",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]
+10:I[73234,["/vazirharf/_next/static/chunks/3314cd0acf593145.js","/vazirharf/_next/static/chunks/e8eee12cd5d14b3b.js","/vazirharf/_next/static/chunks/9931e571416518b0.js","/vazirharf/_next/static/chunks/2884dd7b5e45333f.js"],"default"]
+3:["$","html",null,{"lang":"ar","dir":"rtl","suppressHydrationWarning":true,"children":["$","body",null,{"children":[[["$","script","mui-color-scheme-init",{"suppressHydrationWarning":true,"nonce":"$undefined","dangerouslySetInnerHTML":{"__html":"(function() {\ntry {\n  let colorScheme = '';\n  const mode = localStorage.getItem('mui-mode') || 'system';\n  const dark = localStorage.getItem('mui-color-scheme-dark') || 'dark';\n  const light = localStorage.getItem('mui-color-scheme-light') || 'light';\n  if (mode === 'system') {\n    // handle system mode\n    const mql = window.matchMedia('(prefers-color-scheme: dark)');\n    if (mql.matches) {\n      colorScheme = dark\n    } else {\n      colorScheme = light\n    }\n  }\n  if (mode === 'light') {\n    colorScheme = light;\n  }\n  if (mode === 'dark') {\n    colorScheme = dark;\n  }\n  if (colorScheme) {\n    document.documentElement.classList.remove('%s'.replace('%s', light), '%s'.replace('%s', dark));\n      document.documentElement.classList.add('%s'.replace('%s', colorScheme));\n  }\n} catch(e){}})();"}}]],["$","$L10",null,{"children":"$L11"}]]}]}]
+12:I[83971,["/vazirharf/_next/static/chunks/3314cd0acf593145.js","/vazirharf/_next/static/chunks/e8eee12cd5d14b3b.js","/vazirharf/_next/static/chunks/9931e571416518b0.js","/vazirharf/_next/static/chunks/2884dd7b5e45333f.js","/vazirharf/_next/static/chunks/0395ee5ffec4d641.js","/vazirharf/_next/static/chunks/1957149c0b3835a9.js"],"ClientSlug"]
+13:T4054,<h3>ما هي رخصة استخدام خط وزیرحرف؟</h3>
+<p>خط وزیرحرف، مثل مشروعه الأصلي وزیرمتن، تم إصداره بموجب رخصة OFL الإصدار 1.1. يمكن لأي شخص استخدام هذا الخط لأي غرض.</p>
+<h3>ما هو عنوان الصفحة الرسمية لخط وزیرحرف؟</h3>
+<p>حالياً، الصفحة الرسمية هي:<br>
+<a href="https://nadalaba.github.io/vazirharf">https://nadalaba.github.io/vazirharf</a></p>
+<h3>لماذا تم تغيير الاسم من وزیرمتن إلى وزیرحرف؟</h3>
+<p>تم تغيير الاسم إلى وزیرحرف لتجنب الالتباس مع الخط الأصلي، الذي تم توزيعه على نطاق واسع عبر مدراء الحزم ولكن لن يتم تحديثه بعد الآن.<br>
+اسم "وزیرحرف" يعكس الاستمرارية والتطور:</p>
+<ul>
+<li>"وزیر": يحافظ على إرث الخط الأصلي.</li>
+<li>"حرف": يشير إلى التحول من التركيبات الأحادية إلى التركيبات المعتمدة على الحروف.</li>
+</ul>
+<h3>ما الفرق بين وزیرحرف ووزیرمتن؟</h3>
+<p>الفرق الرئيسي هو أن وزیرحرف يفصل تركيبة "لام-ألف" إلى رمزين منفصلين باستخدام الاستبدال السياقي وميزة 'rclt'، بينما يستخدم وزیرمتن ميزتي 'liga' و 'rlig' لهذه التركيبات.</p>
+<h3>من الذي ينبغي عليه استخدام وزیرحرف؟</h3>
+<p>استخدم <strong>وزیرحرف</strong>:</p>
+<ul>
+<li>عندما تحتاج إلى تعطيل ميزة الترابط الحرفي للخط ligatures (لأنك ترغب في متابعة أثر كل حرف تكتبه مباشرةً)، ولكنك لا تزال ترغب في الحفاظ على الشكل الأصلي لترابط حرفي "لام" و"ألف" <code>لا</code>.
+يكون هذا مفيدًا خصوصًا في منصّات الطباعة التي لا تعتمد على صندوق إدخال تقليدي مثل <a href="https://monkeytype.com">monkeytype</a>. يمكنك رؤية الفرق بوضوح <a href="https://github.com/monkeytypegame/monkeytype/pull/7552">هنا</a>.</li>
+<li>عندما ترغب في الحصول على المساعدة والدعم والتحديثات المستمرة.</li>
+</ul>
+<h3>هل وزیرمتن هو نفسه وزیر؟</h3>
+<p>ابتداءً من الإصدار 32، تم تغيير اسم خط وزیر إلى وزیرمتن.</p>
+<h3>ما هي الفروقات بين وزیرمتن ووزیر؟</h3>
+<p>في وزیرمتن، تمت زيادة حجم الخطوط، خاصة الأنماط العريضة. تمت إعادة بناء الأوزان بأسلوب جديد (مع مراجعة السماكة والتباين والتباعد). تمت إضافة أوزان جديدة، وإعادة تصميم العديد من الرموز والأرقام والحروف. تغيرت طريقة تطوير الخط، وأُعيدت كتابة السكربتات، وتم تعديل هيكل المجلدات والملفات ليصبح أبسط وأسهل قراءة. تغيرت طريقة تسمية النسخ الفرعية. تم توسيع المحارف اللاتينية وإضافة لغات أوروبية (من خط Roboto). تم حل العديد من المشكلات التصميمية والفنية.<br>
+وزیرمتن 32 يمثل فصلًا جديدًا وخطوة كبيرة لهذا النوع من الخطوط. للاطلاع على قائمة التغييرات، راجع <a href="https://github.com/nadalaba/vazirharf/blob/master/CHANGELOG.md">CHANGELOG.md</a>.</p>
+<h3>ما هي اللغات التي يدعمها هذا الخط؟</h3>
+<p>اعتبارًا من الإصدار 27 وما بعده، يدعم وزیرحرف اللغات: الفارسية، العربية، الكردية، البشتو، الأردية، الجيلكية، الأوزبكية، الكازاخية، والبلوشية.</p>
+<h3>إلى أي فئة ينتمي خط وزیرحرف؟</h3>
+<p>ينتمي إلى فئة الخطوط Sans.</p>
+<h3>كم عدد الأنماط/الأوزان التي يحتويها هذا الخط؟</h3>
+<p>9 أوزان:</p>
+<ul>
+<li>نحيف <code>Vazirharf-Thin.ttf</code></li>
+<li>خفيف جدًا <code>Vazirharf-ExtraLight.ttf</code></li>
+<li>خفيف <code>Vazirharf-Light.ttf</code></li>
+<li>عادي <code>Vazirharf-Regular.ttf</code></li>
+<li>متوسط <code>Vazirharf-Medium.ttf</code></li>
+<li>شبه عريض <code>Vazirharf-SemiBold.ttf</code></li>
+<li>عريض <code>Vazirharf-Bold.ttf</code></li>
+<li>عريض جدًا <code>Vazirharf-ExtraBold.ttf</code></li>
+<li>أسود <code>Vazirharf-Black.ttf</code></li>
+</ul>
+<h3>كيف يمكنني عرض سجل التغييرات بعد كل إصدار؟</h3>
+<p>راجع ملف <code>CHANGELOG.md</code> في الحزمة الكاملة أو على الرابط التالي:<br>
+<a href="https://github.com/nadalaba/vazirharf/blob/master/CHANGELOG.md">github.com/nadalaba/vazirharf/blob/master/CHANGELOG.md</a></p>
+<p>أو من خلال صفحة الإصدارات:<br>
+<a href="https://github.com/nadalaba/vazirharf/releases">github.com/nadalaba/vazirharf/releases</a></p>
+<h3>كيف يمكنني الإبلاغ عن مشاكل أو تقديم اقتراحات لتحسين خط وزیرحرف؟</h3>
+<p>إذا كان لديك حساب على GitHub، يمكنك تقديم مشكلة جديدة في مستودع الخط:<br>
+<a href="https://github.com/nadalaba/vazirharf/issues">https://github.com/nadalaba/vazirharf/issues</a><br>
+أو التواصل مع المطور عبر البريد الإلكتروني الموجود في ملف <a href="https://github.com/nadalaba/vazirharf/blob/master/AUTHORS.txt">AUTHORS.txt</a></p>
+<h3>كيف أقوم بتثبيت الخط على نظام ويندوز؟</h3>
+<p>افتح الملف الرئيسي أو المضغوط الذي تم تنزيله من الصفحة الرئيسية للخط، ثم انتقل إلى مجلد <code>fonts/ttf</code>، وافتح الملفات واضغط على زر Install في النافذة المنبثقة. أو قم بتحديد جميع ملفات <code>ttf</code> وانقلها إلى مجلد <code>windows/fonts</code>.</p>
+<h3>لماذا يتم عرض الأرقام بالعربية أو اللاتينية بدلاً من الفارسية؟</h3>
+<p>يعرض خط وزیرحرف الأرقام بالفارسية إذا تمت كتابتها باستخدام الإدخال الفارسي. إذا رأيت أرقامًا إنجليزية أو عربية، فهذا يعني أنها لم تُكتب بالفارسية.<br>
+أمثلة:<br>
+فارسي: ۱۲۳۴۵۶۷۸۹۰<br>
+عربي: ١٢٣٤٥٦٧٨٩٠<br>
+لاتيني: 1234567890</p>
+<p>الخط القياسي لا يجب أن يغيّر النص الأصلي أو يصحح أخطاء الإدخال.</p>
+<h3>لماذا الأرقام ۱ ۲ ۳ ۷ ۸ ۹ فارسية ولكن ٤ ٥ ٦ ٠ ليست كذلك؟</h3>
+<p>تختلف هذه الأرقام بين العربية والفارسية. على سبيل المثال، الصفر العربي غالبًا ما يكون ممتلئًا، بينما الفارسي يكون فارغًا. لعرض الأرقام بالفارسية، يجب كتابتها باستخدام الكود القياسي الفارسي.</p>
+<h3>لا يهمني إن كانت الأرقام الأصلية مكتوبة باللاتينية أو العربية. كيف أجبر خط وزیرحرف على عرض الأرقام بالفارسية؟</h3>
+<p>هناك طريقتان:</p>
+<ul>
+<li>استخدام الخطوط الموجودة في مجلد <code>misc/Farsi-Digits</code>، حيث تم إعادة كتابة جميع الأرقام الإنجليزية والعربية بالفارسية. هذه الطريقة غير قياسية لكنها تح</li>
+</ul>
+<h3>لا يهمني إن كان النص الأصلي يستخدم الأرقام اللاتينية أو العربية. كيف يمكنني إجبار خط وزیرحرف على عرض الأرقام بالفارسية؟</h3>
+<p>هناك طريقتان:</p>
+<ul>
+<li>استخدام الخطوط الموجودة في مجلد <code>misc/Farsi-Digits</code>، حيث تمت إعادة كتابة جميع الأرقام الإنجليزية والعربية لتظهر كأرقامًا فارسية. هذه الطريقة غير قياسية لكنها تحل المشكلة.</li>
+<li>استخدام المجموعات الأسلوبية: إذا كان البرنامج الذي تستخدمه يدعم ميزات Open Type، فعّل ss01 للأرقام الفارسية في المجموعات الأسلوبية، أو استخدم هذا الكود في بيئة الويب:</li>
+</ul>
+<pre><code class="language-css">.sample_farsi_digits {
+    font-feature-settings: "ss01";
+}
+</code></pre>
+<h3>لماذا الأرقام ليست بعرض موحد في خط وزیرحرف؟</h3>
+<p>الأرقام بعرض موحد تعني، على سبيل المثال، أن عرض الرقم ١ يساوي عرض الرقم ٥. في هذه الحالة، سيكون عرض الرقمين التاليين متساويًا:<br>
+١١١١١<br>
+٥٥٥٥٥<br>
+هذا النمط مناسب أكثر للتقارير. لعرض الأرقام بعرض موحد، إذا كان البرنامج الذي تستخدمه يدعم ميزات OpenType، فعّل خيار Tabular Numeric، أو استخدم الكود التالي في بيئة الويب:</p>
+<pre><code class="language-css">.sample_tabular_numbers {
+    font-feature-settings: "tnum";
+}
+</code></pre>
+<h3>كيف يمكنني استخدام الأرقام بعرض موحد أو الأرقام الفارسية الكاملة في LibreOffice؟</h3>
+<p>في LibreOffice، انتقل إلى قائمة Format، ثم اختر Character، وبعدها في تبويب Font انقر على زر Features. اختر Stylistic Set 1 وTabular Number لهذا الغرض.</p>
+<h3>كيف يمكنني استخدام الأرقام بعرض موحد أو الأرقام الفارسية الكاملة في Inkscape؟</h3>
+<p>من قائمة Text، اختر Text and Font...، ثم في تبويب Features، ضمن قسم Numeric اختر Tabular، أو ضمن إعدادات الميزات Feature Setting اختر ss01.</p>
+<h3>كيف يمكنني عرض الأرقام الفارسية الكاملة وبعرض موحد في نفس الوقت على صفحة ويب باستخدام CSS؟</h3>
+<pre><code class="language-css">.sample_ss01_tnum {
+    font-feature-settings: "ss01", "tnum";
+}
+</code></pre>
+<h3>ما هو الخط اللاتيني المدمج مع خط وزیرحرف؟</h3>
+<p>تم دمج وزیرحرف مع خط Roboto من Google. Roboto هو خط مجاني تم إصداره بموجب رخصة Apache الإصدار 2. <a href="https://github.com/googlefonts/roboto">https://github.com/googlefonts/roboto</a>.</p>
+<h3>أين توجد النسخة من هذا الخط بدون الحروف والرموز اللاتينية؟</h3>
+<p>توجد في مجلد <code>misc/Non-Latin</code>.</p>
+<h3>كيف يمكنني دمج خط وزیرحرف مع خطي المفضل؟</h3>
+<p>ستحتاج إلى برنامج تحرير خطوط. على سبيل المثال، يمكنك تثبيت FontForge، ثم فتح ملف وزیرحرف، ومن قائمة <code>Element</code> اختر <code>Merge Fonts...</code> وادمجه مع خطك المفضل.</p>
+<h3>لماذا تظهر النصوص غير متراصفة من الأعلى والأسفل مقارنةً بالخطوط اللاتينية الأخرى في التطبيق الذي أُطوره؟ وكيف يمكنني إصلاح ذلك؟</h3>
+<p>هذه المشكلة شائعة في الخطوط العربية. السبب هو أن العديد من الحروف مثل ("ح"، "ر"، "ى"، وغيرها) تمتد أسفل خط الأساس، كما تُضاف الحركات أعلى وأسفل الحروف. نتيجة لذلك، تحتاج الحروف العربية إلى مساحة رأسية أكبر من الحروف اللاتينية. لمن يحتاج إلى نسخة أقصر، هناك نسخة بديلة متوفرة في مجلد UI داخل الحزمة، وتتميز بارتفاع أقل.</p>
+<h3>ما هي نسخة UI؟</h3>
+<p>في هذه النسخة، تم تقليل ارتفاع الخط لتقليل الفرق في الارتفاع بين النص اللاتيني والعربي. وهي مناسبة لمن يحتاج هذا النوع من التنسيق في واجهات المستخدم الخاصة بالتطبيقات.</p>
+<h3>كيف يمكنني تعيين خط وزیرحرف كخط افتراضي في بيئات سطح المكتب التي تعتمد على Fontconfig (غالبًا أنظمة شبيهة بـ Unix)؟</h3>
+<p>يمكنك ضبط Fontconfig لتعيين الخطوط الافتراضية لبيئة سطح المكتب. إليك مثال على ضبط على مستوى المستخدم يعيّن خط وزیرحرف كخط افتراضي. يمكنك تعديل هذا الضبط لإضافة الخطوط اللاتينية المفضلة لديك إلى جانب خط وزیرحرف. يستخدم هذا الضبط <code>Vazirharf</code> (نسخة UI بدون الحروف اللاتينية) و <a href="https://github.com/rastikerdar/vazir-code-font"><code>Vazir Code WOL</code></a> (خط Vazir Code بدون الحروف اللاتينية)، إلى جانب عدة خطوط لاتينية.</p>
+<pre><code class="language-xml">~/.config/fontconfig/fonts.conf
+
+&#x3C;?xml version='1.0'?>
+&#x3C;!DOCTYPE fontconfig SYSTEM 'fonts.dtd'>
+&#x3C;fontconfig>
+  &#x3C;match target="font">
+    &#x3C;edit mode="assign" name="antialias">
+      &#x3C;bool>true&#x3C;/bool>
+    &#x3C;/edit>
+    &#x3C;edit mode="assign" name="embeddedbitmap">
+      &#x3C;bool>false&#x3C;/bool>
+    &#x3C;/edit>
+    &#x3C;edit name="autohint" mode="assign">
+      &#x3C;bool>true&#x3C;/bool>
+    &#x3C;/edit>
+    &#x3C;edit mode="assign" name="hinting">
+      &#x3C;bool>true&#x3C;/bool>
+    &#x3C;/edit>
+    &#x3C;edit mode="assign" name="hintstyle">
+      &#x3C;const>hintslight&#x3C;/const>
+    &#x3C;/edit>
+    &#x3C;edit mode="assign" name="lcdfilter">
+      &#x3C;const>lcddefault&#x3C;/const>
+    &#x3C;/edit>
+    &#x3C;edit mode="assign" name="rgba">
+      &#x3C;const>rgb&#x3C;/const>
+    &#x3C;/edit>
+  &#x3C;/match>
+  
+  &#x3C;!-- Default sans-serif font -->
+  &#x3C;match target="pattern">
+    &#x3C;test qual="any" name="family">&#x3C;string>sans-serif&#x3C;/string>&#x3C;/test>
+    &#x3C;edit name="family" mode="prepend" binding="same">&#x3C;string>Vazirharf UI NL&#x3C;/string>&#x3C;/edit>
+    &#x3C;edit name="family" mode="append" binding="same">&#x3C;string>DejaVu Sans&#x3C;/string>&#x3C;/edit>
+  &#x3C;/match>
+
+  &#x3C;!-- Default serif fonts -->
+  &#x3C;match target="pattern">
+    &#x3C;test qual="any" name="family">&#x3C;string>serif&#x3C;/string>&#x3C;/test>
+    &#x3C;edit name="family" mode="prepend" binding="same">&#x3C;string>Vazirharf UI NL&#x3C;/string>&#x3C;/edit>
+    &#x3C;edit name="family" mode="append" binding="same">&#x3C;string>DejaVu Serif&#x3C;/string>&#x3C;/edit>
+  &#x3C;/match>
+
+
+  &#x3C;!-- Default monospace fonts -->
+  &#x3C;match target="pattern">
+    &#x3C;test qual="any" name="family">&#x3C;string>monospace&#x3C;/string>&#x3C;/test>
+    &#x3C;edit name="family" mode="prepend" binding="same">&#x3C;string>Vazir Code WOL&#x3C;/string>&#x3C;/edit>
+    &#x3C;edit name="family" mode="append" binding="same">&#x3C;string>Inconsolata&#x3C;/string>&#x3C;/edit>
+  &#x3C;/match>
+
+
+  &#x3C;!-- Fallback fonts preference order -->
+  &#x3C;alias>
+    &#x3C;family>sans-serif&#x3C;/family>
+    &#x3C;prefer>
+      &#x3C;family>Vazirharf UI NL&#x3C;/family>
+      &#x3C;family>Roboto&#x3C;/family>
+    &#x3C;/prefer>
+  &#x3C;/alias>
+
+  &#x3C;alias>
+    &#x3C;family>serif&#x3C;/family>
+    &#x3C;prefer>
+      &#x3C;family>Vazirharf UI NL&#x3C;/family>
+      &#x3C;family>DejaVu Serif&#x3C;/family>
+    &#x3C;/prefer>
+  &#x3C;/alias>
+
+  &#x3C;alias>
+    &#x3C;family>monospace&#x3C;/family>
+    &#x3C;prefer>
+      &#x3C;family>Vazir Code WOL&#x3C;/family>
+      &#x3C;family>Inconsolata&#x3C;/family>
+    &#x3C;/prefer>
+  &#x3C;/alias>
+
+&#x3C;/fontconfig>
+</code></pre>6:["$","$L12",null,{"doc":{"title":"دليل خط وزیرحرف – أسئلة وأجوبة","date":"2025-10-15T17:00:57Z","slug":"HELP","author":["Saber Rastikerdar","Nad Alaba"],"content":"$13"}}]
+14:I[92265,["/vazirharf/_next/static/chunks/3314cd0acf593145.js","/vazirharf/_next/static/chunks/e8eee12cd5d14b3b.js","/vazirharf/_next/static/chunks/9931e571416518b0.js","/vazirharf/_next/static/chunks/2884dd7b5e45333f.js"],"default"]
+11:["$","$L14",null,{"formats":"$undefined","locale":"ar","messages":{"header":{"day_mode":"الوضع النهاري","docs":"المستندات","home":"الصفحة الرئيسية","lab":"المختبر","night_mode":"الوضع الليلي","select_language":"اختر اللغة"},"lab":{"all_combinations":"كل التركيبات الممكنة","all_glyphs":"كُل المحارف","alpha":"الشفافية","arabic":"عربي","calt":"calt","font":"نوع الخط","gilak":"Gilak","glyph":"محرف","glyphs":"محارف","jawi":"جاوية","justify":"مُحاذاة","kurdish":"الكردية","latin":"Latin","numbers":"أرقام","old vazir":"وزیر قديم","pashtu":"Pashtu","persian":"فارسي","settings":"الإعدادات","size":"الحجم","text":"النص","texts":"النصوص","tnum":"tnum","urdu":"أردو","vazirharf rd":"نقاط دائرية","vazirharf variable":"متغير","vazirharf":"وزیرحرف","vazirmatn":"وزیرمتن","weight":"الوزن","vazirharf_font_laboratory":"مختبر خط وزیرحرف"},"index":{"docs":"الإرشادات","downlod_full_package":"تنزيل الحزمة الكاملة","font_description":"مشروع وزیرحرف عبارة عن عائلة خطوط عربية فارسية ذات تسعة أوزان، تفرع عن مشروع وزیرمتن الذي بدأ في عام 2015 تحت اسم وزیر. يعد وزیرحرف خطًا ذو شكل بسيط وسلس وهذا ما يجعله مناسبًا في العديد من السياقات. تم استخدام خط Roboto للأحرف اللاتينية. ويعد برمجية حرة مفتوحة المصدر.","from_other_designers":"من مصممين آخرين","github":"GitHub","hero_tail":"بسيط ومقروء","hero_title":"خط وزیرحرف","lab":"المختبر","other_free_fonts":"خطوط حرة أخرى","version":"الإصدار"},"donation":{"amount":"المبلغ","date":"التاريخ","donations_from":"التبرعات من عام 2025 حتى الآن","list_source":"مصدر هذه القائمة","order_by":"ترتيب بحسب","payment_title":"❤️ إن كنت ترغب في دعم المشروع والعمل الذي تم إنجازه:","fetching_donations":"جارٍ جلب قائمة التبرعات...","copied":"تم نسخ عنوان {coin} إلى الحافظة!","send_information":"إذا كنت قد أرسلت عملات رقمية، فالرجاء <mail>إخباري باسمك</mail> حتى أستطيع شكرك، أو إذا كنت تفضل ذلك، أضف معلوماتك إلى <file>القائمة</file> وافتح Pull Request جديد."},"docs":{"docs_pages":"إرشادات خط وزیرحرف"},"meta":{"site_description":"الصفحة الرسمية لخط وزیرحرف."}},"now":"$undefined","timeZone":"UTC","children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+15:I[8780,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"IconMark"]
+9:null
+d:[["$","title","0",{"children":"دليل خط وزیرحرف – أسئلة وأجوبة | وزیرحرف Vazirharf"}],["$","meta","1",{"name":"description","content":"الصفحة الرسمية لخط وزیرحرف."}],["$","link","2",{"rel":"canonical","href":"https://nadalaba.github.io/vazirharf/en/docs/HELP"}],["$","meta","3",{"name":"google-site-verification","content":"8V-RQNs3c782s0E32CYMaxnBb_ID6zgS_xR5E_PJJj8"}],["$","link","4",{"rel":"shortcut icon","href":"/vazirharf/images/favicon.ico"}],["$","$L15","5",{}]]

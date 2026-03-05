@@ -1,0 +1,87 @@
+1:"$Sreact.fragment"
+2:I[83971,["/vazirharf/_next/static/chunks/3314cd0acf593145.js","/vazirharf/_next/static/chunks/e8eee12cd5d14b3b.js","/vazirharf/_next/static/chunks/9931e571416518b0.js","/vazirharf/_next/static/chunks/2884dd7b5e45333f.js","/vazirharf/_next/static/chunks/0395ee5ffec4d641.js","/vazirharf/_next/static/chunks/1957149c0b3835a9.js"],"ClientSlug"]
+7:I[95276,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:Teb7,<h2>What is a variable font?</h2>
+<p>A variable font is an advanced version of traditional (OpenType) fonts that can contain multiple styles of a typeface within a single file. This allows the user to use just one file instead of separate files for each style. For example, a variable font can include regular and bold weights, italic, condensed, expanded styles, etc., all in one file. Previously, we had to use multiple files to access these styles.</p>
+<h2>Variable font files of Vazirharf</h2>
+<p>Different variable versions of Vazirharf are available at the following paths:</p>
+<h3>Regular Version:</h3>
+<ul>
+<li><code>fonts/variable/Vazirharf[wght].ttf</code></li>
+<li><code>fonts/webfonts/Vazirharf[wght].woff2</code></li>
+</ul>
+<h3>Round Dots Version:</h3>
+<ul>
+<li><code>Round-Dots/fonts/variable/Vazirharf-RD[wght].ttf</code></li>
+<li><code>Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2</code></li>
+</ul>
+<h3>Non-Latin Version:</h3>
+<ul>
+<li><code>misc/Non-Latin/fonts/variable/Vazirharf-NL[wght].ttf</code></li>
+<li><code>misc/Non-Latin/fonts/webfonts/Vazirharf-NL[wght].woff2</code></li>
+</ul>
+<p>Each of these files includes all weights of Vazirharf in one package.</p>
+<h2>How to Use the Variable Vazirharf font on the Web</h2>
+<p>To define the font in CSS:</p>
+<pre><code class="language-css">@font-face {
+  font-family: 'Vazirharf';
+  src: url('fonts/webfonts/Vazirharf[wght].woff2') format('woff2 supports variations'),
+       url('fonts/webfonts/Vazirharf[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</code></pre>
+<p>For the round dots version:</p>
+<pre><code class="language-css">@font-face {
+  font-family: 'Vazirharf RD';
+  src: url('Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
+       url('Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</code></pre>
+<p>You can also use a CDN instead of local paths, like this:</p>
+<pre><code class="language-css">@font-face {
+  font-family: 'Vazirharf RD';
+  src: url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
+       url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</code></pre>
+<p>Additionally, in the root directory, a file named <code>Vazirharf-Variable-font-face.css</code> is provided for web usage. You can include it directly or via CDN:</p>
+<pre><code class="language-html">&#x3C;link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Vazirharf-Variable-font-face.css" rel="stylesheet" type="text/css" />
+</code></pre>
+<p>Note: Always use the latest version instead of the fixed version number v34.002.</p>
+<p>Usage in CSS looks like this:</p>
+<pre><code class="language-css">body {
+    font-family: Vazirharf;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 900;
+}
+</code></pre>
+<p>You can use any number between 100 and 900 to adjust the weight, e.g., 692.</p>
+<p>Or use the <code>wght</code> parameter:</p>
+<pre><code class="language-css">body {
+    font-family: Vazirharf;
+    font-variation-settings: "wght" 400;
+}
+
+h1 {
+    font-variation-settings: "wght" 900;
+}
+</code></pre>
+<p>In Vazirharf, the <code>wght</code> parameter is defined to control font weight. You can use any value between 100 and 900, such as 627.</p>
+<h2>How to Use the variable Vazirharf font in Various Applications</h2>
+<p>Visit this <a href="https://nadalaba.github.io/vazirharf/en/docs/HELP-en">page</a> for guidance.</p>0:{"buildId":"k-SbevznKvoVaSeLckIpj","rsc":["$","$1","c",{"children":[["$","$L2",null,{"doc":{"title":"Guide to the Variable Version of Vazirharf Font","date":"2022-04-18T09:41:38Z","slug":"Vazirharf-Variable","author":["Saber Rastikerdar","Nad Alaba"],"content":"$3"}}],["$L4","$L5"],"$L6"]}],"loading":null,"isPartial":false}
+4:["$","script","script-0",{"src":"/vazirharf/_next/static/chunks/0395ee5ffec4d641.js","async":true}]
+5:["$","script","script-1",{"src":"/vazirharf/_next/static/chunks/1957149c0b3835a9.js","async":true}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null

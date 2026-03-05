@@ -1,0 +1,87 @@
+1:"$Sreact.fragment"
+2:I[83971,["/vazirharf/_next/static/chunks/3314cd0acf593145.js","/vazirharf/_next/static/chunks/e8eee12cd5d14b3b.js","/vazirharf/_next/static/chunks/9931e571416518b0.js","/vazirharf/_next/static/chunks/2884dd7b5e45333f.js","/vazirharf/_next/static/chunks/0395ee5ffec4d641.js","/vazirharf/_next/static/chunks/1957149c0b3835a9.js"],"ClientSlug"]
+7:I[95276,["/vazirharf/_next/static/chunks/221e0744b683f94b.js","/vazirharf/_next/static/chunks/54acdc74ad0965ad.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+3:T1288,<h2>فونت متغیر چیست؟</h2>
+<p>فونت متغیر نسخه تکامل یافته فونت‌های معمولی (اوپن‌تایپ) است که می‌تواند حالت‌‌های مختلف یک تایپ‌فیس را درون یک فایل جای دهد و کاربر تنها از یک فایل به جای استفاده از فایل‌های مختلف به ازای هر حالت استفاده می‌کند. برای مثال یک فونت وریبل می‌تواند وزن‌های معمولی و ضخیم، حالت ایتالیک، فشرده، عریض و ... را یکجا شامل گردد. در حالی که به روال سابق ما مجبور بودیم چندین فایل را برای بهره‌مندی از این حالات به کار بگیریم.</p>
+<h2>فایل‌های فونت وزیرحرف متغیر</h2>
+<p>نسخه‌های مختلف متغیر وزیرحرف در آدرس‌های زیر قرار دارند:</p>
+<h3>نسخه معمولی:</h3>
+<ul>
+<li><code>fonts/variable/Vazirharf[wght].ttf</code></li>
+<li><code>fonts/webfonts/Vazirharf[wght].woff2</code></li>
+</ul>
+<h3>نسخه نقطه‌گرد:</h3>
+<ul>
+<li><code>Round-Dots/fonts/variable/Vazirharf-RD[wght].ttf</code></li>
+<li><code>Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2</code></li>
+</ul>
+<h3>نسخه بدون لاتین:</h3>
+<ul>
+<li><code>misc/Non-Latin/fonts/variable/Vazirharf-NL[wght].ttf</code></li>
+<li><code>misc/Non-Latin/fonts/webfonts/Vazirharf-NL[wght].woff2</code></li>
+</ul>
+<p>هر کدام از این فایل‌ها تمامی وزن‌های وزیرحرف را یکجا شامل می‌شوند.</p>
+<h2>نحوه استفاده از فونت وزیرحرفِ متغیر در وب</h2>
+<p>برای تعریف فونت در CSS:</p>
+<pre><code class="language-css">@font-face {
+  font-family: 'Vazirharf';
+  src: url('fonts/webfonts/Vazirharf[wght].woff2') format('woff2 supports variations'),
+       url('fonts/webfonts/Vazirharf[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</code></pre>
+<p>برای نسخه نقطه گرد:</p>
+<pre><code class="language-css">@font-face {
+  font-family: 'Vazirharf RD';
+  src: url('Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
+       url('Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</code></pre>
+<p>می‌توانید به جای آدرس‌های محلی از CDN استفاده کنید مانند:</p>
+<pre><code class="language-css">@font-face {
+  font-family: 'Vazirharf RD';
+  src: url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2 supports variations'),
+       url('https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2') format('woff2-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+</code></pre>
+<p>هر چند که در آدرس ریشه، فایل <code>Vazirharf-Variable-font-face.css</code> برای استفاده از نسخه وب قرار داده شده است که می‌توانید آن را مستقیما و یا از طریق CDN فرا بخوانید:</p>
+<pre><code class="language-html">&#x3C;link href="https://cdn.jsdelivr.net/gh/nadalaba/vazirharf@v34.002/Vazirharf-Variable-font-face.css" rel="stylesheet" type="text/css" />
+</code></pre>
+<p>در نظر داشته باشید که همیشه از آخرین نسخه به جای عدد ورژن v34.002 استفاده کنید.</p>
+<p>نحوه استفاده در css بدین صورت است:</p>
+<pre><code class="language-css">body {
+    font-family: Vazirharf;
+    font-weight: 400;
+}
+
+h1 {
+    font-weight: 900;
+}
+</code></pre>
+<p>از هر عددی بین 100 تا 900 می‌توان برای تغییر وزن استفاده کرد. مثلا 692.</p>
+<p>یا از پارامتر wght استفاده کنید:</p>
+<pre><code class="language-css">body {
+    font-family: Vazirharf;
+    font-variation-settings: "wght" 400;
+}
+
+h1 {
+    font-variation-settings: "wght" 900;
+}
+</code></pre>
+<p>در وزیرحرف، پارامتر <code>wght</code> برای تغییر وزن فونت تعریف شده است. در این کد به جای 900 هر عددی از 100 تا 900 قابل استفاده می‌باشد. مثلا 627.</p>
+<h2>نحوه استفاده از فونت وزیرحرفِ متغیر در برنامه‌های گوناگون</h2>
+<p>به این <a href="https://nadalaba.github.io/vazirharf/fa/docs/HELP-fa">صفحه</a> مراجعه نمایید.</p>0:{"buildId":"k-SbevznKvoVaSeLckIpj","rsc":["$","$1","c",{"children":[["$","$L2",null,{"doc":{"title":"راهنمای فونت وزیرحرف وریبل یا متغیر (Variable)","date":"2022-04-18T09:41:38Z","slug":"Vazirharf-Variable","author":["Saber Rastikerdar","Nad Alaba"],"content":"$3"}}],["$L4","$L5"],"$L6"]}],"loading":null,"isPartial":false}
+4:["$","script","script-0",{"src":"/vazirharf/_next/static/chunks/0395ee5ffec4d641.js","async":true}]
+5:["$","script","script-1",{"src":"/vazirharf/_next/static/chunks/1957149c0b3835a9.js","async":true}]
+6:["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]
+9:null
