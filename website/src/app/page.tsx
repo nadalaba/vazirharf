@@ -43,9 +43,6 @@ export default function RootRedirect() {
   return (
     <html>
       <head>
-        {/* Tell search engines not to index this page */}
-        <meta name="robots" content="noindex" />
-
         {/* Alternative links for each language */}
         {languagesList.map((lang) => (
           <link
