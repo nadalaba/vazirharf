@@ -24,7 +24,7 @@ The name change to **Vazirharf** was made to avoid confusion with the original f
 ## Who Should Use Vazirharf?
 
 Use **Vazirharf**:
-- When you need to disable ligatures (because you want feedback for each character you type),but you still want to preserve the original ligature shape of Lam-Alef `لا`.
+- When you need to disable ligatures (because you want feedback for each character you type), but you still want to preserve the original ligature shape of Lam-Alef `لا`.
 This is especially useful on typing platforms that do not rely on a traditional input box, such as [monkeytype](https://monkeytype.com). You can clearly see the difference [here](https://github.com/monkeytypegame/monkeytype/pull/7552).
 - If you require ongoing updates and support.
 
