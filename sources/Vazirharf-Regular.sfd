@@ -3,7 +3,7 @@ FontName: Vazirharf-Regular
 FullName: Vazirharf Regular
 FamilyName: Vazirharf
 Weight: Regular
-Copyright: Copyright 2015 The Vazirmatn Project Authors (https://github.com/rastikerdar/vazirmatn).\nContextual Lam-Alef modifications copyright (c) 2025 Nad Alaba <alaba.nadim@gmail.com> with Reserved Font Name "Vazirharf".
+Copyright: Copyright 2015 The Vazirmatn Project Authors (https://github.com/rastikerdar/vazirmatn).\nCopyright (c) 2025-2026, Nad Alaba <alaba.nadim@gmail.com>,\nwith Reserved Font Name "Vazirharf".
 Version: 34.002
 ItalicAngle: 0
 UnderlinePosition: -730
@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1431850356
-ModificationTime: 1772520311
+ModificationTime: 1780854277
 PfmFamily: 33
 TTFWeight: 400
 TTFWidth: 5
@@ -212,7 +212,7 @@ ChainSub2: coverage "'calt' Contextual Alternates lookup 7 subtable 1" 0 0 0 1
  1
   SeqLookup: 0 "Single Substitution 0"
 EndFPST
-LangName: 1033 "" "" "" "" "" "Version 34.002" "" "" "Nad Alaba" "Saber Rastikerdar" "Vazirharf is a fork of Vazirmatn designed to split Lam-Alef required ligatures into two distinct glyphs. The first version of Vazirmatn (formerly named Vazir) was based on DejaVu 2.35 (was committed to the public domain) to begin designing and developing this new typeface. Non-Arabic (Latin) glyphs and data in the full version are imported from Roboto Variable font (version v3.004) under the Apache License, Version 2.0. https://github.com/davelab6/Roboto-Classic." "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" "https://scripts.sil.org/OFL" "" "Vazirharf" "Regular"
+LangName: 1033 "" "" "" "" "" "Version 34.002" "" "" "Nad Alaba" "Saber Rastikerdar" "Vazirharf is a fork of Vazirmatn designed to split Lam-Alef required ligatures into two distinct glyphs. The first version of Vazirmatn (formerly named Vazir) was based on DejaVu 2.35 (was committed to the public domain) to begin designing and developing this new typeface. Non-Arabic (Latin) glyphs and data in the full version are imported from Roboto Variable font (version v3.004) under the Apache License, Version 2.0. https://github.com/davelab6/Roboto-Classic." "" "" "This Font Software is licensed under the SIL Open Font License, Version 1.1.+AAoA-This license is copied below, and is also available with a FAQ at:+AAoA-https://openfontlicense.org+AAoACgAK------------------------------------------------------------+AAoA-SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007+AAoA------------------------------------------------------------+AAoACgAA-PREAMBLE+AAoA-The goals of the Open Font License (OFL) are to stimulate worldwide+AAoA-development of collaborative font projects, to support the font creation+AAoA-efforts of academic and linguistic communities, and to provide a free and+AAoA-open framework in which fonts may be shared and improved in partnership+AAoA-with others.+AAoACgAA-The OFL allows the licensed fonts to be used, studied, modified and+AAoA-redistributed freely as long as they are not sold by themselves. The+AAoA-fonts, including any derivative works, can be bundled, embedded,+AAoA-redistributed and/or sold with any software provided that any reserved+AAoA-names are not used by derivative works. The fonts and derivatives,+AAoA-however, cannot be released under any other type of license. The+AAoA-requirement for fonts to remain under this license does not apply+AAoA-to any document created using the fonts or their derivatives.+AAoACgAA-DEFINITIONS+AAoAIgAA-Font Software+ACIA refers to the set of files released by the Copyright+AAoA-Holder(s) under this license and clearly marked as such. This may+AAoA-include source files, build scripts and documentation.+AAoACgAi-Reserved Font Name+ACIA refers to any names specified as such after the+AAoA-copyright statement(s).+AAoACgAi-Original Version+ACIA refers to the collection of Font Software components as+AAoA-distributed by the Copyright Holder(s).+AAoACgAi-Modified Version+ACIA refers to any derivative made by adding to, deleting,+AAoA-or substituting -- in part or in whole -- any of the components of the+AAoA-Original Version, by changing formats or by porting the Font Software to a+AAoA-new environment.+AAoACgAi-Author+ACIA refers to any designer, engineer, programmer, technical+AAoA-writer or other person who contributed to the Font Software.+AAoACgAA-PERMISSION & CONDITIONS+AAoA-Permission is hereby granted, free of charge, to any person obtaining+AAoA-a copy of the Font Software, to use, study, copy, merge, embed, modify,+AAoA-redistribute, and sell modified and unmodified copies of the Font+AAoA-Software, subject to the following conditions:+AAoACgAA-1) Neither the Font Software nor any of its individual components,+AAoA-in Original or Modified Versions, may be sold by itself.+AAoACgAA-2) Original or Modified Versions of the Font Software may be bundled,+AAoA-redistributed and/or sold with any software, provided that each copy+AAoA-contains the above copyright notice and this license. These can be+AAoA-included either as stand-alone text files, human-readable headers or+AAoA-in the appropriate machine-readable metadata fields within text or+AAoA-binary files as long as those fields can be easily viewed by the user.+AAoACgAA-3) No Modified Version of the Font Software may use the Reserved Font+AAoA-Name(s) unless explicit written permission is granted by the corresponding+AAoA-Copyright Holder. This restriction only applies to the primary font name as+AAoA-presented to the users.+AAoACgAA-4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font+AAoA-Software shall not be used to promote, endorse or advertise any+AAoA-Modified Version, except to acknowledge the contribution(s) of the+AAoA-Copyright Holder(s) and the Author(s) or with their explicit written+AAoA-permission.+AAoACgAA-5) The Font Software, modified or unmodified, in part or in whole,+AAoA-must be distributed entirely under this license, and must not be+AAoA-distributed under any other license. The requirement for fonts to+AAoA-remain under this license does not apply to any document created+AAoA-using the Font Software.+AAoACgAA-TERMINATION+AAoA-This license becomes null and void if any of the above conditions are+AAoA-not met.+AAoACgAA-DISCLAIMER+AAoA-THE FONT SOFTWARE IS PROVIDED +ACIA-AS IS+ACIA, WITHOUT WARRANTY OF ANY KIND,+AAoA-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF+AAoA-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT+AAoA-OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE+AAoA-COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,+AAoA-INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL+AAoA-DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING+AAoA-FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM+AAoA-OTHER DEALINGS IN THE FONT SOFTWARE." "https://openfontlicense.org" "" "Vazirharf" "Regular"
 GaspTable: 1 65535 15 1
 MATH:ScriptPercentScaleDown: 80
 MATH:ScriptScriptPercentScaleDown: 60
@@ -1205,7 +1205,7 @@ SplineSet
  1482 1377 l 5
  1651 1377 l 5
  1651 496 l 2
- 1651 166 1597 -7.06621203108e-14 1020 0 c 2
+ 1651 166 1597 -7.06621203108e-014 1020 0 c 2
  855 0 l 2
  353 0 99 120 99 455 c 0
  99 547 121 635 155 717 c 1
@@ -5156,7 +5156,7 @@ SplineSet
  1883 0 l 5
  1847 0 l 2
  1680 0 1596 54 1557 161 c 1
- 1439 32 1288 -3.28205342171e-14 1020 0 c 2
+ 1439 32 1288 -3.28205342171e-014 1020 0 c 2
  855 0 l 2
  353 0 99 120 99 455 c 0
  99 547 121 635 155 717 c 1
@@ -5408,7 +5408,7 @@ SplineSet
  824 442 751 540 630 540 c 0
 678 -23 m 0
  544 -23 439 35 318 152 c 1
- 231 54 169 -1.77573785876e-14 24 0 c 2
+ 231 54 169 -1.77573785876e-014 24 0 c 2
  -20 0 l 5
  -20 182 l 5
  19 182 l 2
@@ -5446,7 +5446,7 @@ SplineSet
  1082 0 994 33 943 111 c 1
  887 29 810 -23 678 -23 c 0
  544 -23 439 35 318 152 c 1
- 231 54 169 -1.77573785876e-14 24 0 c 2
+ 231 54 169 -1.77573785876e-014 24 0 c 2
 630 540 m 0
  530 540 458 424 406 310 c 1
  450.432353206 263.82520157 494.674949203 228.276806892 535.999995252 202.858853651 c 0
@@ -6783,7 +6783,7 @@ SplineSet
  312.493140972 472.623893333 292.475016496 575.486842962 274 675 c 1
  448 719 l 1
  471.338972629 611.555530353 485.028858346 507.998877077 485.028858346 414.55178835 c 0
- 485.028858346 173.695382964 394.08263439 -8.52651282912e-14 143 0 c 2
+ 485.028858346 173.695382964 394.08263439 -8.52651282912e-014 143 0 c 2
 EndSplineSet
 EndChar
 
