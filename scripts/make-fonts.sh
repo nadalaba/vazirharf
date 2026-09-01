@@ -381,51 +381,55 @@ fi
 if [ -z "$NO_MISC" ]; then
     function generateMiscTTFs() {
         local weight=$1
+        local weightName="$weight"
+        local weightVariation="$weight"
+        [ "$weight" = "[wght]" ] && { weightVariation="Regular"; } || { weightName="-$weight"; }
+
         log "Generating all variations ttf (FD, NL, UI) for $weight"
 
         # Non-Latin subset
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf" --unicodes-file="${BUILD_DIR}/vazirharf_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME$weightName.ttf" --unicodes-file="${BUILD_DIR}/vazirharf_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-NL$weightName-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
         # Non-Latin NL
-        python3 "${SCRIPT_DIR}/set-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-subset.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-temp.ttf" "$FONT_FAMILY_NAME NL" "$weight" || error
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        python3 "${SCRIPT_DIR}/set-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-NL$weightName-subset.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-NL$weightName-temp.ttf" "$FONT_FAMILY_NAME NL" "$weightVariation" || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-NL$weightName-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-NL$weightName.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
-        # UI-Non-Latin UI-NL
-        source_file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight.ttf"
-        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL-$weight-temp.ttf" "$FONT_FAMILY_NAME UI NL" "$weight" || error
-        python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL-$weight-temp.ttf" $UIARGS || error
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-NL-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        # Farsi-Digits FD
+        source_file="${BUILD_DIR}/$FONT_FILE_NAME$weightName.ttf"
+        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-FD$weightName-temp.ttf" "$FONT_FAMILY_NAME FD" "$weightVariation" || error
+        python3 "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD$weightName-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD$weightName-temp.ttf" || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-FD$weightName-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-FD$weightName.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
         # Farsi-Digits-Non-Latin FD-NL
-        source_file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight.ttf"
-        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" "$FONT_FAMILY_NAME FD NL" "$weight" || error
-        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" || error
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-FD-NL-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
-
-        # UI-Farsi-Digits-Non-Latin UI-FD-NL
-        source_file="${BUILD_DIR}/$FONT_FILE_NAME-NL-$weight.ttf"
-        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" "$FONT_FAMILY_NAME UI FD NL" "$weight" || error
-        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf"  || error
-        python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" $UIARGS || error
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        source_file="${BUILD_DIR}/$FONT_FILE_NAME-FD$weightName.ttf"
+        python3 "${SCRIPT_DIR}/insert-digits-unicodes.py" "${BUILD_DIR}/vazirharf_subset_unicodes.txt" "${BUILD_DIR}/vazirharf_with_digits_subset_unicodes.txt"
+        pyftsubset "${source_file}" --unicodes-file="${BUILD_DIR}/vazirharf_with_digits_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-FD-NL$weightName-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        python3 "${SCRIPT_DIR}/set-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL$weightName-subset.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL$weightName-temp.ttf" "$FONT_FAMILY_NAME FD NL" "$weightVariation" || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-FD-NL$weightName-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-FD-NL$weightName.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
         # UI
-        source_file="${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf"
-        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-$weight-temp.ttf" "$FONT_FAMILY_NAME UI" "$weight" || error
-        python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-$weight-temp.ttf" $UIARGS || error
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        source_file="${BUILD_DIR}/$FONT_FILE_NAME$weightName.ttf"
+        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI$weightName-temp.ttf" "$FONT_FAMILY_NAME UI" "$weightVariation" || error
+        python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI$weightName-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI$weightName-temp.ttf" $UIARGS || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI$weightName-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI$weightName.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
-        # Farsi-Digits
-        source_file="${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf"
-        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" "$FONT_FAMILY_NAME FD" "$weight" || error
-        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" || error
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-FD-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        # UI-Non-Latin UI-NL
+        source_file="${BUILD_DIR}/$FONT_FILE_NAME-NL$weightName.ttf"
+        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL$weightName-temp.ttf" "$FONT_FAMILY_NAME UI NL" "$weightVariation" || error
+        python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL$weightName-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL$weightName-temp.ttf" $UIARGS || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-NL$weightName-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-NL$weightName.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
 
         # UI-Farsi-Digits UI-FD
-        source_file="${BUILD_DIR}/$FONT_FILE_NAME-$weight.ttf"
-        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" "$FONT_FAMILY_NAME UI FD" "$weight" || error
-        fontforge -script "${SCRIPT_DIR}/set-farsi-digits.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" || error
-        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-$weight.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+        source_file="${BUILD_DIR}/$FONT_FILE_NAME-FD$weightName.ttf"
+        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD$weightName-temp.ttf" "$FONT_FAMILY_NAME UI FD" "$weightVariation" || error
+        python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD$weightName-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD$weightName-temp.ttf" $UIARGS || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD$weightName-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-FD$weightName.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
+
+        # UI-Farsi-Digits-Non-Latin UI-FD-NL
+        source_file="${BUILD_DIR}/$FONT_FILE_NAME-FD-NL$weightName.ttf"
+        python3 "${SCRIPT_DIR}/set-names.py" "${source_file}" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL$weightName-temp.ttf" "$FONT_FAMILY_NAME UI FD NL" "$weightVariation" || error
+        python3 "${SCRIPT_DIR}/set-uiargs.py" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL$weightName-temp.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL$weightName-temp.ttf" $UIARGS || error
+        pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL$weightName-temp.ttf" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-UI-FD-NL$weightName.ttf" --glyphs='*' --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
     }
 
     generateMiscTTFs 'Thin'
@@ -437,12 +441,7 @@ if [ -z "$NO_MISC" ]; then
     generateMiscTTFs 'Bold'
     generateMiscTTFs 'ExtraBold'
     generateMiscTTFs 'Black'
-
-    log "Generating Non-Latin variable"
-    # Non-Latin variable subset
-    pyftsubset "${BUILD_DIR}/$FONT_FILE_NAME[wght].ttf" --unicodes-file="${BUILD_DIR}/vazirharf_subset_unicodes.txt" --output-file="${BUILD_DIR}/$FONT_FILE_NAME-Variable-NL-subset.ttf" --layout-features='*' --name-IDs='*' --notdef-glyph --glyph-names || error
-    # Non-Latin NL variable
-    python3 "${SCRIPT_DIR}/set-names.py" "${BUILD_DIR}/$FONT_FILE_NAME-Variable-NL-subset.ttf" "${BUILD_DIR}/$FONT_FILE_NAME-NL[wght].ttf" "$FONT_FAMILY_NAME NL" Regular || error
+    [ -z "$NO_VARIABLE" ] && { generateMiscTTFs '[wght]'; }
 
     rm "${BUILD_DIR}"/*-temp.ttf || error
     rm "${BUILD_DIR}"/*-subset.ttf || error
@@ -496,54 +495,50 @@ if [ -z "$NO_MISC" ]; then
     mkdir -p "${PACKAGE_DIR}/misc"
 
     mkdir -p "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin/fonts/ttf" || error
-    mv "${BUILD_DIR}/final_ttfs"/*-UI-FD-NL-*.ttf "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin/fonts/ttf" || error
-    mkdir -p "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin/fonts/webfonts" || error
-    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI-FD-NL-*.woff* "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin/fonts/webfonts" || error; }
+    mv "${BUILD_DIR}/final_ttfs"/*-UI-FD-NL*.ttf "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin/fonts/ttf" || error
+    [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin/fonts/webfonts" || error; }
+    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI-FD-NL*.woff* "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin/fonts/webfonts" || error; }
     [ -z "$NO_CSS" ] && { python3 "${SCRIPT_DIR}/webcss.py" "$FONT_FAMILY_NAME UI FD NL" "${PACKAGE_DIR}/misc/UI-Farsi-Digits-Non-Latin" || error; }
 
     mkdir -p "${PACKAGE_DIR}/misc/UI-Farsi-Digits/fonts/ttf" || error
-    mv "${BUILD_DIR}/final_ttfs"/*-UI-FD-*.ttf "${PACKAGE_DIR}/misc/UI-Farsi-Digits/fonts/ttf" || error
-    mkdir -p "${PACKAGE_DIR}/misc/UI-Farsi-Digits/fonts/webfonts" || error
-    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI-FD-*.woff* "${PACKAGE_DIR}/misc/UI-Farsi-Digits/fonts/webfonts" || error; }
+    mv "${BUILD_DIR}/final_ttfs"/*-UI-FD*.ttf "${PACKAGE_DIR}/misc/UI-Farsi-Digits/fonts/ttf" || error
+    [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/misc/UI-Farsi-Digits/fonts/webfonts" || error; }
+    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI-FD*.woff* "${PACKAGE_DIR}/misc/UI-Farsi-Digits/fonts/webfonts" || error; }
     [ -z "$NO_CSS" ] && { python3 "${SCRIPT_DIR}/webcss.py" "$FONT_FAMILY_NAME UI FD" "${PACKAGE_DIR}/misc/UI-Farsi-Digits" || error; }
 
     mkdir -p "${PACKAGE_DIR}/misc/UI-Non-Latin/fonts/ttf" || error
-    mv "${BUILD_DIR}/final_ttfs"/*-UI-NL-*.ttf "${PACKAGE_DIR}/misc/UI-Non-Latin/fonts/ttf" || error
-    mkdir -p "${PACKAGE_DIR}/misc/UI-Non-Latin/fonts/webfonts" || error
-    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI-NL-*.woff* "${PACKAGE_DIR}/misc/UI-Non-Latin/fonts/webfonts" || error; }
+    mv "${BUILD_DIR}/final_ttfs"/*-UI-NL*.ttf "${PACKAGE_DIR}/misc/UI-Non-Latin/fonts/ttf" || error
+    [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/misc/UI-Non-Latin/fonts/webfonts" || error; }
+    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI-NL*.woff* "${PACKAGE_DIR}/misc/UI-Non-Latin/fonts/webfonts" || error; }
     [ -z "$NO_CSS" ] && { python3 "${SCRIPT_DIR}/webcss.py" "$FONT_FAMILY_NAME UI NL" "${PACKAGE_DIR}/misc/UI-Non-Latin" || error; }
 
     mkdir -p "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin/fonts/ttf" || error
-    mv "${BUILD_DIR}/final_ttfs"/*-FD-NL-*.ttf "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin/fonts/ttf" || error
-    mkdir -p "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin/fonts/webfonts" || error
-    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-FD-NL-*.woff* "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin/fonts/webfonts" || error; }
+    mv "${BUILD_DIR}/final_ttfs"/*-FD-NL*.ttf "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin/fonts/ttf" || error
+    [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin/fonts/webfonts" || error; }
+    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-FD-NL*.woff* "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin/fonts/webfonts" || error; }
     [ -z "$NO_CSS" ] && { python3 "${SCRIPT_DIR}/webcss.py" "$FONT_FAMILY_NAME FD NL" "${PACKAGE_DIR}/misc/Farsi-Digits-Non-Latin" || error; }
 
     mkdir -p "${PACKAGE_DIR}/misc/Farsi-Digits/fonts/ttf" || error
-    mv "${BUILD_DIR}/final_ttfs"/*-FD-*.ttf "${PACKAGE_DIR}/misc/Farsi-Digits/fonts/ttf" || error
-    mkdir -p "${PACKAGE_DIR}/misc/Farsi-Digits/fonts/webfonts" || error
-    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-FD-*.woff* "${PACKAGE_DIR}/misc/Farsi-Digits/fonts/webfonts" || error; }
+    mv "${BUILD_DIR}/final_ttfs"/*-FD*.ttf "${PACKAGE_DIR}/misc/Farsi-Digits/fonts/ttf" || error
+    [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/misc/Farsi-Digits/fonts/webfonts" || error; }
+    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-FD*.woff* "${PACKAGE_DIR}/misc/Farsi-Digits/fonts/webfonts" || error; }
     [ -z "$NO_CSS" ] && { python3 "${SCRIPT_DIR}/webcss.py" "$FONT_FAMILY_NAME FD" "${PACKAGE_DIR}/misc/Farsi-Digits" || error; }
 
     mkdir -p "${PACKAGE_DIR}/misc/UI/fonts/ttf" || error
-    mv "${BUILD_DIR}/final_ttfs"/*-UI-*.ttf "${PACKAGE_DIR}/misc/UI/fonts/ttf" || error
-    mkdir -p "${PACKAGE_DIR}/misc/UI/fonts/webfonts" || error
-    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI-*.woff* "${PACKAGE_DIR}/misc/UI/fonts/webfonts" || error; }
+    mv "${BUILD_DIR}/final_ttfs"/*-UI*.ttf "${PACKAGE_DIR}/misc/UI/fonts/ttf" || error
+    [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/misc/UI/fonts/webfonts" || error; }
+    [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-UI*.woff* "${PACKAGE_DIR}/misc/UI/fonts/webfonts" || error; }
     [ -z "$NO_CSS" ] && { python3 "${SCRIPT_DIR}/webcss.py" "$FONT_FAMILY_NAME UI" "${PACKAGE_DIR}/misc/UI" || error; }
 
-    mkdir -p "${PACKAGE_DIR}/misc/Non-Latin/fonts/variable" || error
-    [ -z "$NO_CSS" ] && { mv "${BUILD_DIR}/final_ttfs/$FONT_FILE_NAME-NL[wght].ttf" "${PACKAGE_DIR}/misc/Non-Latin/fonts/variable" || error; }
 
     mkdir -p "${PACKAGE_DIR}/misc/Non-Latin/fonts/ttf" || error
-    mv "${BUILD_DIR}/final_ttfs"/*-NL-*.ttf "${PACKAGE_DIR}/misc/Non-Latin/fonts/ttf" || error
-    mkdir -p "${PACKAGE_DIR}/misc/Non-Latin/fonts/webfonts" || error
+    mv "${BUILD_DIR}/final_ttfs"/*-NL*.ttf "${PACKAGE_DIR}/misc/Non-Latin/fonts/ttf" || error
+    [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/misc/Non-Latin/fonts/webfonts" || error; }
     [ -z "$ONLY_TTF" ] && { mv "${BUILD_DIR}/final_ttfs"/*-NL*.woff* "${PACKAGE_DIR}/misc/Non-Latin/fonts/webfonts" || error; }
     [ -z "$NO_CSS" ] && { python3 "${SCRIPT_DIR}/webcss.py" "$FONT_FAMILY_NAME NL" "${PACKAGE_DIR}/misc/Non-Latin" || error; }
 fi
 
 # main files (all the remain files)
-[ -z "$NO_VARIABLE" ] && { mkdir -p "${PACKAGE_DIR}/fonts/variable" || error; }
-[ -z "$NO_VARIABLE" ] && { mv "${BUILD_DIR}/final_ttfs"/$FONT_FILE_NAME[wght].ttf "${PACKAGE_DIR}/fonts/variable/" || error; }
 mkdir -p "${PACKAGE_DIR}/fonts/ttf/" || error
 mv "${BUILD_DIR}/final_ttfs"/*.ttf "${PACKAGE_DIR}/fonts/ttf/" || error
 [ -z "$ONLY_TTF" ] && { mkdir -p "${PACKAGE_DIR}/fonts/webfonts" || error; }
