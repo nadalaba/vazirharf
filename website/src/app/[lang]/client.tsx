@@ -101,24 +101,24 @@ export function IndexLayout({ donations }: { donations: Donation[] }) {
     >
       <Grid
         container
-        sx={{ width: "100%" }}
-        mt={1}
-        mb={4}
-        px={2}
         wrap="wrap"
-        maxWidth="md"
-        alignItems="center"
-        rowGap={2}
-      >
+        sx={{
+          mt: 1,
+          mb: 4,
+          px: 2,
+          maxWidth: "md",
+          rowGap: 2,
+          width: "100%",
+          alignItems: "center"
+        }}>
         <Grid size={{ lg: 6, md: 6, xs: 12 }}>
           <Box
-            my={2}
             sx={{
+              my: 2,
               mb: 2,
               "@media (max-width: 480px)": { mb: 0 },
-              textAlign: "center",
-            }}
-          >
+              textAlign: "center"
+            }}>
             <HeroTitle />
             <Typography
               variant="h5"
@@ -140,7 +140,11 @@ export function IndexLayout({ donations }: { donations: Donation[] }) {
           </Box>
         </Grid>
       </Grid>
-      <Box maxWidth="md" px={2}>
+      <Box
+        sx={{
+          maxWidth: "md",
+          px: 2
+        }}>
         {t("font_description")}
       </Box>
       <Box
@@ -174,9 +178,12 @@ export function IndexLayout({ donations }: { donations: Donation[] }) {
         />
       </Box>
       <Box
-        maxWidth="md"
-        sx={{ display: "flex", justifyContent: "center", width: "100%" }}
-      >
+        sx={{
+          maxWidth: "md",
+          display: "flex",
+          justifyContent: "center",
+          width: "100%"
+        }}>
         <Box
           sx={{
             mx: 2,
@@ -187,15 +194,14 @@ export function IndexLayout({ donations }: { donations: Donation[] }) {
         </Box>
       </Box>
       <Box
-        maxWidth="md"
         sx={{
+          maxWidth: "md",
           width: "100%",
           p: 2,
           textAlign: "center",
           wordWrap: "break-word",
-          fontSize: "0.8rem",
-        }}
-      >
+          fontSize: "0.8rem"
+        }}>
         {t("other_free_fonts")}:&nbsp;
         <a
           href="https://rastikerdar.github.io/vazirmatn/"
@@ -292,13 +298,12 @@ export function IndexLayout({ donations }: { donations: Donation[] }) {
       </Box>
       <Box
         dir="ltr"
-        maxWidth="md"
         sx={{
+          maxWidth: "md",
           width: "100%",
           textAlign: "center",
-          fontSize: "0.8rem",
-        }}
-      >
+          fontSize: "0.8rem"
+        }}>
         {languagesList.map((lang: string) => (
           <Link
             key={lang}

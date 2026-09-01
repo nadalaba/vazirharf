@@ -83,7 +83,11 @@ export function DonationView({ donations }: { donations: Donation[] }) {
       </Box>
       {donations.length === 0 && t("fetching_donations")}
       {donations.length > 0 && <DonationList donations={sortedDonations} />}
-      <Box mt={1} sx={{ display: donations.length > 0 ? "block" : "none" }}>
+      <Box
+        sx={{
+          mt: 1,
+          display: donations.length > 0 ? "block" : "none"
+        }}>
         <a
           href="https://github.com/nadalaba/vazirharf/blob/gh-pages/donations.json"
           target="_blank"

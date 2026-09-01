@@ -12,11 +12,12 @@ export const Lab: FC = () => {
   return (
     <ReduxProvider store={store}>
       <Box
-        display="flex"
-        flexDirection="column"
-        height="100%"
-        overflow="hidden"
-      >
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          height: "100%",
+          overflow: "hidden"
+        }}>
         <Panels />
         <TextArea />
       </Box>

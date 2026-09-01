@@ -100,7 +100,9 @@ export function GlyphPanel() {
           display: "flex",
         }}
       >
-        <Box maxWidth="lg">
+        <Box sx={{
+          maxWidth: "lg"
+        }}>
           {getGlyphCollection(selectedCollection)
             .letters.concat(
               getGlyphCollection(selectedCollection).numbers.concat(

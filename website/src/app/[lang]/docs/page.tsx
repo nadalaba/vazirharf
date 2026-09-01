@@ -27,20 +27,21 @@ export default async function Docs({ params }: PageProps<"/[lang]/docs">) {
         sx={{ display: "flex", flexDirection: "column", alignItems: "center" }}
       >
         <Box
-          maxWidth="md"
           sx={{
+            //maxWidth: "md",
             mt: 2,
             px: 2,
+
             maxWidth: {
               xs: "100%", // theme.breakpoints.up('xs')
               md: 900,
             },
+
             minWidth: {
               xs: "100%", // theme.breakpoints.up('xs')
               sm: 600,
-            },
-          }}
-        >
+            }
+          }}>
           <article>
             {docs.map((doc) => (
               <div key={doc.slug + (doc.lang || "")}>

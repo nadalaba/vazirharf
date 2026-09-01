@@ -68,12 +68,15 @@ export const TextArea: FC = () => {
     >
       <Box
         sx={{
+          maxWidth: "lg",
           fontFamily: font.cssFamily,
+
           "& *": {
             fontFamily: `${font.cssFamily} !important`,
             // fontSize: `${size}px !important`,
             // fontWeight: `${isVariable ? "400" : String(weight)} !important`,
           },
+
           fontSize: `${size}px`,
           fontWeight: isVariable ? "400" : String(weight),
           color: `rgba(${theme.vars?.palette.text.primaryChannel} / ${alpha / 100})`,
@@ -82,12 +85,11 @@ export const TextArea: FC = () => {
           fontVariationSettings: `"wght" ${weight}`,
           lineHeight: "1.63",
           textAlign: justify ? "justify" : "unset",
+
           fontFeatureSettings: `"calt" ${calt ? "on" : "off"}, "tnum" ${
             tnum ? "on" : "off"
-          }`,
-        }}
-        maxWidth="lg"
-      >
+          }`
+        }}>
         <div
           contentEditable={contentEditable}
           suppressContentEditableWarning={true}
