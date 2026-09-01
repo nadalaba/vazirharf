@@ -1,13 +1,17 @@
 # git files
 .git*
 
-# out files and directories
+# build files
+tmp*
+latin
+
+# out files
+out
 fonts
 misc
 Round-Dots
 Vazirharf-font-face.css
 vazirharf-v*.zip
-out
 
 # package files
 DESCRIPTION*
