@@ -10,25 +10,35 @@ author:
 
 A variable font is an advanced version of traditional (OpenType) fonts that can contain multiple styles of a typeface within a single file. This allows the user to use just one file instead of separate files for each style. For example, a variable font can include regular and bold weights, italic, condensed, expanded styles, etc., all in one file. Previously, we had to use multiple files to access these styles.
 
-## Variable font files of Vazirharf
+## What variable font files of Vazirharf are there?
 
 Different variable versions of Vazirharf are available at the following paths:
 
 ### Regular Version:
-- `fonts/variable/Vazirharf[wght].ttf`
+- `fonts/ttf/Vazirharf[wght].ttf`
 - `fonts/webfonts/Vazirharf[wght].woff2`
 
 ### Round Dots Version:
-- `Round-Dots/fonts/variable/Vazirharf-RD[wght].ttf`
+- `Round-Dots/fonts/ttf/Vazirharf-RD[wght].ttf`
 - `Round-Dots/fonts/webfonts/Vazirharf-RD[wght].woff2`
 
 ### Non-Latin Version:
-- `misc/Non-Latin/fonts/variable/Vazirharf-NL[wght].ttf`
+- `misc/Non-Latin/fonts/ttf/Vazirharf-NL[wght].ttf`
 - `misc/Non-Latin/fonts/webfonts/Vazirharf-NL[wght].woff2`
+
+### UI Version:
+- `misc/UI/fonts/ttf/Vazirharf-UI[wght].ttf`
+- `misc/UI/fonts/webfonts/Vazirharf-UI[wght].woff2`
+
+### Farsi-Digits Version:
+- `misc/Farsi-Digits/fonts/ttf/Vazirharf-FD[wght].ttf`
+- `misc/Farsi-Digits/fonts/webfonts/Vazirharf-FD[wght].woff2`
+
+**And any combination of the last 3.**
 
 Each of these files includes all weights of Vazirharf in one package.
 
-## How to Use the Variable Vazirharf font on the Web
+## How to Use the Variable Vazirharf font on the Web?
 
 To define the font in CSS:
 ```css
@@ -98,6 +108,6 @@ h1 {
 ```
 In Vazirharf, the `wght` parameter is defined to control font weight. You can use any value between 100 and 900, such as 627.
 
-## How to Use the variable Vazirharf font in Various Applications
+## How to Use the variable Vazirharf font in Various Applications?
 
 Visit this [page](https://nadalaba.github.io/vazirharf/en/docs/HELP-en) for guidance.
