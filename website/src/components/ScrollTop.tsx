@@ -32,9 +32,9 @@ export function ScrollTop() {
         role="presentation"
         sx={{ position: "fixed", bottom: 16, right: 16 }}
       >
-        <Fab color="inherit" size="small">
-          <KeyboardArrowUpIcon />
-        </Fab>
+      <Fab size="small" sx={{ bgcolor: 'background.paper' }}>
+        <KeyboardArrowUpIcon sx={{ color: 'text.primary' }} />
+      </Fab>
       </Box>
     </Zoom>
   );
