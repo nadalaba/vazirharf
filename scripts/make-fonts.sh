@@ -137,9 +137,6 @@ for i in "$@"; do
     esac
 done
 
-REPO_DIR=$(readlink -f "$REPO_DIR")
-TEMP_DIR=$(readlink -f "$TEMP_DIR")
-
 FONT_FAMILY_NAME="Vazirharf"
 FONT_FILE_NAME="Vazirharf"
 if [ -n "$RD_FONT" ]; then
@@ -147,6 +144,11 @@ if [ -n "$RD_FONT" ]; then
     FONT_FILE_NAME="Vazirharf-RD"
 fi
 
+if [ -n "$RD_FONT" ]; then
+    OUTPUT_DIR="${OUTPUT_DIR}/Round-Dots"
+fi
+
+REPO_DIR=$(readlink -f "$REPO_DIR")
 LATIN_DIR="${REPO_DIR}/latin"
 if [ -n "$NO_LATIN" ]; then
     LATIN_DIR=""
@@ -154,10 +156,12 @@ else
     mkdir -p "${LATIN_DIR}"
 fi
 
-if [ -n "$RD_FONT" ]; then
-    mkdir -p "${OUTPUT_DIR}/Round-Dots" || error 
-    OUTPUT_DIR="${OUTPUT_DIR}/Round-Dots"
+if [ -d "${TEMP_DIR}" ]; then
+    rm -rf "${TEMP_DIR}"/* || error
+else
+    mkdir -p "${TEMP_DIR}" || error
 fi
+TEMP_DIR=$(readlink -f "$TEMP_DIR")
 
 SOURCES_DIR="${REPO_DIR}/sources"
 BUILD_DIR="${TEMP_DIR}/build"
@@ -169,17 +173,11 @@ UIARGS="1950,970"
 # ========================================
 
 [ ! -d "${REPO_DIR}" ] && error "--repo-dir ${REPO_DIR} not found"
-[ ! -d "${OUTPUT_DIR}" ] && error "--output-dir ${OUTPUT_DIR} not found"
 [ ! -d "${SOURCES_DIR}" ] && error "${SOURCES_DIR} not found. Try to use --repo-dir="
-
-if [ -d "${TEMP_DIR}" ]; then
-    rm -rf "${TEMP_DIR}"/* || error
-else
-    mkdir -p "${TEMP_DIR}" || error
-fi
 
 mkdir "${BUILD_DIR}" || error
 mkdir "${PACKAGE_DIR}" || error
+mkdir -p "${OUTPUT_DIR}" || error
 
 # ========================================
 # Clone the Roboto Variable Font repo
