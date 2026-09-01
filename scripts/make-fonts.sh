@@ -6,11 +6,11 @@
 # Works only on Linux.
 #
 # Requirements:
+#     wget (Access to fetch Roboto Variable repo https://github.com/googlefonts/roboto-3-classic) ~ v3.004
 #     fontforge ~ v20251009
 #     fontmake  https://github.com/googlefonts/fontmake ~ v2.4.1
 #     python3
 #     fonttools https://github.com/fonttools/fonttools ~ v4.29.1
-#     git (Access to fetch Roboto Variable repo https://github.com/googlefonts/Roboto-Classic) ~ v3.004
 #     gftools
 #     ttfautohint  https://www.freetype.org/ttfautohint/ ~ v1.8.3
 #
@@ -184,9 +184,11 @@ mkdir -p "${OUTPUT_DIR}" || error
 # ========================================
 
 if [[ -n "${LATIN_DIR}" && ! -d "${LATIN_DIR}/Roboto" ]]; then
-    log "Cloning https://github.com/sannorozco/Roboto.git v3.004 into ${LATIN_DIR}/Roboto"
-    git clone --depth 1 --branch v3.004 https://github.com/googlefonts/Roboto-Classic.git "${LATIN_DIR}/Roboto" || error
-    rm -rf "${LATIN_DIR}/Roboto/.git" || error
+    log "Downloading https://github.com/googlefonts/roboto-3-classic v3.004 into ${LATIN_DIR}/Roboto"
+    wget https://github.com/googlefonts/roboto-3-classic/archive/refs/tags/v3.004.tar.gz || error
+    tar -xzf v3.004.tar.gz || error
+    rm v3.004.tar.gz || error
+    mv roboto-3-classic-3.004 ${LATIN_DIR}/Roboto || error
 fi
 
 # ========================================

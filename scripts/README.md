@@ -22,7 +22,7 @@ docker build -o path/to/build/directory .
 ## Building without Docker
 
 The script tool for building files for [vazirharf](https://github.com/nadalaba/vazirharf).
-By default this tool clones the repository of Roboto-Classic Variable font into the folder `latin` and then merge it into Vazirharf. However, You can use the `--no-latin` option to skip this step.
+By default this tool downloads the repository of Roboto-Classic Variable font into the folder `latin` and then merge it into Vazirharf. However, You can use the `--no-latin` option to skip this step.
 
 ### Requirements
 
@@ -31,7 +31,7 @@ By default this tool clones the repository of Roboto-Classic Variable font into 
 - fontmake https://github.com/googlefonts/fontmake
 - fonttools (pyftsubset) https://github.com/fonttools/fonttools
 - gftools
-- git (access to fetch Roboto Variable repository https://github.com/googlefonts/Roboto-Classic)
+- wget (Access to fetch Roboto Variable repo https://github.com/googlefonts/roboto-3-classic) ~ v3.004
 - sed
 - zip
 - make
@@ -41,13 +41,12 @@ By default this tool clones the repository of Roboto-Classic Variable font into 
 Make sure you have installed all the requirements. For Debian distro you can use this command:
 
 ```sh
-sudo apt install fontmake fonttools gftools zip sed git make
+sudo apt install fontmake fonttools gftools wget sed zip make
 ```
 
 Install fontforge AppImage from [latest github release](https://github.com/fontforge/fontforge/releases/download/20251009/FontForge-2025-10-09-Linux-x86_64.AppImage) because debian 13 package still doesn't have [this fix](https://github.com/fontforge/fontforge/commit/45d74411b2ec9b6060bfa58534c636cc30208f7b):
 
 ```sh
-sudo apt install wget
 wget https://github.com/fontforge/fontforge/releases/download/20251009/FontForge-2025-10-09-Linux-x86_64.AppImage
 mkdir -p ~/.local/bin/appimages
 mv FontForge-2025-10-09-Linux-x86_64.AppImage ~/.local/bin/appimages
