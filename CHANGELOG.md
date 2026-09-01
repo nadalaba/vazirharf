@@ -1,5 +1,9 @@
 # Vazirharf Changelog
 
+## 34.003
+
+- Add variable font of all misc variants (FD / NL / UI) with all their combinations to the package.
+
 ## 34.002
 
 - Fix interpolation problems in variable font (rastikerdar/vazirmatn#317).

@@ -5,50 +5,61 @@ using legacy or unchangable environments.
 """
 
 import sys
-import fontforge
+from fontTools.ttLib import TTFont
+from copy import deepcopy
 
+# map from Persian digits to Latin digits
+latin_map = {
+    "uni06F0": "zero",
+    "uni0661": "one",
+    "uni0662": "two",
+    "uni0663": "three",
+    "uni06F4": "four",
+    "uni06F5": "five",
+    "uni06F6": "six",
+    "uni0667": "seven",
+    "uni0668": "eight",
+    "uni0669": "nine",
+}
+
+# map from Persian digits to Arabic digits
+arabic_map = {
+    "uni06F0": "uni0660",
+    "uni06F4": "uni0664",
+    "uni06F5": "uni0665",
+    "uni06F6": "uni0666",
+}
+
+def copyGlyph(font, src, dst):
+    glyf = font["glyf"]
+    hmtx = font["hmtx"]
+
+    # deep-copy outline so we don't share references
+    glyf[dst] = deepcopy(glyf[src])
+
+    # copy metrics (advance width + left side bearing)
+    hmtx[dst] = hmtx[src]
+
+    # copy variable deltas if the font has a gvar table
+    if "gvar" in font:
+            gvar = font["gvar"]
+            if src in gvar.variations:
+                gvar.variations[dst] = deepcopy(gvar.variations[src])
 
 def setFarsiDigits(infile, outfile):
-    font = fontforge.open(infile)
-    font.encoding = "Unicode"
+    font = TTFont(infile)
 
-    # copy Farsi digits (0 1 2 3 4 5 6 7 8 9) to Latin digits
-    mapDigits = {
-        "uni06F0": "zero",
-        "uni0661": "one",
-        "uni0662": "two",
-        "uni0663": "three",
-        "uni06F4": "four",
-        "uni06F5": "five",
-        "uni06F6": "six",
-        "uni0667": "seven",
-        "uni0668": "eight",
-        "uni0669": "nine",
-    }
+    # copy Persian to Latin
+    for src, dst in latin_map.items():
+        if src in font["glyf"]:
+            copyGlyph(font, src, dst)
 
-    for index in mapDigits:
-        font.selection.select(index)
-        font.copyReference()
-        font.selection.select(mapDigits[index])
-        font.paste()
+    # copy Persian to Arabic
+    for src, dst in arabic_map.items():
+        if src in font["glyf"]:
+            copyGlyph(font, src, dst)
 
-    # copy Farsi digits (0 4 5 6) to Arabic digits
-    mapDigits = {
-        "uni06F0": "uni0660",
-        "uni06F4": "uni0664",
-        "uni06F5": "uni0665",
-        "uni06F6": "uni0666",
-    }
-
-    for index in mapDigits:
-        font.selection.select(index)
-        font.copyReference()
-        font.selection.select(mapDigits[index])
-        font.paste()
-
-    font.selection.none()
-    font.generate(outfile, flags=("opentype"))
-
+    font.save(outfile)
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
